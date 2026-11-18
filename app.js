@@ -18,7 +18,7 @@
       telemetry_compliance: 'Standard: Linee Guida MiC VPIA & D.Lgs. 36/2023',
       brand_tagline: 'Subsurface & Landscape Archaeology',
       nav_services: 'Metodologie & Servizi',
-      nav_simulator: 'Stratigrafia & Segnale',
+      nav_software: 'Software & Python',
       nav_portfolio: 'Casi Studio',
       nav_instrumentation: 'Strumentazione',
       nav_contact: 'Contatti & VPIA',
@@ -97,22 +97,10 @@
       service_8_spec1: 'Scripting Python (GeoPandas, Matplotlib, NumPy) e automazione plugin/script PyQGIS',
       service_8_spec2: 'Spatial join, buffer di correlazione geofisica-ricognizione e geodatabase MiC/ICA',
 
-      sim_kicker: 'Diagnostica Sottosuolo & Sviluppo Software',
-      sim_title: 'Confronto della risposta geofisica ed elaborazione 3D proprietaria',
-      sim_subtitle:
-        'Seleziona una metodologia di indagine per visualizzare la firma del segnale sulla sezione stratigrafica ed esplora il nostro software proprietario per la co-registrazione 3D di profili GPR, Time-Slices ed ERT.',
-      sim_tab1_title: 'Georadar Multicanale (GPR 400/200 MHz)',
-      sim_tab1_desc:
-        'Ideale per murature, pavimentazioni, cavità, cripte e stratigrafie urbane complesse. Restituisce la profondità reale del target tramite analisi di velocità delle onde EM.',
-      sim_tab2_title: 'Magnetometria Gradiente Fluxgate / Cesareo',
-      sim_tab2_desc:
-        'Altissima produttività areale in contesti extraurbani. Rileva fornaci, focolari, strutture in laterizio, buche di palo, fossati ricolmati e tracce termorimanenti (nT/m).',
-      sim_tab3_title: 'Tomografia Elettrica 2D/3D (ERT)',
-      sim_tab3_desc:
-        'Indagine profonda del contatto con il substrato geologico, argini antichi, cisterne, tumuli funerari, porti sepolti e contesti ad elevata presenza argillosa.',
-      sim_spec_res: 'Risoluzione Spaziale',
-      sim_spec_target: 'Target Primari',
-      sim_spec_prod: 'Resa Giornaliera',
+      sw_section_kicker: 'Tecnologia In-House & Data Science',
+      sw_section_title: 'Software Proprietario 3D & Geocomputazione in Python',
+      sw_section_subtitle:
+        "Pipeline software sviluppate internamente per l'integrazione volumetrica di dati geofisici multi-sensore (GPR ed ERT) e geocomputazione avanzata in Python/PyQGIS per l'analisi spaziale quantitativa multi-periodo.",
 
       sw_badge: 'SVILUPPO SOFTWARE IN-HOUSE • 3D GEOPHYSICAL DATA FUSION',
       sw_title: 'Elaborazione dati GPR ed ERT con software sviluppato internamente',
@@ -249,7 +237,7 @@
       telemetry_compliance: 'Standards: Italian MiC VPIA Guidelines & Cultural Heritage GIS',
       brand_tagline: 'Subsurface & Landscape Archaeology',
       nav_services: 'Methods & Services',
-      nav_simulator: 'Stratigraphy & Signal',
+      nav_software: 'Software & Python',
       nav_portfolio: 'Case Studies',
       nav_instrumentation: 'Equipment',
       nav_contact: 'Contact & VPIA',
@@ -328,22 +316,10 @@
       service_8_spec1: 'Python scripting (GeoPandas, Matplotlib, NumPy) and custom PyQGIS automation',
       service_8_spec2: 'Spatial joins, geophysics-fieldwalking correlation buffers, and MiC/ICA geodatabases',
 
-      sim_kicker: 'Subsurface Diagnostics & Software Engineering',
-      sim_title: 'Geophysical response comparison & proprietary 3D processing',
-      sim_subtitle:
-        'Select a survey methodology to inspect its physical signal signature and explore our custom-developed software for 3D co-registration of GPR profiles, Time-Slices, and ERT.',
-      sim_tab1_title: 'Multi-Channel Ground Penetrating Radar (GPR 400/200 MHz)',
-      sim_tab1_desc:
-        'Optimal for masonry walls, floors, vaults, crypts, and complex urban stratigraphy. Yields true target depth via electromagnetic wave velocity analysis.',
-      sim_tab2_title: 'Fluxgate / Cesium Gradient Magnetometry',
-      sim_tab2_desc:
-        'Ultra-high areal coverage in rural landscapes. Detects kilns, hearths, brick structures, post-holes, backfilled ditches, and thermoremanent anomalies (nT/m).',
-      sim_tab3_title: '2D/3D Electrical Resistivity Tomography (ERT)',
-      sim_tab3_desc:
-        'Deep investigation of bedrock contact, ancient embankments, cisterns, burial mounds, buried harbors, and clay-rich conductive environments.',
-      sim_spec_res: 'Spatial Resolution',
-      sim_spec_target: 'Primary Targets',
-      sim_spec_prod: 'Daily Output',
+      sw_section_kicker: 'In-House Technology & Data Science',
+      sw_section_title: 'Proprietary 3D Software & Python Geocomputation',
+      sw_section_subtitle:
+        'Custom-developed software pipelines for volumetric multi-sensor geophysical data fusion (GPR & ERT) and advanced Python/PyQGIS spatial data science for multi-period quantitative spatial analysis.',
 
       sw_badge: 'IN-HOUSE SOFTWARE DEVELOPMENT • 3D GEOPHYSICAL DATA FUSION',
       sw_title: 'GPR and ERT data processing via custom-developed proprietary software',
@@ -571,226 +547,8 @@
   });
 
   /* ==========================================================================
-     4. Interactive Subsurface Stratigraphy & Signal Response Canvas Simulator
-     ========================================================================== */
-  const canvas = document.getElementById('subsurfaceCanvas');
-  const ctx = canvas ? canvas.getContext('2d') : null;
-  const simActiveTitle = document.getElementById('simActiveTitle');
-  const simFreqBadge = document.getElementById('simFreqBadge');
-  const simSpecRes = document.getElementById('simSpecRes');
-  const simSpecTarget = document.getElementById('simSpecTarget');
-  const simSpecProd = document.getElementById('simSpecProd');
-
-  const simMethodConfigs = {
-    gpr: {
-      it: {
-        title: 'PROFILO RADARGRAMMA B-SCAN & SEZIONE STRATIGRAFICA',
-        badge: 'ANTENNA: DUAL 250 / 500 MHz • v = 0.10 m/ns',
-        res: '0.05 m × 0.25 m',
-        target: 'Murature, Pavimenti, Volte',
-        prod: '1.5 – 4.0 ha / giorno'
-      },
-      en: {
-        title: 'B-SCAN RADARGRAM PROFILE & STRATIGRAPHIC SECTION',
-        badge: 'ANTENNA: DUAL 250 / 500 MHz • v = 0.10 m/ns',
-        res: '0.05 m × 0.25 m',
-        target: 'Masonry Walls, Floors, Vaults',
-        prod: '1.5 – 4.0 ha / day'
-      }
-    },
-    mag: {
-      it: {
-        title: 'PROFILO GRADIENTE MAGNETICO VERTICALE (nT/m)',
-        badge: 'ARRAY: 5× SONDE FLUXGATE • SENSIBILITÀ 0.1 nT',
-        res: '0.12 m × 0.50 m',
-        target: 'Fornaci, Fossati, Laterizi',
-        prod: '5.0 – 12.0 ha / giorno'
-      },
-      en: {
-        title: 'VERTICAL MAGNETIC GRADIENT PROFILE (nT/m)',
-        badge: 'ARRAY: 5× FLUXGATE SENSORS • SENSITIVITY 0.1 nT',
-        res: '0.12 m × 0.50 m',
-        target: 'Kilns, Ditches, Brick Walls',
-        prod: '5.0 – 12.0 ha / day'
-      }
-    },
-    ert: {
-      it: {
-        title: 'SEZIONE INVERTITA DI RESISTIVITÀ ELETTRICA (Ω·m)',
-        badge: 'ARRAY: WENNER-SCHLUMBERGER • 96 ELETTRODI',
-        res: '0.50 m – 1.50 m',
-        target: 'Cavità Profonde, Paleoalvei, Fondazioni',
-        prod: '400 – 900 m lineari / giorno'
-      },
-      en: {
-        title: 'INVERTED ELECTRICAL RESISTIVITY SECTION (Ω·m)',
-        badge: 'ARRAY: WENNER-SCHLUMBERGER • 96 ELECTRODES',
-        res: '0.50 m – 1.50 m',
-        target: 'Deep Cavities, Paleochannels, Foundations',
-        prod: '400 – 900 linear m / day'
-      }
-    }
-  };
-
-  function drawStratigraphyCanvas(method) {
-    if (!ctx || !canvas) return;
-    const w = canvas.width;
-    const h = canvas.height;
-    ctx.clearRect(0, 0, w, h);
-
-    // Stratigraphic background layers
-    // Layer 1: Humus / Ploughzone (US 1)
-    ctx.fillStyle = '#23201c';
-    ctx.fillRect(0, 28, w, 40);
-
-    // Layer 2: Archaeological Collapse & Deposit (US 2)
-    ctx.fillStyle = '#2c241d';
-    ctx.fillRect(0, 68, w, 95);
-
-    // Layer 3: Geological Substrate / Bedrock (US 3)
-    ctx.fillStyle = '#1b222a';
-    ctx.fillRect(0, 163, w, h - 163);
-
-    // Subtle depth grid & horizontal stratigraphic boundaries
-    ctx.strokeStyle = 'rgba(235, 220, 195, 0.12)';
-    ctx.lineWidth = 1;
-    [28, 68, 115, 163, 210].forEach((y) => {
-      ctx.beginPath();
-      ctx.moveTo(0, y);
-      ctx.lineTo(w, y);
-      ctx.stroke();
-    });
-
-    // Depth scale labels on left
-    ctx.fillStyle = '#a9b4c0';
-    ctx.font = '11px "JetBrains Mono", monospace';
-    ctx.fillText('0.0m (US 1 Humus)', 10, 22);
-    ctx.fillText('-0.8m (US 2 Strato Archeologico)', 10, 82);
-    ctx.fillText('-1.8m (US 3 Substrato)', 10, 178);
-
-    // Draw buried archaeological features (Wall on left, Kiln/Hearth in center, Ditch/Vault on right)
-    // Feature A: Buried Roman Masonry Wall (X: 160..210, Y: 75..150)
-    ctx.fillStyle = 'rgba(200, 90, 50, 0.35)';
-    ctx.strokeStyle = '#c85a32';
-    ctx.lineWidth = 1.5;
-    ctx.fillRect(165, 78, 46, 72);
-    ctx.strokeRect(165, 78, 46, 72);
-
-    // Feature B: Fired Brick Kiln / Pavement (X: 330..405, Y: 95..125)
-    ctx.fillStyle = 'rgba(217, 155, 38, 0.32)';
-    ctx.strokeStyle = '#d99b26';
-    ctx.fillRect(330, 96, 75, 28);
-    ctx.strokeRect(330, 96, 75, 28);
-
-    // Feature C: Deep Backfilled Ditch / Vaulted Conduit (X: 500..585, Y: 105..195)
-    ctx.fillStyle = 'rgba(72, 138, 122, 0.28)';
-    ctx.strokeStyle = '#58a894';
-    ctx.beginPath();
-    ctx.arc(542, 145, 36, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.stroke();
-
-    // Method-specific Geophysical Signal Overlay
-    if (method === 'gpr') {
-      // Draw bright radar reflection hyperbolas over each target
-      const hyperbolas = [
-        { x0: 188, y0: 76, spread: 58, color: '#ff7847' },
-        { x0: 367, y0: 94, spread: 68, color: '#f3b340' },
-        { x0: 542, y0: 108, spread: 64, color: '#ff7847' }
-      ];
-
-      hyperbolas.forEach((hyp) => {
-        for (let offset = 0; offset < 18; offset += 6) {
-          ctx.beginPath();
-          ctx.strokeStyle = offset === 6 ? '#ffffff' : hyp.color;
-          ctx.lineWidth = offset === 6 ? 2.2 : 1.5;
-          for (let dx = -hyp.spread; dx <= hyp.spread; dx += 3) {
-            const px = hyp.x0 + dx;
-            const py = hyp.y0 + offset + Math.sqrt(1 + (dx * dx) / 360) * 18 - 18;
-            if (dx === -hyp.spread) ctx.moveTo(px, py);
-            else ctx.lineTo(px, py);
-          }
-          ctx.stroke();
-        }
-      });
-
-      ctx.fillStyle = '#f3b340';
-      ctx.fillText('IPERBOLE GPR (Muro USM)', 135, 64);
-      ctx.fillText('RIFLESSIONE PLANARE (Pavimento)', 295, 84);
-      ctx.fillText('CAVITÀ / CONDOTTO', 495, 96);
-    } else if (method === 'mag') {
-      // Draw dipolar magnetic anomaly curve across the top section
-      ctx.beginPath();
-      ctx.strokeStyle = '#f3b340';
-      ctx.lineWidth = 2.5;
-      for (let x = 20; x < w - 20; x += 3) {
-        // Dipole peaks over wall (x=188), strong thermoremanent dipole over kiln (x=367), positive anomaly over ditch (x=542)
-        const d1 = ((x - 188) / 22) * Math.exp(-Math.pow(x - 188, 2) / 900) * -28;
-        const d2 = (1 - Math.pow((x - 367) / 18, 2)) * Math.exp(-Math.pow(x - 367, 2) / 700) * -56;
-        const d3 = Math.exp(-Math.pow(x - 542, 2) / 1600) * -22;
-        const y = 72 + d1 + d2 + d3;
-        if (x === 20) ctx.moveTo(x, y);
-        else ctx.lineTo(x, y);
-      }
-      ctx.stroke();
-
-      ctx.fillStyle = '#ff7847';
-      ctx.fillText('+85 nT/m (Anomalia Termorimanente Fornace)', 275, 24);
-      ctx.fillStyle = '#58a894';
-      ctx.fillText('+18 nT/m (Fossato)', 495, 48);
-    } else if (method === 'ert') {
-      // Draw smooth resistivity tomography color clouds
-      const gradWall = ctx.createRadialGradient(188, 112, 8, 188, 112, 65);
-      gradWall.addColorStop(0, 'rgba(215, 75, 35, 0.78)');
-      gradWall.addColorStop(1, 'rgba(215, 75, 35, 0)');
-      ctx.fillStyle = gradWall;
-      ctx.fillRect(110, 45, 160, 140);
-
-      const gradVault = ctx.createRadialGradient(542, 145, 12, 542, 145, 85);
-      gradVault.addColorStop(0, 'rgba(235, 165, 40, 0.82)');
-      gradVault.addColorStop(0.6, 'rgba(200, 85, 40, 0.45)');
-      gradVault.addColorStop(1, 'rgba(40, 110, 145, 0)');
-      ctx.fillStyle = gradVault;
-      ctx.fillRect(445, 55, 195, 175);
-
-      ctx.fillStyle = '#ffffff';
-      ctx.fillText('ρ > 650 Ω·m (Muratura Compatta)', 125, 64);
-      ctx.fillText('ρ > 900 Ω·m (Volta Ipogea / Cavità)', 460, 90);
-    }
-  }
-
-  function updateSimulatorMethodUI(method) {
-    activeSimMethod = method;
-    document.querySelectorAll('.method-tab').forEach((btn) => {
-      const isMatch = btn.getAttribute('data-method') === method;
-      btn.classList.toggle('active', isMatch);
-      btn.setAttribute('aria-selected', isMatch ? 'true' : 'false');
-    });
-
-    const cfg = simMethodConfigs[method][currentLang];
-    if (cfg) {
-      simActiveTitle.textContent = cfg.title;
-      simFreqBadge.textContent = cfg.badge;
-      simSpecRes.textContent = cfg.res;
-      simSpecTarget.textContent = cfg.target;
-      simSpecProd.textContent = cfg.prod;
-    }
-
-    drawStratigraphyCanvas(method);
-  }
-
-  document.querySelectorAll('.method-tab').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const method = btn.getAttribute('data-method');
-      updateSimulatorMethodUI(method);
-    });
-  });
-
-  // Initial draw
-  updateSimulatorMethodUI('gpr');
-
   /* ==========================================================================
-     5. Case Studies Category Filter
+     4. Case Studies Category Filter
      ========================================================================== */
   const filterButtons = document.querySelectorAll('.filter-btn');
   const caseCards = document.querySelectorAll('.case-card');

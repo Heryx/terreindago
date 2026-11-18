@@ -30,7 +30,7 @@
       <nav aria-label="Primary Navigation">
         <ul class="nav-links">
           <li><a href="#services" class="nav-link" data-i18n="nav_services">Metodologie &amp; Servizi</a></li>
-          <li><a href="#simulator" class="nav-link" data-i18n="nav_simulator">Stratigrafia &amp; Segnale</a></li>
+          <li><a href="#software-tech" class="nav-link" data-i18n="nav_software">Software &amp; Python</a></li>
           <li><a href="#portfolio" class="nav-link" data-i18n="nav_portfolio">Casi Studio</a></li>
           <li><a href="#instrumentation" class="nav-link" data-i18n="nav_instrumentation">Strumentazione</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contatti &amp; VPIA</a></li>
@@ -400,80 +400,20 @@
       </div>
     </section>
 
-    <!-- Interactive Subsurface Stratigraphy & Signal Penetration Simulator -->
-    <section class="stratigraphy-section" id="simulator">
+    <!-- Dedicated In-House Software, GIS & Python Geocomputation Section -->
+    <section class="software-tech-section" id="software-tech">
       <div class="container">
         <div class="section-header">
           <div>
             <div class="section-kicker">
               <span class="kicker-line"></span>
-              <span data-i18n="sim_kicker">Diagnostica Sottosuolo &amp; Sviluppo Software</span>
+              <span data-i18n="sw_section_kicker">Tecnologia In-House &amp; Data Science</span>
             </div>
-            <h2 class="section-title" data-i18n="sim_title">Confronto della risposta geofisica ed elaborazione 3D proprietaria</h2>
+            <h2 class="section-title" data-i18n="sw_section_title">Software Proprietario 3D &amp; Geocomputazione in Python</h2>
           </div>
-          <p class="section-subtitle" data-i18n="sim_subtitle">
-            Seleziona una metodologia di indagine per visualizzare la firma del segnale sulla sezione stratigrafica ed esplora il nostro software proprietario per la co-registrazione 3D di profili GPR, Time-Slices ed ERT.
+          <p class="section-subtitle" data-i18n="sw_section_subtitle">
+            Pipeline software sviluppate internamente per l'integrazione volumetrica di dati geofisici multi-sensore (GPR ed ERT) e geocomputazione avanzata in Python/PyQGIS per l'analisi spaziale quantitativa multi-periodo.
           </p>
-        </div>
-
-        <div class="simulator-layout">
-          <div class="method-selector-panel" role="tablist" aria-label="Geophysical Method Selector">
-            <button type="button" class="method-tab active" data-method="gpr" id="tabMethodGpr" role="tab" aria-selected="true">
-              <div class="method-tab-header">
-                <span class="method-tab-title" data-i18n="sim_tab1_title">Georadar Multicanale (GPR 400/200 MHz)</span>
-                <span class="method-tab-badge">Z: 0.2m &ndash; 3.5m</span>
-              </div>
-              <p class="method-tab-desc" data-i18n="sim_tab1_desc">
-                Ideale per murature, pavimentazioni, cavità, cripte e stratigrafie urbane complesse. Restituisce la profondità reale del target tramite analisi di velocità delle onde EM.
-              </p>
-            </button>
-
-            <button type="button" class="method-tab" data-method="mag" id="tabMethodMag" role="tab" aria-selected="false">
-              <div class="method-tab-header">
-                <span class="method-tab-title" data-i18n="sim_tab2_title">Magnetometria Gradiente Fluxgate / Cesareo</span>
-                <span class="method-tab-badge">Z: 0.1m &ndash; 2.2m</span>
-              </div>
-              <p class="method-tab-desc" data-i18n="sim_tab2_desc">
-                Altissima produttività areale in contesti extraurbani. Rileva fornaci, focolari, strutture in laterizio, buche di palo, fossati ricolmati e tracce termorimanenti (nT/m).
-              </p>
-            </button>
-
-            <button type="button" class="method-tab" data-method="ert" id="tabMethodErt" role="tab" aria-selected="false">
-              <div class="method-tab-header">
-                <span class="method-tab-title" data-i18n="sim_tab3_title">Tomografia Elettrica 2D/3D (ERT)</span>
-                <span class="method-tab-badge">Z: 0.5m &ndash; 15.0m+</span>
-              </div>
-              <p class="method-tab-desc" data-i18n="sim_tab3_desc">
-                Indagine profonda del contatto con il substrato geologico, argini antichi, cisterne, tumuli funerari, porti sepolti e contesti ad elevata presenza argillosa.
-              </p>
-            </button>
-          </div>
-
-          <div class="radargram-display-card">
-            <div class="radargram-top-bar">
-              <span id="simActiveTitle">PROFILO RADARGRAMMA B-SCAN &amp; SEZIONE STRATIGRAFICA</span>
-              <span id="simFreqBadge">ANTENNA: DUAL 250 / 500 MHz</span>
-            </div>
-
-            <div class="radargram-canvas-wrap">
-              <canvas id="subsurfaceCanvas" width="680" height="250"></canvas>
-            </div>
-
-            <div class="radargram-specs-grid">
-              <div class="radar-spec-box">
-                <span class="radar-spec-label" data-i18n="sim_spec_res">Risoluzione Spaziale</span>
-                <span class="radar-spec-val" id="simSpecRes">0.08 m &times; 0.25 m</span>
-              </div>
-              <div class="radar-spec-box">
-                <span class="radar-spec-label" data-i18n="sim_spec_target">Target Primari</span>
-                <span class="radar-spec-val" id="simSpecTarget">Fondazioni, Volte, Strade</span>
-              </div>
-              <div class="radar-spec-box">
-                <span class="radar-spec-label" data-i18n="sim_spec_prod">Resa Giornaliera</span>
-                <span class="radar-spec-val" id="simSpecProd">1.5 &ndash; 4.0 ha / giorno</span>
-              </div>
-            </div>
-          </div>
         </div>
 
         <!-- Proprietary GPR & ERT 3D Processing Software Showcase -->
