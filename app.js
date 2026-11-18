@@ -46,11 +46,11 @@
       services_subtitle:
         "Dalla diagnostica non invasiva su vasta scala fino al rilievo Laser Scanner 3D dei monumenti e all'indagine stratigrafica diretta, forniamo flussi di lavoro georiferiti completi per Soprintendenze, Università, studi di progettazione ed enti pubblici.",
 
-      service_1_title: "Geofisica Applicata all'Archeologia",
+      service_1_title: 'Geofisica Applicata & Software Proprietario GPR/ERT',
       service_1_desc:
-        'Mappatura ad alta risoluzione delle anomalie sepolte tramite Georadar (GPR), magnetometria differenziale Fluxgate/Overhauser e tomografia elettrica di resistività (ERT 2D/3D) per individuare murature, fossati, fornaci, cavità e strutture sepolte senza intaccare il suolo.',
-      service_1_caption: 'Indagine Georadar (GPR) in sito archeologico',
-      service_1_spec1: 'Elaborazione Time-Slices 3D e inversione profili stratigrafici',
+        'Mappatura ad alta risoluzione delle anomalie sepolte tramite Georadar (GPR), magnetometria ed ERT 2D/3D. I dati acquisiti vengono elaborati direttamente con un software proprietario sviluppato internamente per la co-registrazione 3D di profili radargramma B-Scan, Time-Slices multi-profondità e sezioni tomografiche ERT.',
+      service_1_caption: 'Acquisizione GPR & Software 3D Proprietario',
+      service_1_spec1: 'Elaborazione diretta con software 3D sviluppato internamente (GPR + Time-Slice + ERT)',
       service_1_spec2: 'Acquisizione in contesti complessi con posizionamento GNSS RTK',
       service_1_spec3: 'Interpretazione archeo-geofisica vettoriale del grado di affidabilità',
 
@@ -90,10 +90,10 @@
       service_4_spec1: 'Elaborazione nuvole LiDAR, carte del potenziale e VPIA (D.Lgs. 36/2023)',
       service_4_spec2: 'Direzione di scavo stratigrafico, GIS intra-site e template GNA/ICA',
 
-      sim_kicker: 'Diagnostica Sottosuolo Interattiva',
-      sim_title: 'Confronto della risposta geofisica per profondità e target',
+      sim_kicker: 'Diagnostica Sottosuolo & Sviluppo Software',
+      sim_title: 'Confronto della risposta geofisica ed elaborazione 3D proprietaria',
       sim_subtitle:
-        'Seleziona una metodologia di indagine per visualizzare la firma del segnale (iperboli di riflessione GPR, dipolo magnetico o contrasto di resistività ERT) sulla sezione stratigrafica tipo.',
+        'Seleziona una metodologia di indagine per visualizzare la firma del segnale sulla sezione stratigrafica ed esplora il nostro software proprietario per la co-registrazione 3D di profili GPR, Time-Slices ed ERT.',
       sim_tab1_title: 'Georadar Multicanale (GPR 400/200 MHz)',
       sim_tab1_desc:
         'Ideale per murature, pavimentazioni, cavità, cripte e stratigrafie urbane complesse. Restituisce la profondità reale del target tramite analisi di velocità delle onde EM.',
@@ -107,6 +107,17 @@
       sim_spec_target: 'Target Primari',
       sim_spec_prod: 'Resa Giornaliera',
 
+      sw_badge: 'SVILUPPO SOFTWARE IN-HOUSE • 3D GEOPHYSICAL DATA FUSION',
+      sw_title: 'Elaborazione dati GPR ed ERT con software sviluppato internamente',
+      sw_desc:
+        'I dati geofisici vengono elaborati e interpretati direttamente tramite un software proprietario progettato su misura per fondere in un unico spazio tridimensionale interattivo i profili Georadar B-Scan, le Time-Slices orizzontali a profondità variabile e le sezioni di Tomografia Elettrica (ERT in Ω·m).',
+      sw_card1_tag: 'VISTA 3D MULTI-SENSORE • TIME-SLICES + B-SCAN + ERT',
+      sw_card1_caption:
+        'Co-registrazione volumetrica simultanea di Time-Slices GPR a diverse quote (passo 14/54), profili radargramma B-Scan in scala di grigi e sezione tomografica di resistività elettrica ERT (0.90 – 3.35 Ω·m) per correlare riflettori murari e anomalie conduttive/resistive.',
+      sw_card2_tag: 'ANALISI DINAMICA • CONTROLLO PALETTE, OPACITÀ & INTERPOLAZIONE',
+      sw_card2_caption:
+        'Ispezione interattiva strato per strato (es. 0.00–0.10 m) e profilo per profilo (Swath/Array) con regolazione in tempo reale di opacità (82.7%), limiti di ampiezza automatici/manuali, correzione gamma e interpolazione bilineare o nitida.',
+
       portfolio_kicker: 'Progetti & Campagne sul Campo',
       portfolio_title: 'Casi studio selezionati',
       portfolio_subtitle:
@@ -117,10 +128,10 @@
       filter_topogis: 'Laser Scanner 3D, Topografia & GIS',
       filter_excavation: 'Scavo & VPIA',
 
-      case1_loc: "Geofisica Applicata all'Archeologia • Acquisizione GPR",
-      case1_title: 'Indagini Georadar (GPR) in Contesti Archeologici Monumentali',
+      case1_loc: 'Geofisica Applicata • Acquisizione GPR & Software Sviluppato Internamente',
+      case1_title: 'Indagini Georadar (GPR) ed Elaborazione 3D con Software Proprietario',
       case1_desc:
-        "Acquisizione Georadar (GPR) ad alta risoluzione in contesti archeologici complessi e a morfologia articolata. L'elaborazione dei profili B-Scan e la generazione di Time-Slices 3D georiferite permettono di individuare fasi costruttive sepolte, strutture murarie, cavità e livelli di frequentazione antichi senza impatto sul sito.",
+        'Acquisizione Georadar (GPR) ad alta risoluzione in contesti archeologici monumentali ed elaborazione diretta dei dati tramite software sviluppato internamente, capace di integrare in 3D profili B-Scan, Time-Slices multi-quota e sezioni tomografiche ERT per una lettura stratigrafica non invasiva di altissima precisione.',
 
       case6_loc: 'Fotogrammetria Structure from Motion • Rilievo Aerofotogrammetrico 3D',
       case6_title: 'Rilievo Fotogrammetrico Structure from Motion (SfM) di Complessi Templari',
@@ -165,8 +176,8 @@
       eq_col_sensors: 'Sistemi & Sensori',
       eq_col_app: 'Applicazione Principale',
       eq_col_out: 'Deliverable Tecnico',
-      eq_row1_inst: 'Sistemi GPR ad Alta Risoluzione & Multicanale (200/400/600 MHz)',
-      eq_row1_app: 'Mappatura 3D di strutture murarie, pavimentazioni, cavità e stratigrafie sepolte in contesti monumentali, urbani ed extraurbani',
+      eq_row1_inst: 'Sistemi GPR Multicanale (200/400/600 MHz), ERT & Software 3D Proprietario',
+      eq_row1_app: 'Elaborazione diretta con software sviluppato internamente per co-registrazione 3D di profili GPR B-Scan, Time-Slices e sezioni ERT',
       eq_row2_inst: 'Gradiometri Fluxgate Multi-Sensore su carrello amagnetico + GNSS RTK',
       eq_row2_app: 'Prospezioni estensive ad alta velocità per fornaci, fossati, buche di palo, necropoli e viabilità antica',
       eq_row3_inst: 'Laser Scanner 3D Terrestre, Pipeline Structure from Motion (SfM) & 3D Gaussian Splatting (3DGS)',
@@ -213,7 +224,7 @@
       hero_kicker: 'Archaeological Diagnostics & Geotechnologies',
       hero_title: 'Reading the subsurface before excavation, documenting landscapes with metric rigor.',
       hero_lead:
-        'TerreIndago integrates high-resolution geophysical prospection, Structure from Motion (SfM) photogrammetry, 3D Laser Scanning of ancient monuments, LiDAR DTM analysis, Sentinel-1 SAR change detection, 3D Gaussian Splatting, topography, and GIS.',
+        'TerreIndago integrates high-resolution geophysical prospection, proprietary 3D GPR/ERT processing software, Structure from Motion (SfM), 3D Laser Scanning of ancient monuments, LiDAR DTM analysis, Sentinel-1 SAR change detection, and 3D Gaussian Splatting.',
       hero_btn_primary: 'Explore Case Studies',
       hero_btn_secondary: 'Methodology Specs',
       metric_1_label: 'Area surveyed via GPR & Magnetometry',
@@ -230,13 +241,13 @@
       services_kicker: 'Integrated Operational Domains',
       services_title: 'Six disciplines for archaeological and monumental intelligence',
       services_subtitle:
-        'From large-scale non-invasive prospection, Structure from Motion (SfM), 3D Laser Scanning of ancient monuments, LiDAR micro-topography, and satellite SAR monitoring to direct stratigraphic excavation.',
+        'From large-scale non-invasive prospection with custom 3D GPR/ERT software, Structure from Motion (SfM), and 3D Laser Scanning of ancient monuments to LiDAR micro-topography and satellite SAR monitoring.',
 
-      service_1_title: 'Applied Archaeological Geophysics',
+      service_1_title: 'Applied Geophysics & Proprietary 3D GPR/ERT Software',
       service_1_desc:
-        'High-resolution mapping of buried anomalies using Ground Penetrating Radar (GPR), Fluxgate/Overhauser differential magnetometry, and 2D/3D Electrical Resistivity Tomography (ERT) to detect walls, ditches, kilns, cavities, and buried structures non-invasively.',
-      service_1_caption: 'Ground Penetrating Radar (GPR) survey at archaeological site',
-      service_1_spec1: '3D Time-Slice processing and stratigraphic profile inversion',
+        'High-resolution mapping of buried anomalies using Ground Penetrating Radar (GPR), magnetometry, and 2D/3D ERT. Field datasets are processed directly with custom-built proprietary software for 3D co-registration of B-Scan radargrams, multi-depth Time-Slices, and ERT sections.',
+      service_1_caption: 'GPR Field Acquisition & Proprietary 3D Software',
+      service_1_spec1: 'Direct processing via in-house 3D software (GPR B-Scan + Time-Slice + ERT)',
       service_1_spec2: 'Acquisition in complex terrains with centimeter-grade GNSS RTK positioning',
       service_1_spec3: 'Vector archaeo-geophysical interpretation graded by reliability',
 
@@ -276,10 +287,10 @@
       service_4_spec1: 'LiDAR point cloud processing, archaeological potential maps & VPIA',
       service_4_spec2: 'Stratigraphic excavation direction, intra-site GIS & GNA/ICA templates',
 
-      sim_kicker: 'Interactive Subsurface Diagnostics',
-      sim_title: 'Geophysical response comparison by depth and target',
+      sim_kicker: 'Subsurface Diagnostics & Software Engineering',
+      sim_title: 'Geophysical response comparison & proprietary 3D processing',
       sim_subtitle:
-        'Select a survey methodology to inspect its physical signal signature (GPR reflection hyperbolas, magnetic dipole, or ERT resistivity contrast) across a reference stratigraphic section.',
+        'Select a survey methodology to inspect its physical signal signature and explore our custom-developed software for 3D co-registration of GPR profiles, Time-Slices, and ERT.',
       sim_tab1_title: 'Multi-Channel Ground Penetrating Radar (GPR 400/200 MHz)',
       sim_tab1_desc:
         'Optimal for masonry walls, floors, vaults, crypts, and complex urban stratigraphy. Yields true target depth via electromagnetic wave velocity analysis.',
@@ -293,20 +304,31 @@
       sim_spec_target: 'Primary Targets',
       sim_spec_prod: 'Daily Output',
 
+      sw_badge: 'IN-HOUSE SOFTWARE DEVELOPMENT • 3D GEOPHYSICAL DATA FUSION',
+      sw_title: 'GPR and ERT data processing via custom-developed proprietary software',
+      sw_desc:
+        'Geophysical datasets are processed and interpreted directly using our custom-engineered software built to fuse B-Scan GPR radargrams, variable-depth horizontal Time-Slices, and Electrical Resistivity Tomography (ERT in Ω·m) sections within a unified 3D interactive volume.',
+      sw_card1_tag: 'MULTI-SENSOR 3D VIEW • TIME-SLICES + B-SCAN + ERT',
+      sw_card1_caption:
+        'Simultaneous volumetric co-registration of multi-depth GPR Time-Slices (step 14/54), grayscale B-Scan radargram profiles, and ERT electrical resistivity sections (0.90 – 3.35 Ω·m) to correlate masonry reflectors with conductive/resistive anomalies.',
+      sw_card2_tag: 'DYNAMIC ANALYSIS • PALETTE, OPACITY & INTERPOLATION CONTROL',
+      sw_card2_caption:
+        'Interactive layer-by-layer (e.g., 0.00–0.10 m) and profile-by-profile (Swath/Array) inspection with real-time opacity adjustment (82.7%), automatic/manual amplitude clipping, gamma correction, and bilinear or sharp interpolation.',
+
       portfolio_kicker: 'Field Projects & Campaigns',
       portfolio_title: 'Selected case studies',
       portfolio_subtitle:
         'Explore real-world integrations of Structure from Motion (SfM) photogrammetry, 3D Laser Scanning of ancient monuments, LiDAR micro-topography, Sentinel-1 SAR remote sensing, 3D Gaussian Splatting, GPR geophysics, and GIS.',
       filter_all: 'All Projects (6)',
-      filter_geophysics: 'Geophysics (GPR / Mag / ERT)',
+      filter_geophysics: 'Geofisica (GPR / Mag / ERT)',
       filter_remotesensing: 'SfM, 3DGS, LiDAR & SAR',
       filter_topogis: '3D Laser Scanner, Topography & GIS',
       filter_excavation: 'Excavation & VPIA',
 
-      case1_loc: 'Applied Archaeological Geophysics • GPR Acquisition',
-      case1_title: 'Ground Penetrating Radar (GPR) Surveys in Monumental Contexts',
+      case1_loc: 'Applied Geophysics • GPR Acquisition & In-House 3D Software',
+      case1_title: 'Ground Penetrating Radar (GPR) & 3D Processing with Proprietary Software',
       case1_desc:
-        'High-resolution Ground Penetrating Radar (GPR) acquisition in complex monumental archaeological settings. B-Scan profile processing and georeferenced 3D Time-Slices identify buried construction phases, masonry foundations, cavities, and ancient occupation surfaces non-invasively.',
+        'High-resolution GPR acquisition in monumental archaeological contexts and direct processing via custom-built in-house software integrating 3D B-Scan profiles, multi-depth Time-Slices, and ERT tomographic sections for high-precision non-invasive stratigraphic diagnostics.',
 
       case6_loc: 'Structure from Motion Photogrammetry • 3D Aerial Survey',
       case6_title: 'Structure from Motion (SfM) Photogrammetric Survey of Temple Complexes',
@@ -351,8 +373,8 @@
       eq_col_sensors: 'Systems & Sensors',
       eq_col_app: 'Primary Application',
       eq_col_out: 'Technical Deliverable',
-      eq_row1_inst: 'Multi-Channel & Dual-Frequency GPR Arrays (200/400/600 MHz)',
-      eq_row1_app: '3D mapping of masonry foundations, floors, cavities, and utilities in urban and rural environments',
+      eq_row1_inst: 'Multi-Channel GPR Arrays (200/400/600 MHz), ERT & Proprietary 3D Software',
+      eq_row1_app: 'Direct processing via in-house developed software for 3D co-registration of GPR B-Scan profiles, Time-Slices, and ERT sections',
       eq_row2_inst: 'Multi-Sensor Fluxgate Gradiometers on non-magnetic cart + GNSS RTK',
       eq_row2_app: 'High-speed extensive surveys for kilns, ditches, post-holes, cemeteries, and ancient roads',
       eq_row3_inst: '96-Electrode Multi-Channel ERT Resistivity Meter & FDEM Sensor',

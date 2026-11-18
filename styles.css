@@ -899,6 +899,133 @@ button {
   margin-top: 0.2rem;
 }
 
+/* Proprietary GPR & ERT 3D Processing Software Showcase */
+.custom-software-showcase {
+  margin-top: 2.75rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border-dark-contour);
+}
+
+.custom-software-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.custom-software-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-ochre);
+  background-color: hsla(37, 68%, 46%, 0.14);
+  border: 1px solid hsla(37, 68%, 46%, 0.4);
+  padding: 0.28rem 0.65rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.6rem;
+}
+
+.custom-software-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  font-weight: 600;
+  color: var(--text-on-dark);
+  line-height: 1.2;
+}
+
+.custom-software-desc {
+  max-width: 62ch;
+  font-size: 0.92rem;
+  color: var(--text-muted-dark);
+}
+
+.software-screens-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.software-screen-card {
+  background-color: #0e1318;
+  border: 1px solid var(--border-dark-contour);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s var(--transition-smooth), border-color 0.25s ease;
+}
+
+.software-screen-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-ochre);
+}
+
+.software-screen-img-wrap {
+  position: relative;
+  width: 100%;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid var(--border-dark-contour);
+}
+
+.software-screen-img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.software-screen-body {
+  padding: 1.15rem 1.35rem;
+}
+
+.software-screen-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent-ochre);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.software-screen-caption {
+  font-size: 0.86rem;
+  color: var(--text-on-dark);
+  line-height: 1.45;
+}
+
+.gpr-dual-thumbs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.gpr-mini-thumb {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border-contour-strong);
+  background-color: #f4f4f4;
+}
+
+.gpr-mini-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .software-screens-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ==========================================================================
    Filterable Case Studies / Field Portfolio
    ========================================================================== */
