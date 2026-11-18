@@ -180,15 +180,49 @@ button {
 }
 
 .brand-mark {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-sm);
-  background-color: var(--bg-slate-deep);
-  color: var(--bg-parchment);
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--accent-terracotta);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 6px rgba(24, 32, 40, 0.18));
+  transition: transform 0.25s var(--transition-smooth);
+}
+
+.brand-logo:hover .brand-mark {
+  transform: scale(1.06);
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.hero-brand-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.05rem;
+  margin-bottom: 1.15rem;
+}
+
+.hero-logo-medallion {
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 12px rgba(24, 32, 40, 0.22));
+}
+
+.hero-brand-sub {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-ash);
+  letter-spacing: 0.06em;
 }
 
 .brand-text-wrap {
