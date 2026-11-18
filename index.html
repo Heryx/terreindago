@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TerreIndago — Geofisica Applicata all'Archeologia, Telerilevamento, Topografia, GIS & Scavo</title>
+  <meta name="description" content="TerreIndago: diagnostica archeologica non invasiva, prospezioni geofisiche (GPR, Magnetometria, ERT), Telerilevamento Drone LiDAR, Topografia GNSS, WebGIS e Scavo Archeologico Stratigrafico / VPIA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Cartographic Telemetry Bar -->
+  <div class="telemetry-bar" role="region" aria-label="Technical Telemetry">
+    <div class="container telemetry-inner">
+      <div class="telemetry-items">
+        <span class="telemetry-item">
+          <span class="telemetry-dot"></span>
+          <span>CRS: WGS84 / UTM 32N-33N (EPSG:32632)</span>
+        </span>
+        <span class="telemetry-item" data-i18n="telemetry_compliance">
+          Standard: Linee Guida MiC VPIA &amp; D.Lgs. 36/2023
+        </span>
+      </div>
+      <div class="telemetry-items">
+        <span class="telemetry-item">GNSS RTK FIX: &plusmn;0.8 cm</span>
+        <span class="telemetry-item">GPR / MAG / ERT / LiDAR / GIS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-bar">
+      <a href="#top" class="brand-logo" id="brandLogoLink">
+        <div class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M3 17l9 4 9-4" stroke="#c85a32"/>
+            <path d="M3 12l9 4 9-4" stroke="#d99b26"/>
+            <path d="M12 3L3 7l9 4 9-4-9-4z"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">TerreIndago</span>
+          <span class="brand-tagline" data-i18n="brand_tagline">Subsurface &amp; Landscape Archaeology</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#services" class="nav-link" data-i18n="nav_services">Metodologie &amp; Servizi</a></li>
+          <li><a href="#simulator" class="nav-link" data-i18n="nav_simulator">Stratigrafia &amp; Segnale</a></li>
+          <li><a href="#portfolio" class="nav-link" data-i18n="nav_portfolio">Casi Studio</a></li>
+          <li><a href="#instrumentation" class="nav-link" data-i18n="nav_instrumentation">Strumentazione</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contatti &amp; VPIA</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language Selector">
+          <button type="button" class="lang-btn active" id="langBtnIt" data-lang="it">IT</button>
+          <button type="button" class="lang-btn" id="langBtnEn" data-lang="en">EN</button>
+        </div>
+        <a href="#contact" class="btn btn-primary" id="headerCtaBtn" data-i18n="nav_cta">Richiedi Indagine</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section with Interactive Before/After Subsurface Comparison -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            <span data-i18n="hero_kicker">Diagnostica Archeologica &amp; Geotecnologie</span>
+          </div>
+          <h1 class="hero-title" data-i18n="hero_title">
+            Leggere il sottosuolo prima dello scavo, documentare il paesaggio con rigore metrico.
+          </h1>
+          <p class="hero-lead" data-i18n="hero_lead">
+            TerreIndago integra prospezioni geofisiche ad alta risoluzione, telerilevamento multispettrale e LiDAR, topografia di precisione, sistemi GIS e direzione di scavo stratigrafico per la ricerca scientifica, la tutela e l'archeologia preventiva (VPIA).
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#portfolio" class="btn btn-primary" id="heroExploreBtn" data-i18n="hero_btn_primary">
+              Esplora i Casi Studio
+            </a>
+            <a href="#services" class="btn btn-outline" id="heroServicesBtn" data-i18n="hero_btn_secondary">
+              Schede Metodologiche
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <div>
+                <span class="metric-value">450+</span>
+                <span class="metric-unit">ha</span>
+              </div>
+              <span class="metric-label" data-i18n="metric_1_label">Superficie indagata con GPR &amp; Magnetometria</span>
+            </div>
+            <div class="metric-card">
+              <div>
+                <span class="metric-value">&plusmn;0.8</span>
+                <span class="metric-unit">cm</span>
+              </div>
+              <span class="metric-label" data-i18n="metric_2_label">Accuratezza planialtimetrica GNSS / Total Station</span>
+            </div>
+            <div class="metric-card">
+              <div>
+                <span class="metric-value">100%</span>
+                <span class="metric-unit">GIS</span>
+              </div>
+              <span class="metric-label" data-i18n="metric_3_label">Conformità standard MiC / ICA per VPIA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Before/After Comparison Slider -->
+        <div class="survey-inspector-card" aria-label="Interactive Geophysical Survey Comparison">
+          <div class="inspector-header">
+            <span class="inspector-title">
+              <span class="telemetry-dot"></span>
+              <span data-i18n="inspector_header_title">ISPETTORE MULTISTRATO: VILLA ROMANA RUSTICA</span>
+            </span>
+            <span class="inspector-coords">42&deg;25'18.4"N 11&deg;52'09.2"E &bull; Z: -1.25m</span>
+          </div>
+
+          <div class="comparison-viewport" id="comparisonViewport">
+            <!-- Base Layer: Drone Orthophoto + Cropmarks -->
+            <img
+              src="assets/images/survey_before_ortho.jpg"
+              alt="Ortofoto aerea da drone con tracce da vegetazione (cropmarks)"
+              class="comparison-img"
+            />
+
+            <!-- Clipped Overlay Layer: GPR Time-Slice + Magnetometry + GIS Interpretation -->
+            <div class="comparison-overlay" id="comparisonOverlay">
+              <img
+                src="assets/images/survey_after_gpr.jpg"
+                alt="Mappa geofisica integrata GPR time-slice e magnetometria con interpretazione GIS"
+                class="comparison-img"
+              />
+            </div>
+
+            <!-- Interactive SVG GIS Anomaly Vector Overlay -->
+            <svg class="gis-vector-svg" id="gisVectorOverlay" viewBox="0 0 800 500" preserveAspectRatio="none">
+              <g stroke="#e8a838" stroke-width="1.6" stroke-dasharray="5 3" fill="rgba(200, 90, 50, 0.14)">
+                <rect x="368" y="128" width="175" height="175" transform="rotate(-18 455 215)" />
+                <circle cx="515" cy="160" r="24" stroke="#ff5e36" stroke-width="2" />
+              </g>
+              <g font-family="JetBrains Mono, monospace" font-size="11" fill="#fff">
+                <rect x="378" y="92" width="158" height="20" rx="3" fill="rgba(18, 25, 33, 0.85)" />
+                <text x="385" y="106" fill="#e8a838">ANOMALIA GPR: PERISTILIO</text>
+              </g>
+            </svg>
+
+            <span class="comparison-badge badge-left" data-i18n="badge_before">01. Ortofoto UAV &amp; Cropmarks</span>
+            <span class="comparison-badge badge-right" data-i18n="badge_after">02. GPR Time-Slice (-1.2m) &amp; Mag</span>
+
+            <div class="comparison-handle" id="comparisonHandle">
+              <div class="handle-knob" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M15 18l-6-6 6-6" transform="translate(-4 0)" />
+                  <path d="M9 18l6-6-6-6" transform="translate(4 0)" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="inspector-controls">
+            <div class="slider-control-wrap">
+              <label for="comparisonRange" class="slider-label" data-i18n="slider_label">Sovrapposizione Geofisica:</label>
+              <input
+                type="range"
+                id="comparisonRange"
+                class="comparison-range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Percentuale di sovrapposizione mappa geofisica"
+              />
+              <span class="slider-label" id="comparisonPercentReadout">50%</span>
+            </div>
+            <div class="inspector-Layer-toggles">
+              <button type="button" class="layer-chip active" id="toggleGisVectorsBtn" data-i18n="toggle_gis_vectors">
+                Vettori GIS: ON
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Disciplines & Services (5 Pillars) -->
+    <section class="section-block" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">
+              <span class="kicker-line"></span>
+              <span data-i18n="services_kicker">Ambiti Operativi Integrati</span>
+            </div>
+            <h2 class="section-title" data-i18n="services_title">Cinque discipline per la conoscenza del territorio</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="services_subtitle">
+            Dalla diagnostica non invasiva su vasta scala fino all'indagine stratigrafica diretta, forniamo flussi di lavoro georiferiti completi per Soprintendenze, Università, studi di progettazione ed enti pubblici.
+          </p>
+        </div>
+
+        <div class="disciplines-grid">
+          <!-- Pillar 1: Applied Geophysics -->
+          <article class="discipline-card span-6">
+            <div class="discipline-top">
+              <div class="discipline-meta">
+                <span class="discipline-index">01 / GEOFISICA</span>
+                <span class="discipline-code">GPR &bull; MAG &bull; ERT &bull; FDEM</span>
+              </div>
+              <h3 class="discipline-name" data-i18n="service_1_title">Geofisica Applicata all'Archeologia</h3>
+              <p class="discipline-desc" data-i18n="service_1_desc">
+                Mappatura ad alta risoluzione delle anomalie sepolte tramite Georadar multicanale (GPR), magnetometria differenziale Fluxgate/Overhauser e tomografia elettrica di resistività (ERT 2D/3D) per individuare murature, fossati, fornaci, cavità e paleoalvei senza intaccare il suolo.
+              </p>
+            </div>
+            <ul class="spec-list">
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_1_spec1">Elaborazione Time-Slices 3D e inversione profili stratigrafici</span>
+              </li>
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_1_spec2">Acquisizione motorizzata o manuale con posizionamento GNSS RTK</span>
+              </li>
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_1_spec3">Interpretazione archeo-geofisica vettoriale del grado di affidabilità</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pillar 2: Remote Sensing -->
+          <article class="discipline-card span-6">
+            <div class="discipline-top">
+              <div class="discipline-meta">
+                <span class="discipline-index">02 / REMOTE SENSING</span>
+                <span class="discipline-code">UAV LiDAR &bull; MULTISPECTRAL &bull; SfM</span>
+              </div>
+              <h3 class="discipline-name" data-i18n="service_2_title">Telerilevamento &amp; Aerofotogrammetria</h3>
+              <p class="discipline-desc" data-i18n="service_2_desc">
+                Prospezioni aeree tramite droni (UAV) equipaggiati con sensori LiDAR, camere multispettrali, termiche e RGB ad alta risoluzione, integrate con l'analisi di immagini satellitari storiche e moderne per l'individuazione di micro-rilievi sotto copertura boschiva e anomalie da cropmarks/soilmarks.
+              </p>
+            </div>
+            <ul class="spec-list">
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_2_spec1">DTM/DSM da LiDAR con filtraggio vegetazione (Local Relief Model, SVF)</span>
+              </li>
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_2_spec2">Indici di vigore vegetativo (NDVI, NDRE) e termografia archeologica</span>
+              </li>
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_2_spec3">Fotogrammetria 3D Structure-from-Motion di cantieri e monumenti</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pillar 3: Topography -->
+          <article class="discipline-card">
+            <div class="discipline-top">
+              <div class="discipline-meta">
+                <span class="discipline-index">03 / TOPOGRAFIA</span>
+                <span class="discipline-code">GNSS RTK &bull; TOTAL STATION &bull; SLAM</span>
+              </div>
+              <h3 class="discipline-name" data-i18n="service_3_title">Topografia &amp; Rilievo Metrico</h3>
+              <p class="discipline-desc" data-i18n="service_3_desc">
+                Inquadramento geodetico rigoroso, poligonali di precisione, rilievo strumentale con Stazione Totale robotica e GNSS differenziale, oltre a scansioni Laser Scanner 3D terrestri di strutture archeologiche e architettoniche complesse.
+              </p>
+            </div>
+            <ul class="spec-list">
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_3_spec1">Reticoli di scavo, picchettamento anomalie geofisiche e quote assolute</span>
+              </li>
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_3_spec2">Sezioni, prospetti, piante lapidarie e nuvole di punti certificate</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pillar 4: GIS & Spatial Analysis -->
+          <article class="discipline-card">
+            <div class="discipline-top">
+              <div class="discipline-meta">
+                <span class="discipline-index">04 / SISTEMI GIS</span>
+                <span class="discipline-code">QGIS &bull; POSTGIS &bull; TEMPLATE MiC</span>
+              </div>
+              <h3 class="discipline-name" data-i18n="service_4_title">GIS &amp; Analisi Spaziale</h3>
+              <p class="discipline-desc" data-i18n="service_4_desc">
+                Progettazione di Geodatabase relazionali, digitalizzazione cartografica multitemporale, analisi predittiva del potenziale archeologico e predisposizione di pacchetti informativi conformi agli standard dell'Istituto Centrale per l'Archeologia (ICA / Geoportale Nazionale).
+              </p>
+            </div>
+            <ul class="spec-list">
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_4_spec1">Cartografia del rischio e potenziale archeologico per grandi opere</span>
+              </li>
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_4_spec2">GIS di scavo intra-site e WebGIS interattivi di consultazione</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pillar 5: Stratigraphic Excavation & VPIA -->
+          <article class="discipline-card">
+            <div class="discipline-top">
+              <div class="discipline-meta">
+                <span class="discipline-index">05 / SCAVO &amp; VPIA</span>
+                <span class="discipline-code">D.LGS. 36/2023 &bull; STRATIGRAFIA</span>
+              </div>
+              <h3 class="discipline-name" data-i18n="service_5_title">Scavo Archeologico &amp; VPIA</h3>
+              <p class="discipline-desc" data-i18n="service_5_desc">
+                Redazione di Valutazioni Preventive dell'Interesse Archeologico (VPIA), assistenza archeologica in corso d'opera, saggi di verifica stratigrafica ed esecuzione di scavi estensivi con documentazione digitale integrata 3D e Matrix di Harris.
+              </p>
+            </div>
+            <ul class="spec-list">
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_5_spec1">Direzione scientifica, schede US/USM e relazioni tecniche per Soprintendenze</span>
+              </li>
+              <li class="spec-item">
+                <span class="spec-bullet">&rsaquo;</span>
+                <span data-i18n="service_5_spec2">Verifica mirata delle anomalie geofisiche per ridurre tempi e costi di cantiere</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Subsurface Stratigraphy & Signal Penetration Simulator -->
+    <section class="stratigraphy-section" id="simulator">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">
+              <span class="kicker-line"></span>
+              <span data-i18n="sim_kicker">Diagnostica Sottosuolo Interattiva</span>
+            </div>
+            <h2 class="section-title" data-i18n="sim_title">Confronto della risposta geofisica per profondità e target</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="sim_subtitle">
+            Seleziona una metodologia di indagine per visualizzare la firma del segnale (iperboli di riflessione GPR, dipolo magnetico o contrasto di resistività ERT) sulla sezione stratigrafica tipo.
+          </p>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="method-selector-panel" role="tablist" aria-label="Geophysical Method Selector">
+            <button type="button" class="method-tab active" data-method="gpr" id="tabMethodGpr" role="tab" aria-selected="true">
+              <div class="method-tab-header">
+                <span class="method-tab-title" data-i18n="sim_tab1_title">Georadar Multicanale (GPR 400/200 MHz)</span>
+                <span class="method-tab-badge">Z: 0.2m &ndash; 3.5m</span>
+              </div>
+              <p class="method-tab-desc" data-i18n="sim_tab1_desc">
+                Ideale per murature, pavimentazioni, cavità, cripte e stratigrafie urbane complesse. Restituisce la profondità reale del target tramite analisi di velocità delle onde EM.
+              </p>
+            </button>
+
+            <button type="button" class="method-tab" data-method="mag" id="tabMethodMag" role="tab" aria-selected="false">
+              <div class="method-tab-header">
+                <span class="method-tab-title" data-i18n="sim_tab2_title">Magnetometria Gradiente Fluxgate / Cesareo</span>
+                <span class="method-tab-badge">Z: 0.1m &ndash; 2.2m</span>
+              </div>
+              <p class="method-tab-desc" data-i18n="sim_tab2_desc">
+                Altissima produttività areale in contesti extraurbani. Rileva fornaci, focolari, strutture in laterizio, buche di palo, fossati ricolmati e tracce termorimanenti (nT/m).
+              </p>
+            </button>
+
+            <button type="button" class="method-tab" data-method="ert" id="tabMethodErt" role="tab" aria-selected="false">
+              <div class="method-tab-header">
+                <span class="method-tab-title" data-i18n="sim_tab3_title">Tomografia Elettrica 2D/3D (ERT)</span>
+                <span class="method-tab-badge">Z: 0.5m &ndash; 15.0m+</span>
+              </div>
+              <p class="method-tab-desc" data-i18n="sim_tab3_desc">
+                Indagine profonda del contatto con il substrato geologico, argini antichi, cisterne, tumuli funerari, porti sepolti e contesti ad elevata presenza argillosa.
+              </p>
+            </button>
+          </div>
+
+          <div class="radargram-display-card">
+            <div class="radargram-top-bar">
+              <span id="simActiveTitle">PROFILO RADARGRAMMA B-SCAN &amp; SEZIONE STRATIGRAFICA</span>
+              <span id="simFreqBadge">ANTENNA: DUAL 250 / 500 MHz</span>
+            </div>
+
+            <div class="radargram-canvas-wrap">
+              <canvas id="subsurfaceCanvas" width="680" height="250"></canvas>
+            </div>
+
+            <div class="radargram-specs-grid">
+              <div class="radar-spec-box">
+                <span class="radar-spec-label" data-i18n="sim_spec_res">Risoluzione Spaziale</span>
+                <span class="radar-spec-val" id="simSpecRes">0.08 m &times; 0.25 m</span>
+              </div>
+              <div class="radar-spec-box">
+                <span class="radar-spec-label" data-i18n="sim_spec_target">Target Primari</span>
+                <span class="radar-spec-val" id="simSpecTarget">Fondazioni, Volte, Strade</span>
+              </div>
+              <div class="radar-spec-box">
+                <span class="radar-spec-label" data-i18n="sim_spec_prod">Resa Giornaliera</span>
+                <span class="radar-spec-val" id="simSpecProd">1.5 &ndash; 4.0 ha / giorno</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filterable Case Studies / Portfolio -->
+    <section class="section-block" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">
+              <span class="kicker-line"></span>
+              <span data-i18n="portfolio_kicker">Progetti &amp; Campagne sul Campo</span>
+            </div>
+            <h2 class="section-title" data-i18n="portfolio_title">Casi studio selezionati</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="portfolio_subtitle">
+            Esplora esempi concreti di integrazione tra telerilevamento, geofisica non invasiva, rilievo topografico, modellazione GIS e verifica stratigrafica diretta.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-toolbar" role="toolbar" aria-label="Filtra progetti per disciplina">
+          <button type="button" class="filter-btn active" data-filter="all" id="filterAll" data-i18n="filter_all">
+            Tutti i Progetti (4)
+          </button>
+          <button type="button" class="filter-btn" data-filter="geophysics" id="filterGeophysics" data-i18n="filter_geophysics">
+            Geofisica (GPR / Mag / ERT)
+          </button>
+          <button type="button" class="filter-btn" data-filter="remotesensing" id="filterRemoteSensing" data-i18n="filter_remotesensing">
+            Telerilevamento &amp; LiDAR
+          </button>
+          <button type="button" class="filter-btn" data-filter="topogis" id="filterTopoGis" data-i18n="filter_topogis">
+            Topografia &amp; GIS
+          </button>
+          <button type="button" class="filter-btn" data-filter="excavation" id="filterExcavation" data-i18n="filter_excavation">
+            Scavo &amp; VPIA
+          </button>
+        </div>
+
+        <div class="cases-grid" id="casesGrid">
+          <!-- Case Study 1: GPR + Magnetometry + GIS -->
+          <article class="case-card" data-categories="geophysics topogis">
+            <div class="case-image-wrap">
+              <img src="assets/images/survey_after_gpr.jpg" alt="Prospezione integrata GPR e Magnetometria di complesso rustico romano" loading="lazy" />
+              <span class="case-tag-overlay">GPR 3D &bull; MAGNETOMETRIA &bull; GIS</span>
+              <span class="case-coords-overlay">ETRURIA MERIDIONALE (VT)</span>
+            </div>
+            <div class="case-body">
+              <div>
+                <div class="case-location" data-i18n="case1_loc">Archeologia Preventiva &amp; Ricerca &bull; Italia Centrale</div>
+                <h3 class="case-title" data-i18n="case1_title">Mappatura integrale di una Villa Rustica e Viabilità Romana</h3>
+                <p class="case-summary" data-i18n="case1_desc">
+                  Prospezione magnetometrica estensiva su 14 ettari combinata con acquisizione Georadar multicanale ad alta densità sull'area residenziale. L'elaborazione delle time-slices tra -0.60m e -1.80m ha restituito la planimetria completa del peristilio, dell'aula absidata e dell'incrocio stradale glareato, vettorializzata in ambiente QGIS.
+                </p>
+              </div>
+              <div class="case-telemetry-footer">
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_area">Estensione</span>
+                  <span class="telemetry-stat-val">14.2 ha</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_depth">Profondità Target</span>
+                  <span class="telemetry-stat-val">0.45 &ndash; 1.85 m</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_method">Sensori</span>
+                  <span class="telemetry-stat-val">Fluxgate + GPR 400MHz</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 2: UAV LiDAR + Remote Sensing + GIS -->
+          <article class="case-card" data-categories="remotesensing topogis">
+            <div class="case-image-wrap">
+              <img src="assets/images/case_study_lidar.jpg" alt="Modello digitale del terreno da LiDAR drone di insediamento fortificato e necropoli" loading="lazy" />
+              <span class="case-tag-overlay">UAV LiDAR &bull; DEM / LRM &bull; GIS</span>
+              <span class="case-coords-overlay">APPENNINO TOSCO-EMILIANO</span>
+            </div>
+            <div class="case-body">
+              <div>
+                <div class="case-location" data-i18n="case2_loc">Telerilevamento sotto Copertura Boschiva &bull; Appennino</div>
+                <h3 class="case-title" data-i18n="case2_title">Rilievo LiDAR da Drone di Castellieri Protostorici e Necropoli a Tumulo</h3>
+                <p class="case-summary" data-i18n="case2_desc">
+                  Acquisizione laser scanner da UAV sotto fitta copertura forestale (densità 240 pt/m²). Il filtraggio ground-point e l'elaborazione di algoritmi di visualizzazione topografica (Sky-View Factor e Local Relief Model) hanno rivelato tre cinte difensive concentriche, terrazzamenti antichi e 18 tumuli funerari inediti.
+                </p>
+              </div>
+              <div class="case-telemetry-footer">
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_area">Copertura</span>
+                  <span class="telemetry-stat-val">85.0 ha</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_res">Risoluzione DTM</span>
+                  <span class="telemetry-stat-val">10 cm / pixel</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_method">Output</span>
+                  <span class="telemetry-stat-val">GeoTIFF + Geodatabase</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 3: Stratigraphic Excavation + Total Station + GPR Verification -->
+          <article class="case-card" data-categories="excavation topogis geophysics">
+            <div class="case-image-wrap">
+              <img src="assets/images/case_study_excavation.jpg" alt="Cantiere di scavo archeologico stratigrafico con stazione totale e georadar" loading="lazy" />
+              <span class="case-tag-overlay">SCAVO STRATIGRAFICO &bull; VPIA &bull; TOPOGRAFIA</span>
+              <span class="case-coords-overlay">VAL D'ORCIA / TOSCANA</span>
+            </div>
+            <div class="case-body">
+              <div>
+                <div class="case-location" data-i18n="case3_loc">Verifica Preventiva &amp; Scavo Estensivo &bull; D.Lgs. 36/2023</div>
+                <h3 class="case-title" data-i18n="case3_title">Indagine Stratigrafica Mirata e Rilievo 3D di Complesso Termale</h3>
+                <p class="case-summary" data-i18n="case3_desc">
+                  Pianificazione ed esecuzione di trincee di verifica archeologica posizionate direttamente sulle anomalie GPR ad alta affidabilità. Lo scavo stratigrafico ha portato alla luce ambienti pavimentati a mosaico e strutture in laterizio, documentati giornalmente tramite fotogrammetria 3D, stazione totale e GIS intra-site conforme ai template MiC.
+                </p>
+              </div>
+              <div class="case-telemetry-footer">
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_us">Unità Stratigrafiche</span>
+                  <span class="telemetry-stat-val">142 US / USM</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_accuracy">Precisione Rilievo</span>
+                  <span class="telemetry-stat-val">&plusmn;4 mm (Staz. Totale)</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_compliance">Consegna</span>
+                  <span class="telemetry-stat-val">Standard GNA / ICA</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 4: 3D ERT Tomography + GNSS Topography -->
+          <article class="case-card" data-categories="geophysics topogis">
+            <div class="case-image-wrap">
+              <img src="assets/images/case_study_ert_gis.jpg" alt="Tomografia elettrica 3D ERT e modello topografico di strutture portuali e acquedotto sepolto" loading="lazy" />
+              <span class="case-tag-overlay">TOMOGRAFIA ERT 3D &bull; GNSS &bull; GEOARCHEOLOGIA</span>
+              <span class="case-coords-overlay">PIANA COSTIERA TIRRENICA</span>
+            </div>
+            <div class="case-body">
+              <div>
+                <div class="case-location" data-i18n="case4_loc">Geoarcheologia Profonda &amp; Infrastrutture &bull; Costa Tirrenica</div>
+                <h3 class="case-title" data-i18n="case4_title">Tomografia Elettrica 3D di Strutture Portuali e Condotti Voltati Sepolti</h3>
+                <p class="case-summary" data-i18n="case4_desc">
+                  In un contesto alluvionale ad alta conducibilità dove il segnale radar risultava attenuato, l'acquisizione di 16 profili tomografici ERT paralleli (configurazione Dipolo-Dipolo e Wenner-Schlumberger) ha consentito di ricostruire in 3D volte in muratura e banchine antiche fino a 8 metri di profondità e il contatto con il paleo-canale.
+                </p>
+              </div>
+              <div class="case-telemetry-footer">
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_depth">Profondità Indagata</span>
+                  <span class="telemetry-stat-val">0.5 &ndash; 14.0 m</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_electrodes">Elettrodi</span>
+                  <span class="telemetry-stat-val">96 canali multi-cavo</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_resistivity">Contrasto</span>
+                  <span class="telemetry-stat-val">15 &ndash; 850 &Omega;&middot;m</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Hardware & Software Instrumentation Arsenal -->
+    <section class="section-block" id="instrumentation">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">
+              <span class="kicker-line"></span>
+              <span data-i18n="eq_kicker">Dotazione Strumentale &amp; Software</span>
+            </div>
+            <h2 class="section-title" data-i18n="eq_title">Tecnologia da campo e pipeline di calcolo</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="eq_subtitle">
+            Operiamo con sensoristica calibrata e pipeline software certificate per garantire ripetibilità del dato, georeferenziazione centimetrica e interoperabilità con gli enti di tutela.
+          </p>
+        </div>
+
+        <div class="equipment-table-wrap" role="region" aria-label="Tabella strumentazione tecnica">
+          <div class="equipment-row header-row">
+            <span data-i18n="eq_col_domain">Comparto</span>
+            <span data-i18n="eq_col_sensors">Sistemi &amp; Sensori</span>
+            <span data-i18n="eq_col_app">Applicazione Principale</span>
+            <span data-i18n="eq_col_out">Deliverable Tecnico</span>
+          </div>
+
+          <div class="equipment-row">
+            <span class="eq-category">GEORADAR (GPR)</span>
+            <span class="eq-instrument" data-i18n="eq_row1_inst">Sistemi GPR Multicanale &amp; Dual-Frequency (200/400/600 MHz)</span>
+            <span class="eq-application" data-i18n="eq_row1_app">Mappatura 3D di strutture murarie, pavimentazioni, cavità e sottoservizi in ambito urbano ed extraurbano</span>
+            <span class="eq-output">Time-Slices GeoTIFF / 3D DXF</span>
+          </div>
+
+          <div class="equipment-row">
+            <span class="eq-category">MAGNETOMETRIA</span>
+            <span class="eq-instrument" data-i18n="eq_row2_inst">Gradiometri Fluxgate Multi-Sensore su carrello amagnetico + GNSS RTK</span>
+            <span class="eq-application" data-i18n="eq_row2_app">Prospezioni estensive ad alta velocità per fornaci, fossati, buche di palo, necropoli e viabilità antica</span>
+            <span class="eq-output">Mappe nT/m &amp; Shp Anomalie</span>
+          </div>
+
+          <div class="equipment-row">
+            <span class="eq-category">GEO-ELETTRICA &amp; EM</span>
+            <span class="eq-instrument" data-i18n="eq_row3_inst">Georesistivimetro Multicanale ERT (96 elettrodi) &amp; Elettromagnetometro FDEM</span>
+            <span class="eq-application" data-i18n="eq_row3_app">Tomografie 2D/3D profonde, ricostruzione paleo-geomorfologica, cavità ipogee e terreni argillosi</span>
+            <span class="eq-output">Sezioni &Omega;&middot;m &amp; Volumi 3D</span>
+          </div>
+
+          <div class="equipment-row">
+            <span class="eq-category">UAV &amp; REMOTE SENSING</span>
+            <span class="eq-instrument" data-i18n="eq_row4_inst">Droni RTK con payload LiDAR, Camera Multispettrale (5 bande), Termica e RGB 45MP</span>
+            <span class="eq-application" data-i18n="eq_row4_app">Rilievo micro-topografico sotto bosco, analisi cropmarks (NDVI/NDRE), ortofoto metriche e modelli 3D di scavo</span>
+            <span class="eq-output">LAS/LAZ, DTM/DSM, Ortofoto</span>
+          </div>
+
+          <div class="equipment-row">
+            <span class="eq-category">TOPOGRAFIA &amp; GIS</span>
+            <span class="eq-instrument" data-i18n="eq_row5_inst">Stazione Totale Robotica 1", Ricevitori GNSS Multi-Costellazione RTK, QGIS/PostGIS</span>
+            <span class="eq-application" data-i18n="eq_row5_app">Inquadramento geodetico, rilievo stratigrafico di cantiere, geodatabase VPIA conformi al Geoportale Nazionale per l'Archeologia</span>
+            <span class="eq-output">GPKG / Template MiC ICA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & VPIA Project Consultation Section -->
+    <section class="section-block" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-kicker">
+            <span class="kicker-line"></span>
+            <span data-i18n="contact_kicker">Consulenza Tecnica &amp; Preventivi</span>
+          </div>
+          <h2 class="section-title" data-i18n="contact_title">Pianifichiamo la tua prossima indagine sul campo</h2>
+          <p class="section-subtitle" style="margin-top: 1rem;" data-i18n="contact_desc">
+            Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, rilievi LiDAR/aerofotogrammetrici o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).
+          </p>
+
+          <div class="compliance-box">
+            <div class="compliance-title" data-i18n="compliance_box_title">Conformità Normativa &amp; Qualifica Professionale</div>
+            <p class="compliance-text" data-i18n="compliance_box_text">
+              Tutte le relazioni archeologiche, geofisiche e le banche dati GIS vengono redatte nel pieno rispetto del Codice dei Contratti Pubblici (D.Lgs. 36/2023, All. I.8) e delle Linee Guida dell'Istituto Centrale per l'Archeologia (ICA) per la pubblicazione sul Geoportale Nazionale per l'Archeologia (GNA).
+            </p>
+          </div>
+
+          <ul class="contact-direct-list">
+            <li class="contact-direct-item">
+              <span class="contact-direct-label" data-i18n="contact_label_area">Operatività</span>
+              <span data-i18n="contact_val_area">Tutto il territorio nazionale &amp; missioni archeologiche internazionali</span>
+            </li>
+            <li class="contact-direct-item">
+              <span class="contact-direct-label">Email</span>
+              <a href="mailto:info@terreindago.it" style="text-decoration: underline;">info@terreindago.it</a>
+            </li>
+            <li class="contact-direct-item">
+              <span class="contact-direct-label">PEC</span>
+              <span>terreindago@pec.it</span>
+            </li>
+            <li class="contact-direct-item">
+              <span class="contact-direct-label">GitHub</span>
+              <a href="https://github.com/Heryx/terreindago" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">github.com/Heryx/terreindago</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="consultationForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="inputName" class="form-label" data-i18n="form_name">Nome / Ente / Studio *</label>
+                <input type="text" id="inputName" class="form-input" required placeholder="Es. Dott. Mario Rossi / Studio Ingegneria" />
+              </div>
+
+              <div class="form-group">
+                <label for="inputEmail" class="form-label" data-i18n="form_email">Email di riferimento *</label>
+                <input type="email" id="inputEmail" class="form-input" required placeholder="nome@studio.it" />
+              </div>
+
+              <div class="form-group">
+                <label for="selectService" class="form-label" data-i18n="form_service">Servizio Richiesto *</label>
+                <select id="selectService" class="form-select" required>
+                  <option value="geophysics" data-i18n="form_opt_geo">Prospezione Geofisica (GPR / Magnetometria / ERT)</option>
+                  <option value="remotesensing" data-i18n="form_opt_rs">Telerilevamento Drone (LiDAR / Multispettrale / Fotogrammetria)</option>
+                  <option value="topogis" data-i18n="form_opt_gis">Rilievo Topografico, Laser Scanner &amp; GIS (Template GNA/ICA)</option>
+                  <option value="vpia" data-i18n="form_opt_vpia">VPIA, Assistenza &amp; Scavo Archeologico Stratigrafico</option>
+                  <option value="integrated" data-i18n="form_opt_int">Pacchetto Integrato Multi-Disciplinare</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="inputArea" class="form-label" data-i18n="form_location">Comune / Estensione Stimata (ha o m²)</label>
+                <input type="text" id="inputArea" class="form-input" placeholder="Es. Viterbo — circa 5 ettari (tracciato lineare)" />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="inputDetails" class="form-label" data-i18n="form_details">Inquadramento del sito e obiettivi dell'indagine *</label>
+                <textarea
+                  id="inputDetails"
+                  class="form-textarea"
+                  required
+                  placeholder="Descrivi brevemente il contesto geomorfologico, l'uso attuale del suolo, eventuali prescrizioni della Soprintendenza e le tempistiche previste..."
+                ></textarea>
+              </div>
+
+              <div class="form-group full-width">
+                <button type="submit" class="btn btn-primary" id="submitConsultationBtn" style="width: 100%;" data-i18n="form_submit">
+                  Genera Richiesta Tecnica Preliminare
+                </button>
+              </div>
+            </div>
+
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="brand-logo">
+          <div class="brand-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 17l9 4 9-4" stroke="#c85a32"/>
+              <path d="M3 12l9 4 9-4" stroke="#d99b26"/>
+              <path d="M12 3L3 7l9 4 9-4-9-4z"/>
+            </svg>
+          </div>
+          <div class="brand-text-wrap">
+            <span class="brand-name" style="color: var(--text-on-dark);">TerreIndago</span>
+            <span class="brand-tagline">Archeo-Geophysics &bull; Remote Sensing &bull; GIS &bull; Excavation</span>
+          </div>
+        </div>
+        <p data-i18n="footer_motto">
+          Diagnostica non invasiva, telerilevamento, topografia e archeologia stratigrafica ad alta precisione.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 TerreIndago. All rights reserved.</span>
+        <span>EPSG:32632 / RDN2008 &bull; Standard MiC-ICA Compliant</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
