@@ -42,9 +42,9 @@
       toggle_gis_vectors_off: 'Vettori GIS: OFF',
 
       services_kicker: 'Ambiti Operativi Integrati',
-      services_title: 'Sei discipline per la conoscenza del territorio e dei monumenti',
+      services_title: 'Sette discipline per la conoscenza del territorio e dei monumenti',
       services_subtitle:
-        "Dalla diagnostica non invasiva su vasta scala fino al rilievo Laser Scanner 3D dei monumenti e all'indagine stratigrafica diretta, forniamo flussi di lavoro georiferiti completi per Soprintendenze, Università, studi di progettazione ed enti pubblici.",
+        "Dalla diagnostica non invasiva su vasta scala fino al rilievo Laser Scanner 3D dei monumenti, all'analisi spaziale in Python/GIS e all'indagine stratigrafica diretta, forniamo flussi di lavoro georiferiti completi per Soprintendenze, Università, studi di progettazione ed enti pubblici.",
 
       service_1_title: 'Geofisica Applicata & Software Proprietario GPR/ERT',
       service_1_desc:
@@ -83,12 +83,19 @@
       service_6_spec1: 'Nuvole di punti dense (.E57 / .LAS), piante, prospetti e sezioni metriche',
       service_6_spec2: 'Inquadramento topografico, analisi delle deformazioni e modellazione HBIM',
 
-      service_4_title: 'Rilievo LiDAR, Sistemi GIS, Scavo & VPIA',
+      service_4_title: 'Rilievo LiDAR (DTM Hillshade), Scavo Archeologico & VPIA',
       service_4_desc:
-        'Elaborazione di modelli digitali del terreno (DTM/DEM) da rilievo LiDAR con filtraggio della vegetazione, analisi micro-topografica (Hillshade, SVF, LRM), progettazione di Geodatabase GIS conformi agli standard MiC / ICA e direzione di scavi archeologici e VPIA.',
+        "Elaborazione di modelli digitali del terreno (DTM/DEM) da rilievo LiDAR con filtraggio della vegetazione, analisi micro-topografica (Hillshade, SVF, LRM) per l'individuazione di strutture sotto copertura, carte del potenziale e direzione di scavi archeologici e VPIA (D.Lgs. 36/2023).",
       service_4_caption: 'DTM da Rilievo LiDAR: micro-rilievo e strutture sepolte',
       service_4_spec1: 'Elaborazione nuvole LiDAR, carte del potenziale e VPIA (D.Lgs. 36/2023)',
-      service_4_spec2: 'Direzione di scavo stratigrafico, GIS intra-site e template GNA/ICA',
+      service_4_spec2: 'Direzione di scavo stratigrafico, verifica anomalie e template GNA/ICA',
+
+      service_8_title: 'GIS, Analisi Spaziali Quantitative & Geocomputazione in Python',
+      service_8_desc:
+        "Progettazione di Geodatabase relazionali in QGIS/PostGIS e sviluppo di script dedicati in Python (GeoPandas, Shapely, Matplotlib, PyQGIS) per l'analisi spaziale quantitativa, la normalizzazione statistica dei reperti da ricognizione (fieldwalking) e la correlazione multi-periodo con anomalie geofisiche e dipoli magnetici.",
+      service_8_caption: 'GIS & Python (GeoPandas / PyQGIS): Analisi Spaziale Multi-Periodo',
+      service_8_spec1: 'Scripting Python (GeoPandas, Matplotlib, NumPy) e automazione plugin/script PyQGIS',
+      service_8_spec2: 'Spatial join, buffer di correlazione geofisica-ricognizione e geodatabase MiC/ICA',
 
       sim_kicker: 'Diagnostica Sottosuolo & Sviluppo Software',
       sim_title: 'Confronto della risposta geofisica ed elaborazione 3D proprietaria',
@@ -118,14 +125,31 @@
       sw_card2_caption:
         'Ispezione interattiva strato per strato (es. 0.00–0.10 m) e profilo per profilo (Swath/Array) con regolazione in tempo reale di opacità (82.7%), limiti di ampiezza automatici/manuali, correzione gamma e interpolazione bilineare o nitida.',
 
+      gis_py_badge: 'GEOCOMPUTAZIONE PYTHON & PyQGIS • SPATIAL DATA SCIENCE ARCHEOLOGICA',
+      gis_py_title: 'GIS, analisi spaziali quantitative e sviluppo di script in Python',
+      gis_py_desc:
+        'Sviluppo di pipeline di calcolo in Python (GeoPandas, Shapely, Matplotlib, NumPy) e script di automazione in ambiente QGIS (API PyQGIS) per la modellazione spaziale, la normalizzazione statistica dei reperti da ricognizione (fieldwalking) e la correlazione multi-periodo con griglie magnetometriche, dipoli e strutture geofisiche.',
+      gis_py_card1_tag: 'PYTHON (MATPLOTLIB / GEOPANDAS) • MODELLAZIONE SPAZIALE & GEOFISICA',
+      gis_py_card1_caption:
+        'Elaborazione cartografica e statistica in Python con plot automatizzato della griglia di magnetometria, dipoli negativi/positivi, strutture geofisiche vettorializzate e istogrammi di distribuzione dei reperti per fase cronologica (Preistorico, Antico, Medievale/Post-medievale).',
+      gis_py_card2_tag: 'SCRIPTING PyQGIS • AUTOMAZIONE GEODATABASE & DENSITÀ NORMALIZZATE',
+      gis_py_card2_caption:
+        'Programmazione diretta tramite API PyQGIS (QgsFeature, QgsGeometry, QgsCoordinateTransform, QgsVectorDataProvider) per il calcolo automatizzato di densità areali, normalizzazioni logaritmiche e indici di visibilità (vis_pre, vis_anc, vis_med).',
+      gis_py_card3_tag: 'QGIS MULTI-LAYER • QUANTIFICAZIONE FIELDWALKING & BUFFER ANOMALIE',
+      gis_py_card3_caption:
+        "Architettura GIS multi-strato per l'analisi congiunta tra unità topografiche di ricognizione (fieldwalking), quantificazione ceramica ponderata, buffer spaziali sulle anomalie geofisiche (Feature_Geofisica_da_buffer) e basi ortofotogrammetriche.",
+      gis_py_card4_tag: 'OVERLAY SPAZIALE DI DETTAGLIO • CORRELAZIONE STRUTTURE – REPERTI',
+      gis_py_card4_caption:
+        'Vista ravvicinata della sovrapposizione topologica tra strutture archeologiche sepolte ricostruite da geofisica (poligoni verdi), dipoli magnetici (blu/ocra) e concentrazioni multi-periodo dei materiali in superficie per singola cella del reticolo.',
+
       portfolio_kicker: 'Progetti & Campagne sul Campo',
       portfolio_title: 'Casi studio selezionati',
       portfolio_subtitle:
-        'Esplora esempi concreti di integrazione tra geofisica GPR e verifica di scavo, fotogrammetria Structure from Motion (SfM), Laser Scanner 3D di monumenti, rilievo LiDAR, telerilevamento satellitare SAR e 3D Gaussian Splatting.',
-      filter_all: 'Tutti i Progetti (7)',
+        'Esplora esempi concreti di integrazione tra geofisica GPR e verifica di scavo, GIS e analisi spaziali in Python, fotogrammetria Structure from Motion (SfM), Laser Scanner 3D di monumenti, rilievo LiDAR, telerilevamento satellitare SAR e 3D Gaussian Splatting.',
+      filter_all: 'Tutti i Progetti (8)',
       filter_geophysics: 'Geofisica (GPR / Mag / ERT)',
       filter_remotesensing: 'SfM, 3DGS, LiDAR & SAR',
-      filter_topogis: 'Laser Scanner 3D, Topografia & GIS',
+      filter_topogis: 'GIS, Python & Laser Scanner 3D',
       filter_excavation: 'Scavo & Confronto Geofisica',
 
       case1_loc: 'Geofisica Applicata • Acquisizione GPR & Software Sviluppato Internamente',
@@ -137,6 +161,11 @@
       case7_title: 'Confronto tra Time-Slices GPR e Verifica di Scavo Archeologico',
       case7_desc:
         "Corrispondenza geometrica e stratigrafica puntuale tra le Time-Slices Georadar (GPR) alle profondità di 1.10 – 2.00 m e il successivo saggio di scavo archeologico stratigrafico. Le anomalie riflettenti individuate in fase diagnostica hanno previsto con precisione millimetrica l'andamento della struttura muraria semicircolare absidata e del setto ortogonale.",
+
+      case8_loc: 'GIS, Spatial Data Science & Programmazione Python • Geofisica & Fieldwalking',
+      case8_title: 'GIS, Analisi Spaziali Multi-Periodo e Geocomputazione in Python & PyQGIS',
+      case8_desc:
+        'Sviluppo di script dedicati in Python (GeoPandas, Matplotlib, Shapely) e automazione tramite API PyQGIS per integrare e correlare statisticamente i risultati delle prospezioni geofisiche (dipoli magnetici positivi/negativi e strutture sepolte bufferizzate) con la quantificazione ponderata dei materiali ceramici da ricognizione sistematica (Preistorico, Antico, Medievale).',
 
       case6_loc: 'Fotogrammetria Structure from Motion • Rilievo Aerofotogrammetrico 3D',
       case6_title: 'Rilievo Fotogrammetrico Structure from Motion (SfM) di Complessi Templari',
@@ -189,13 +218,13 @@
       eq_row3_app: 'Nuvole di punti millimetriche, fotogrammetria UAV/terrestre e ricostruzione 3D immersiva di teatri, templi e monumenti antichi',
       eq_row4_inst: 'SAR Sentinel-1 (VV/VH), Ottico Multispettrale & Droni RTK (LiDAR / 5 Bande)',
       eq_row4_app: 'Analisi multitemporale di Change Detection (SSD), monitoraggio archeologico, micro-topografia sotto bosco e indici NDVI/NDRE',
-      eq_row5_inst: 'Stazione Totale Robotica 1", Ricevitori GNSS Multi-Costellazione RTK, QGIS/PostGIS',
-      eq_row5_app: "Inquadramento geodetico, rilievo stratigrafico di cantiere, geodatabase VPIA conformi al Geoportale Nazionale per l'Archeologia",
+      eq_row5_inst: 'Python (GeoPandas, Shapely, Matplotlib), PyQGIS, QGIS/PostGIS, GNSS RTK & Stazione Totale',
+      eq_row5_app: 'Analisi spaziali quantitative in Python, correlazione statistica geofisica-ricognizione (fieldwalking), inquadramento geodetico e geodatabase VPIA (GNA/ICA)',
 
       contact_kicker: 'Consulenza Tecnica & Preventivi',
       contact_title: 'Pianifichiamo la tua prossima indagine sul campo',
       contact_desc:
-        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, fotogrammetria Structure from Motion, Laser Scanner 3D, LiDAR, SAR e 3D Gaussian Splatting o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
+        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, analisi spaziali GIS/Python, fotogrammetria Structure from Motion, Laser Scanner 3D, LiDAR, SAR e 3D Gaussian Splatting o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
       compliance_box_title: 'Conformità Normativa & Qualifica Professionale',
       compliance_box_text:
         "Tutte le relazioni archeologiche, geofisiche e le banche dati GIS vengono redatte nel pieno rispetto del Codice dei Contratti Pubblici (D.Lgs. 36/2023, All. I.8) e delle Linee Guida dell'Istituto Centrale per l'Archeologia (ICA) per la pubblicazione sul Geoportale Nazionale per l'Archeologia (GNA).",
@@ -207,13 +236,13 @@
       form_service: 'Servizio Richiesto *',
       form_opt_geo: 'Prospezione Geofisica (GPR / Magnetometria / ERT)',
       form_opt_rs: 'Fotogrammetria SfM, LiDAR, Telerilevamento SAR & 3D Gaussian Splatting',
-      form_opt_gis: 'Rilievo Monumenti Laser Scanner 3D, Topografia & GIS (Template GNA/ICA)',
+      form_opt_gis: 'GIS, Analisi Spaziali Python/PyQGIS, Laser Scanner 3D & Topografia',
       form_opt_vpia: 'VPIA, Assistenza & Scavo Archeologico Stratigrafico',
       form_opt_int: 'Pacchetto Integrato Multi-Disciplinare',
       form_location: 'Comune / Estensione Stimata (ha o m²)',
       form_details: "Inquadramento del sito e obiettivi dell'indagine *",
       form_submit: 'Genera Richiesta Tecnica Preliminare',
-      footer_motto: 'Diagnostica non invasiva, fotogrammetria SfM, Laser Scanner 3D, LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, topografia e scavo archeologico.'
+      footer_motto: 'Diagnostica non invasiva, GIS e analisi spaziali in Python, fotogrammetria SfM, Laser Scanner 3D, LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting e scavo archeologico.'
     },
 
     en: {
@@ -229,7 +258,7 @@
       hero_kicker: 'Archaeological Diagnostics & Geotechnologies',
       hero_title: 'Reading the subsurface before excavation, documenting landscapes with metric rigor.',
       hero_lead:
-        'TerreIndago integrates high-resolution geophysical prospection, proprietary 3D GPR/ERT processing software, Structure from Motion (SfM), 3D Laser Scanning of ancient monuments, LiDAR DTM analysis, Sentinel-1 SAR change detection, and 3D Gaussian Splatting.',
+        'TerreIndago integrates high-resolution geophysical prospection, proprietary 3D GPR/ERT processing software, Python & PyQGIS spatial data science, Structure from Motion (SfM), 3D Laser Scanning of ancient monuments, LiDAR DTM analysis, Sentinel-1 SAR change detection, and 3D Gaussian Splatting.',
       hero_btn_primary: 'Explore Case Studies',
       hero_btn_secondary: 'Methodology Specs',
       metric_1_label: 'Area surveyed via GPR & Magnetometry',
@@ -244,9 +273,9 @@
       toggle_gis_vectors_off: 'GIS Vectors: OFF',
 
       services_kicker: 'Integrated Operational Domains',
-      services_title: 'Six disciplines for archaeological and monumental intelligence',
+      services_title: 'Seven disciplines for archaeological and monumental intelligence',
       services_subtitle:
-        'From large-scale non-invasive prospection with custom 3D GPR/ERT software, Structure from Motion (SfM), and 3D Laser Scanning of ancient monuments to LiDAR micro-topography and satellite SAR monitoring.',
+        'From large-scale non-invasive prospection with custom 3D GPR/ERT software, Python/GIS spatial analysis, Structure from Motion (SfM), and 3D Laser Scanning of ancient monuments to LiDAR micro-topography and satellite SAR monitoring.',
 
       service_1_title: 'Applied Geophysics & Proprietary 3D GPR/ERT Software',
       service_1_desc:
@@ -285,12 +314,19 @@
       service_6_spec1: 'Dense point clouds (.E57 / .LAS), metric plans, elevations, and sections',
       service_6_spec2: 'Topographic control, structural deformation analysis, and HBIM modeling',
 
-      service_4_title: 'LiDAR Survey, GIS Systems, Excavation & VPIA',
+      service_4_title: 'LiDAR Survey (DTM Hillshade), Archaeological Excavation & VPIA',
       service_4_desc:
-        'High-resolution Digital Terrain Model (DTM/DEM) generation from LiDAR point clouds with vegetation filtering, micro-topographic visualization (Hillshade, SVF, LRM), MiC/ICA-compliant GIS Geodatabases, and stratigraphic excavation / VPIA.',
+        'High-resolution Digital Terrain Model (DTM/DEM) generation from LiDAR point clouds with vegetation filtering, micro-topographic visualization (Hillshade, SVF, LRM) for under-canopy structure detection, archaeological potential maps, and stratigraphic excavation / VPIA.',
       service_4_caption: 'LiDAR DTM Hillshade: micro-relief & buried structures',
       service_4_spec1: 'LiDAR point cloud processing, archaeological potential maps & VPIA',
-      service_4_spec2: 'Stratigraphic excavation direction, intra-site GIS & GNA/ICA templates',
+      service_4_spec2: 'Stratigraphic excavation direction, anomaly ground-truthing & GNA/ICA templates',
+
+      service_8_title: 'GIS, Quantitative Spatial Analysis & Python Geocomputation',
+      service_8_desc:
+        'Relational Geodatabase architecture in QGIS/PostGIS and custom Python scripting (GeoPandas, Shapely, Matplotlib, PyQGIS) for quantitative spatial analysis, statistical normalization of fieldwalking artifact distributions, and multi-period correlation with geophysical anomalies and magnetic dipoles.',
+      service_8_caption: 'GIS & Python (GeoPandas / PyQGIS): Multi-Period Spatial Analysis',
+      service_8_spec1: 'Python scripting (GeoPandas, Matplotlib, NumPy) and custom PyQGIS automation',
+      service_8_spec2: 'Spatial joins, geophysics-fieldwalking correlation buffers, and MiC/ICA geodatabases',
 
       sim_kicker: 'Subsurface Diagnostics & Software Engineering',
       sim_title: 'Geophysical response comparison & proprietary 3D processing',
@@ -320,14 +356,31 @@
       sw_card2_caption:
         'Interactive layer-by-layer (e.g., 0.00–0.10 m) and profile-by-profile (Swath/Array) inspection with real-time opacity adjustment (82.7%), automatic/manual amplitude clipping, gamma correction, and bilinear or sharp interpolation.',
 
+      gis_py_badge: 'PYTHON & PyQGIS GEOCOMPUTATION • ARCHAEOLOGICAL SPATIAL DATA SCIENCE',
+      gis_py_title: 'GIS, quantitative spatial analysis, and Python scripting',
+      gis_py_desc:
+        'Custom geocomputation pipelines in Python (GeoPandas, Shapely, Matplotlib, NumPy) and automation scripts in QGIS (PyQGIS API) for spatial modeling, statistical normalization of fieldwalking survey artifacts, and multi-period correlation with magnetometry grids, dipoles, and geophysical structures.',
+      gis_py_card1_tag: 'PYTHON (MATPLOTLIB / GEOPANDAS) • SPATIAL MODELING & GEOPHYSICS',
+      gis_py_card1_caption:
+        'Automated cartographic and statistical modeling in Python plotting the magnetometry survey grid, negative/positive dipoles, vectorized geophysical structures, and chronological artifact density histograms (Prehistoric, Ancient, Medieval/Post-medieval).',
+      gis_py_card2_tag: 'PyQGIS SCRIPTING • GEODATABASE AUTOMATION & NORMALIZED DENSITIES',
+      gis_py_card2_caption:
+        'Direct programming via the PyQGIS API (QgsFeature, QgsGeometry, QgsCoordinateTransform, QgsVectorDataProvider) for automated calculation of areal densities, logarithmic normalizations, and visibility indices (vis_pre, vis_anc, vis_med).',
+      gis_py_card3_tag: 'MULTI-LAYER QGIS • FIELDWALKING QUANTIFICATION & ANOMALY BUFFERS',
+      gis_py_card3_caption:
+        'Multi-layer GIS architecture integrating fieldwalking survey units, weighted ceramic quantification, spatial buffers around geophysical anomalies (Feature_Geofisica_da_buffer), and historical orthophoto basemaps.',
+      gis_py_card4_tag: 'DETAILED SPATIAL OVERLAY • STRUCTURE – ARTIFACT CORRELATION',
+      gis_py_card4_caption:
+        'Close-up topological overlay comparing buried archaeological structures reconstructed from geophysics (green polygons), magnetic dipoles (blue/ochre), and multi-period surface artifact concentrations per grid cell.',
+
       portfolio_kicker: 'Field Projects & Campaigns',
       portfolio_title: 'Selected case studies',
       portfolio_subtitle:
-        'Explore real-world integrations of GPR geophysics and excavation ground-truthing, Structure from Motion (SfM) photogrammetry, 3D Laser Scanning of ancient monuments, LiDAR micro-topography, Sentinel-1 SAR remote sensing, and 3D Gaussian Splatting.',
-      filter_all: 'All Projects (7)',
+        'Explore real-world integrations of GPR geophysics and excavation ground-truthing, GIS and Python spatial analysis, Structure from Motion (SfM) photogrammetry, 3D Laser Scanning of ancient monuments, LiDAR micro-topography, Sentinel-1 SAR remote sensing, and 3D Gaussian Splatting.',
+      filter_all: 'All Projects (8)',
       filter_geophysics: 'Geophysics (GPR / Mag / ERT)',
       filter_remotesensing: 'SfM, 3DGS, LiDAR & SAR',
-      filter_topogis: '3D Laser Scanner, Topography & GIS',
+      filter_topogis: 'GIS, Python & 3D Laser Scanner',
       filter_excavation: 'Excavation & Geophysics Ground-Truthing',
 
       case1_loc: 'Applied Geophysics • GPR Acquisition & In-House 3D Software',
@@ -339,6 +392,11 @@
       case7_title: 'Comparison Between GPR Time-Slices and Stratigraphic Excavation Verification',
       case7_desc:
         'Exact geometric and stratigraphic correlation between Ground Penetrating Radar (GPR) Time-Slices at 1.10 – 2.00 m depth and subsequent stratigraphic excavation. High-amplitude reflectors detected during non-invasive diagnostics accurately predicted the semicircular apsidal masonry structure and orthogonal wall.',
+
+      case8_loc: 'GIS, Spatial Data Science & Python Programming • Geophysics & Fieldwalking',
+      case8_title: 'GIS, Multi-Period Spatial Analysis & Geocomputation in Python & PyQGIS',
+      case8_desc:
+        'Custom scripts in Python (GeoPandas, Matplotlib, Shapely) and PyQGIS API automation to statistically correlate geophysical survey outputs (positive/negative magnetic dipoles and buffered buried structures) with weighted ceramic artifact quantifications from systematic fieldwalking (Prehistoric, Ancient, Medieval).',
 
       case6_loc: 'Structure from Motion Photogrammetry • 3D Aerial Survey',
       case6_title: 'Structure from Motion (SfM) Photogrammetric Survey of Temple Complexes',
@@ -387,12 +445,12 @@
       eq_row1_app: 'Direct processing via in-house developed software for 3D co-registration of GPR B-Scan profiles, Time-Slices, and ERT sections',
       eq_row2_inst: 'Multi-Sensor Fluxgate Gradiometers on non-magnetic cart + GNSS RTK',
       eq_row2_app: 'High-speed extensive surveys for kilns, ditches, post-holes, cemeteries, and ancient roads',
-      eq_row3_inst: '96-Electrode Multi-Channel ERT Resistivity Meter & FDEM Sensor',
-      eq_row3_app: 'Deep 2D/3D tomographies, paleo-geomorphological reconstruction, hypogea, and conductive clay soils',
-      eq_row4_inst: 'RTK Drones with LiDAR payload, 5-Band Multispectral, Thermal & 45MP RGB',
-      eq_row4_app: 'Under-canopy micro-topography, cropmark analysis (NDVI/NDRE), metric orthophotos, and 3D trench models',
-      eq_row5_inst: '1" Robotic Total Station, Multi-Constellation GNSS RTK, QGIS/PostGIS',
-      eq_row5_app: 'Geodetic control networks, stratigraphic trench survey, VPIA geodatabases compliant with GNA/ICA standards',
+      eq_row3_inst: 'Terrestrial 3D Laser Scanner, Structure from Motion (SfM) & 3D Gaussian Splatting (3DGS)',
+      eq_row3_app: 'Millimeter-accurate point clouds, UAV/terrestrial photogrammetry, and immersive 3D reconstruction of ancient theaters and temples',
+      eq_row4_inst: 'Sentinel-1 SAR (VV/VH), Multispectral Optical & RTK Drones (LiDAR / 5-Band)',
+      eq_row4_app: 'Multi-temporal Change Detection (SSD), archaeological monitoring, under-canopy micro-topography, and NDVI/NDRE indices',
+      eq_row5_inst: 'Python (GeoPandas, Shapely, Matplotlib), PyQGIS, QGIS/PostGIS, GNSS RTK & Total Station',
+      eq_row5_app: 'Quantitative spatial analysis in Python, geophysics-fieldwalking statistical correlation, geodetic control, and VPIA geodatabases (GNA/ICA)',
 
       contact_kicker: 'Technical Consultation & Quotes',
       contact_title: 'Plan your next field campaign with us',
