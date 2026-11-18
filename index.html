@@ -121,47 +121,46 @@
           </div>
         </div>
 
-        <!-- Interactive Before/After Comparison Slider -->
-        <div class="survey-inspector-card" aria-label="Interactive Geophysical Survey Comparison">
+        <!-- Interactive Before/After Comparison Slider: GPR Time-Slices vs Stratigraphic Excavation -->
+        <div class="survey-inspector-card" aria-label="Interactive Geophysical Survey vs Excavation Comparison">
           <div class="inspector-header">
             <span class="inspector-title">
               <span class="telemetry-dot"></span>
-              <span data-i18n="inspector_header_title">ISPETTORE MULTISTRATO: VILLA ROMANA RUSTICA</span>
+              <span data-i18n="inspector_header_title">CONFRONTO GEOFISICA &amp; SCAVO: TIME-SLICES GPR vs VERIFICA STRATIGRAFICA</span>
             </span>
-            <span class="inspector-coords">42&deg;25'18.4"N 11&deg;52'09.2"E &bull; Z: -1.25m</span>
+            <span class="inspector-coords">Z: 1.10m &ndash; 2.00m &bull; GROUND-TRUTHING</span>
           </div>
 
           <div class="comparison-viewport" id="comparisonViewport">
-            <!-- Base Layer: Drone Orthophoto + Cropmarks -->
+            <!-- Base Layer: 8 GPR Depth Slices + Zoomed GPR Slice 11 (1.3-1.5m) -->
             <img
-              src="assets/images/survey_before_ortho.jpg"
-              alt="Ortofoto aerea da drone con tracce da vegetazione (cropmarks)"
+              src="assets/images/hero_gpr_slices.jpg"
+              alt="Time-Slices Georadar (GPR) da 1.1m a 2.0m di profondità con anomalia absidata"
               class="comparison-img"
             />
 
-            <!-- Clipped Overlay Layer: GPR Time-Slice + Magnetometry + GIS Interpretation -->
+            <!-- Clipped Overlay Layer: Side-by-Side 8 GPR Slices + Excavated Semicircular Apse Wall -->
             <div class="comparison-overlay" id="comparisonOverlay">
               <img
-                src="assets/images/survey_after_gpr.jpg"
-                alt="Mappa geofisica integrata GPR time-slice e magnetometria con interpretazione GIS"
+                src="assets/images/geophysics_excavation_wide.jpg"
+                alt="Confronto diretto tra Time-Slices GPR e scavo archeologico della struttura muraria absidata"
                 class="comparison-img"
               />
             </div>
 
             <!-- Interactive SVG GIS Anomaly Vector Overlay -->
             <svg class="gis-vector-svg" id="gisVectorOverlay" viewBox="0 0 800 500" preserveAspectRatio="none">
-              <g stroke="#e8a838" stroke-width="1.6" stroke-dasharray="5 3" fill="rgba(200, 90, 50, 0.14)">
-                <rect x="368" y="128" width="175" height="175" transform="rotate(-18 455 215)" />
-                <circle cx="515" cy="160" r="24" stroke="#ff5e36" stroke-width="2" />
+              <g stroke="#e8a838" stroke-width="2.2" stroke-dasharray="6 4" fill="rgba(200, 90, 50, 0.12)">
+                <path d="M 435 135 Q 575 145 615 268 L 725 268 L 725 325 L 555 325 Q 535 215 435 195 Z" />
               </g>
               <g font-family="JetBrains Mono, monospace" font-size="11" fill="#fff">
-                <rect x="378" y="92" width="158" height="20" rx="3" fill="rgba(18, 25, 33, 0.85)" />
-                <text x="385" y="106" fill="#e8a838">ANOMALIA GPR: PERISTILIO</text>
+                <rect x="440" y="96" width="295" height="22" rx="3" fill="rgba(18, 25, 33, 0.88)" />
+                <text x="448" y="111" fill="#e8a838">CORRISPONDENZA GPR / MURATURA ABSIDATA</text>
               </g>
             </svg>
 
-            <span class="comparison-badge badge-left" data-i18n="badge_before">01. Ortofoto UAV &amp; Cropmarks</span>
-            <span class="comparison-badge badge-right" data-i18n="badge_after">02. GPR Time-Slice (-1.2m) &amp; Mag</span>
+            <span class="comparison-badge badge-left" data-i18n="badge_before">01. Time-Slices GPR (1.1m &ndash; 2.0m)</span>
+            <span class="comparison-badge badge-right" data-i18n="badge_after">02. Verifica di Scavo Stratigrafico</span>
 
             <div class="comparison-handle" id="comparisonHandle">
               <div class="handle-knob" aria-hidden="true">
@@ -175,7 +174,7 @@
 
           <div class="inspector-controls">
             <div class="slider-control-wrap">
-              <label for="comparisonRange" class="slider-label" data-i18n="slider_label">Sovrapposizione Geofisica:</label>
+              <label for="comparisonRange" class="slider-label" data-i18n="slider_label">Confronto GPR / Scavo:</label>
               <input
                 type="range"
                 id="comparisonRange"
@@ -183,7 +182,7 @@
                 min="0"
                 max="100"
                 value="50"
-                aria-label="Percentuale di sovrapposizione mappa geofisica"
+                aria-label="Percentuale di sovrapposizione verifica di scavo su Time-Slice GPR"
               />
               <span class="slider-label" id="comparisonPercentReadout">50%</span>
             </div>
@@ -537,7 +536,7 @@
         <!-- Category Filters -->
         <div class="filter-toolbar" role="toolbar" aria-label="Filtra progetti per disciplina">
           <button type="button" class="filter-btn active" data-filter="all" id="filterAll" data-i18n="filter_all">
-            Tutti i Progetti (6)
+            Tutti i Progetti (7)
           </button>
           <button type="button" class="filter-btn" data-filter="geophysics" id="filterGeophysics" data-i18n="filter_geophysics">
             Geofisica (GPR / Mag / ERT)
@@ -549,7 +548,7 @@
             Laser Scanner 3D, Topografia &amp; GIS
           </button>
           <button type="button" class="filter-btn" data-filter="excavation" id="filterExcavation" data-i18n="filter_excavation">
-            Scavo &amp; VPIA
+            Scavo &amp; Confronto Geofisica
           </button>
         </div>
 
@@ -594,7 +593,39 @@
             </div>
           </article>
 
-          <!-- Case Study 2: Structure from Motion (SfM) Photogrammetry -->
+          <!-- Case Study 2: Geophysics vs Stratigraphic Excavation Comparison (Ground-Truthing) -->
+          <article class="case-card" data-categories="geophysics excavation topogis">
+            <div class="case-image-wrap">
+              <img src="assets/images/geophysics_excavation_wide.jpg" alt="Confronto diretto tra 8 Time-Slices Georadar GPR (1.1m-2.0m) e verifica di scavo archeologico della struttura muraria absidata" loading="lazy" />
+              <span class="case-tag-overlay">GEOFISICA &amp; CONFRONTO CON SCAVO &bull; GROUND-TRUTHING</span>
+              <span class="case-coords-overlay">TIME-SLICES 1.1m &ndash; 2.0m vs SCAVO</span>
+            </div>
+            <div class="case-body">
+              <div>
+                <div class="case-location" data-i18n="case7_loc">Geofisica Applicata &amp; Scavo Archeologico &bull; Verifica Stratigrafica Diretta</div>
+                <h3 class="case-title" data-i18n="case7_title">Confronto tra Time-Slices GPR e Verifica di Scavo Archeologico</h3>
+                <p class="case-summary" data-i18n="case7_desc">
+                  Corrispondenza geometrica e stratigrafica puntuale tra le <strong>Time-Slices Georadar (GPR) alle profondità di 1.10 &ndash; 2.00 m</strong> e il successivo saggio di <strong>scavo archeologico stratigrafico</strong>. Le anomalie riflettenti individuate in fase diagnostica hanno previsto con precisione millimetrica l'andamento della struttura muraria semicircolare absidata e del setto ortogonale.
+                </p>
+              </div>
+              <div class="case-telemetry-footer">
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_depth">Quote Time-Slices</span>
+                  <span class="telemetry-stat-val">1.10 &ndash; 2.00 m (8 Slices)</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_area">Target Verificato</span>
+                  <span class="telemetry-stat-val">Struttura Muraria Absidata</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_resistivity">Validazione</span>
+                  <span class="telemetry-stat-val">Ground-Truthing &amp; SfM</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 3: Structure from Motion (SfM) Photogrammetry -->
           <article class="case-card" data-categories="remotesensing topogis excavation">
             <div class="case-image-wrap">
               <img src="assets/images/sfm_photogrammetry.jpg" alt="Fotogrammetria Structure from Motion (SfM) con geometria di presa delle camere su tempio e parco archeologico" loading="lazy" />
