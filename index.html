@@ -243,49 +243,53 @@
             </ul>
           </article>
 
-          <!-- Pillar 2: Remote Sensing & 3D Gaussian Splatting -->
+          <!-- Pillar 2: Satellite & UAV Remote Sensing + 3D Gaussian Splatting -->
           <article class="discipline-card span-6">
             <div class="discipline-top">
               <div class="discipline-meta">
                 <span class="discipline-index">02 / REMOTE SENSING &amp; 3D</span>
-                <span class="discipline-code">3D GAUSSIAN SPLATTING &bull; UAV LiDAR &bull; SfM</span>
+                <span class="discipline-code">SAR SENTINEL-1 &bull; 3DGS &bull; UAV LiDAR</span>
               </div>
-              <h3 class="discipline-name" data-i18n="service_2_title">Telerilevamento, Rilievo 3D &amp; Gaussian Splatting</h3>
+              <h3 class="discipline-name" data-i18n="service_2_title">Telerilevamento Satellitare (SAR/Ottico), UAV &amp; Rilievo 3D</h3>
               <p class="discipline-desc" data-i18n="service_2_desc">
-                Prospezioni aeree tramite droni (UAV), fotogrammetria Structure-from-Motion e ricostruzione immersiva fotorealistica tramite <strong>3D Gaussian Splatting (3DGS)</strong> e Radiance Fields, integrate con sensori LiDAR, camere multispettrali e termiche per documentare paesaggi archeologici e monumenti.
+                Elaborazione di dati satellitari radar ad apertura sintetica (<strong>SAR Sentinel-1</strong>, rapporto di polarizzazione VV/VH) e multispettrali per analisi multitemporali di <strong>Change Detection (SSD)</strong> e monitoraggio delle trasformazioni del territorio, integrati con droni LiDAR e ricostruzioni <strong>3D Gaussian Splatting</strong>.
               </p>
               <div class="discipline-media-preview">
-                <img src="assets/images/gaussian_splatting_3d.jpg" alt="Ricostruzione 3D Gaussian Splatting a scala territoriale di area archeologica e tempio" loading="lazy" />
-                <span class="discipline-media-caption" data-i18n="service_2_caption">Rilievo 3D immersivo con 3D Gaussian Splatting</span>
+                <img src="assets/images/sar_change_detection.jpg" alt="Analisi di Change Detection satellitare SAR Sentinel-1 VV/VH RGB ratio (2014-2024) e Sum of Squared Differences (SSD)" loading="lazy" />
+                <span class="discipline-media-caption" data-i18n="service_2_caption">Telerilevamento Satellitare SAR Sentinel-1 &amp; Change Detection (SSD)</span>
               </div>
             </div>
             <ul class="spec-list">
               <li class="spec-item">
                 <span class="spec-bullet">&rsaquo;</span>
-                <span data-i18n="service_2_spec1">Modelli 3D Gaussian Splatting navigabili in tempo reale e fotogrammetria SfM</span>
+                <span data-i18n="service_2_spec1">Change Detection satellitare multitemporale SAR (Sentinel-1 VV/VH, SSD) e ottica</span>
               </li>
               <li class="spec-item">
                 <span class="spec-bullet">&rsaquo;</span>
-                <span data-i18n="service_2_spec2">DTM/DSM da LiDAR con filtraggio vegetazione (Local Relief Model, SVF)</span>
+                <span data-i18n="service_2_spec2">Modelli 3D Gaussian Splatting (3DGS), fotogrammetria SfM e LiDAR da drone</span>
               </li>
               <li class="spec-item">
                 <span class="spec-bullet">&rsaquo;</span>
-                <span data-i18n="service_2_spec3">Indici multispettrali (NDVI, NDRE) e termografia archeologica</span>
+                <span data-i18n="service_2_spec3">Indici multispettrali (NDVI, NDRE) e monitoraggio paesaggi archeologici</span>
               </li>
             </ul>
           </article>
 
-          <!-- Pillar 3: Topography -->
+          <!-- Pillar 3: Topography & 3D Gaussian Splatting -->
           <article class="discipline-card">
             <div class="discipline-top">
               <div class="discipline-meta">
                 <span class="discipline-index">03 / TOPOGRAFIA &amp; 3D</span>
                 <span class="discipline-code">GNSS RTK &bull; TOTAL STATION &bull; 3DGS</span>
               </div>
-              <h3 class="discipline-name" data-i18n="service_3_title">Topografia &amp; Rilievo Tridimensionale</h3>
+              <h3 class="discipline-name" data-i18n="service_3_title">Topografia &amp; Rilievo 3D Gaussian Splatting</h3>
               <p class="discipline-desc" data-i18n="service_3_desc">
-                Inquadramento geodetico rigoroso, poligonali di precisione, rilievo strumentale con Stazione Totale robotica e GNSS differenziale, scansioni Laser Scanner 3D e digitalizzazione tridimensionale tramite 3D Gaussian Splatting.
+                Inquadramento geodetico rigoroso, poligonali di precisione, rilievo strumentale con Stazione Totale robotica e GNSS differenziale, scansioni Laser Scanner 3D e digitalizzazione immersiva tramite 3D Gaussian Splatting.
               </p>
+              <div class="discipline-media-preview">
+                <img src="assets/images/gaussian_splatting_3d.jpg" alt="Ricostruzione 3D Gaussian Splatting di area archeologica e tempio" loading="lazy" />
+                <span class="discipline-media-caption" data-i18n="service_3_caption">Rilievo 3D immersivo con 3D Gaussian Splatting</span>
+              </div>
             </div>
             <ul class="spec-list">
               <li class="spec-item">
@@ -440,7 +444,7 @@
             <h2 class="section-title" data-i18n="portfolio_title">Casi studio selezionati</h2>
           </div>
           <p class="section-subtitle" data-i18n="portfolio_subtitle">
-            Esplora esempi concreti di integrazione tra telerilevamento, geofisica non invasiva, rilievo topografico, modellazione GIS e verifica stratigrafica diretta.
+            Esplora esempi concreti di integrazione tra telerilevamento satellitare SAR, rilievo 3D Gaussian Splatting, geofisica non invasiva, topografia, GIS e scavo stratigrafico.
           </p>
         </div>
 
@@ -453,7 +457,7 @@
             Geofisica (GPR / Mag / ERT)
           </button>
           <button type="button" class="filter-btn" data-filter="remotesensing" id="filterRemoteSensing" data-i18n="filter_remotesensing">
-            Rilievo 3D, Gaussian Splatting &amp; LiDAR
+            Telerilevamento SAR, Rilievo 3D &amp; Gaussian Splatting
           </button>
           <button type="button" class="filter-btn" data-filter="topogis" id="filterTopoGis" data-i18n="filter_topogis">
             Topografia &amp; GIS
@@ -528,7 +532,39 @@
             </div>
           </article>
 
-          <!-- Case Study 3: Stratigraphic Excavation + Total Station + GPR Verification -->
+          <!-- Case Study 3: Satellite SAR Change Detection (Sentinel-1 VV/VH & SSD) -->
+          <article class="case-card" data-categories="remotesensing topogis">
+            <div class="case-image-wrap">
+              <img src="assets/images/sar_change_detection.jpg" alt="Telerilevamento satellitare Sentinel-1 AWS-IW-VVVH RGB ratio (2014-2024) e Change Detection Sum of Squared Differences (SSD)" loading="lazy" />
+              <span class="case-tag-overlay">SENTINEL-1 SAR &bull; CHANGE DETECTION (SSD)</span>
+              <span class="case-coords-overlay">2014 &ndash; 2024 MULTITEMPORALE</span>
+            </div>
+            <div class="case-body">
+              <div>
+                <div class="case-location" data-i18n="case3_loc">Telerilevamento Satellitare Radar &bull; Change Detection &amp; GIS</div>
+                <h3 class="case-title" data-i18n="case3_title">Monitoraggio Satellitare SAR Sentinel-1 e Analisi di Change Detection (SSD)</h3>
+                <p class="case-summary" data-i18n="case3_desc">
+                  Analisi multitemporale decennale (2014&ndash;2024) basata su acquisizioni radar ad apertura sintetica <strong>Sentinel-1 (AWS-IW-VVVH RGB ratio)</strong> ed elaborazione dell'indice <strong>Sum of Squared Differences (SSD)</strong> per il rilevamento delle variazioni morfologiche, dell'espansione antropica, dell'umidità dei suoli e la tutela preventiva dei paesaggi archeologici.
+                </p>
+              </div>
+              <div class="case-telemetry-footer">
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_us">Sensore</span>
+                  <span class="telemetry-stat-val">Sentinel-1 IW VV/VH</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_accuracy">Serie Storica</span>
+                  <span class="telemetry-stat-val">2014 &ndash; 2024 (10 anni)</span>
+                </div>
+                <div>
+                  <span class="telemetry-stat-label" data-i18n="stat_compliance">Algoritmo</span>
+                  <span class="telemetry-stat-val">Change Detection SSD</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 4: Stratigraphic Excavation + Total Station + GPR Verification -->
           <article class="case-card" data-categories="excavation topogis geophysics">
             <div class="case-image-wrap">
               <img src="assets/images/case_study_excavation.jpg" alt="Cantiere di scavo archeologico stratigrafico con stazione totale e georadar" loading="lazy" />
@@ -537,56 +573,24 @@
             </div>
             <div class="case-body">
               <div>
-                <div class="case-location" data-i18n="case3_loc">Verifica Preventiva &amp; Scavo Estensivo &bull; D.Lgs. 36/2023</div>
-                <h3 class="case-title" data-i18n="case3_title">Indagine Stratigrafica Mirata e Rilievo 3D di Cantiere</h3>
-                <p class="case-summary" data-i18n="case3_desc">
-                  Pianificazione ed esecuzione di trincee di verifica archeologica posizionate direttamente sulle anomalie geofisiche ad alta affidabilità. Lo scavo stratigrafico viene documentato giornalmente tramite fotogrammetria 3D, Gaussian Splatting, stazione totale e GIS intra-site conforme ai template MiC.
+                <div class="case-location" data-i18n="case4_loc">Verifica Preventiva &amp; Scavo Estensivo &bull; D.Lgs. 36/2023</div>
+                <h3 class="case-title" data-i18n="case4_title">Indagine Stratigrafica Mirata, VPIA e Rilievo Topografico di Cantiere</h3>
+                <p class="case-summary" data-i18n="case4_desc">
+                  Pianificazione ed esecuzione di trincee di verifica archeologica posizionate direttamente sulle anomalie geofisiche ad alta affidabilità. Lo scavo stratigrafico viene documentato giornalmente tramite fotogrammetria 3D, Gaussian Splatting, stazione totale e GIS intra-site conforme ai template MiC / ICA.
                 </p>
               </div>
               <div class="case-telemetry-footer">
                 <div>
-                  <span class="telemetry-stat-label" data-i18n="stat_us">Documentazione</span>
+                  <span class="telemetry-stat-label" data-i18n="stat_depth">Documentazione</span>
                   <span class="telemetry-stat-val">US / USM + 3D</span>
                 </div>
                 <div>
-                  <span class="telemetry-stat-label" data-i18n="stat_accuracy">Precisione Rilievo</span>
+                  <span class="telemetry-stat-label" data-i18n="stat_electrodes">Precisione Rilievo</span>
                   <span class="telemetry-stat-val">&plusmn;4 mm (Staz. Totale)</span>
                 </div>
                 <div>
-                  <span class="telemetry-stat-label" data-i18n="stat_compliance">Consegna</span>
-                  <span class="telemetry-stat-val">Standard GNA / ICA</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Case Study 4: LiDAR DEM & Subsurface Tomography -->
-          <article class="case-card" data-categories="remotesensing geophysics topogis">
-            <div class="case-image-wrap">
-              <img src="assets/images/case_study_lidar.jpg" alt="Modello digitale del terreno da LiDAR drone e analisi micro-rilievo archeologico" loading="lazy" />
-              <span class="case-tag-overlay">UAV LiDAR &bull; DEM / LRM &bull; ANALISI SPAZIALE GIS</span>
-              <span class="case-coords-overlay">TELERILEVAMENTO &amp; DEM</span>
-            </div>
-            <div class="case-body">
-              <div>
-                <div class="case-location" data-i18n="case4_loc">Telerilevamento &amp; Analisi Geomorfologica &bull; GIS</div>
-                <h3 class="case-title" data-i18n="case4_title">Rilievo LiDAR, Analisi Micro-Topografica (LRM/SVF) e Tomografia</h3>
-                <p class="case-summary" data-i18n="case4_desc">
-                  Acquisizione LiDAR e multispettrale da drone combinata con algoritmi di visualizzazione avanzata del micro-rilievo (Sky-View Factor e Local Relief Model) e tomografia profonda per l'individuazione di strutture difensive, terrazzamenti, tumuli e paleo-morfologie sotto copertura vegetale.
-                </p>
-              </div>
-              <div class="case-telemetry-footer">
-                <div>
-                  <span class="telemetry-stat-label" data-i18n="stat_depth">Risoluzione DTM</span>
-                  <span class="telemetry-stat-val">5 &ndash; 10 cm / px</span>
-                </div>
-                <div>
-                  <span class="telemetry-stat-label" data-i18n="stat_electrodes">Elaborazione</span>
-                  <span class="telemetry-stat-val">SVF / LRM / NDVI</span>
-                </div>
-                <div>
                   <span class="telemetry-stat-label" data-i18n="stat_resistivity">Deliverable</span>
-                  <span class="telemetry-stat-val">GeoTIFF + Geodatabase</span>
+                  <span class="telemetry-stat-val">Standard GNA / ICA</span>
                 </div>
               </div>
             </div>
@@ -641,10 +645,10 @@
           </div>
 
           <div class="equipment-row">
-            <span class="eq-category">UAV &amp; REMOTE SENSING</span>
-            <span class="eq-instrument" data-i18n="eq_row4_inst">Droni RTK con payload LiDAR, Camera Multispettrale (5 bande), Termica e RGB</span>
-            <span class="eq-application" data-i18n="eq_row4_app">Rilievo micro-topografico sotto bosco, analisi cropmarks (NDVI/NDRE), ortofoto metriche e modelli DEM/DSM</span>
-            <span class="eq-output">LAS/LAZ, DTM/DSM, Ortofoto</span>
+            <span class="eq-category">SATELLITE &amp; UAV</span>
+            <span class="eq-instrument" data-i18n="eq_row4_inst">SAR Sentinel-1 (VV/VH), Ottico Multispettrale &amp; Droni RTK (LiDAR / 5 Bande)</span>
+            <span class="eq-application" data-i18n="eq_row4_app">Analisi multitemporale di Change Detection (SSD), monitoraggio archeologico, micro-topografia sotto bosco e indici NDVI/NDRE</span>
+            <span class="eq-output">Raster SSD, LAS/LAZ, DTM</span>
           </div>
 
           <div class="equipment-row">

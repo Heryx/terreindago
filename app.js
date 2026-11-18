@@ -54,17 +54,18 @@
       service_1_spec2: 'Acquisizione in contesti complessi con posizionamento GNSS RTK',
       service_1_spec3: 'Interpretazione archeo-geofisica vettoriale del grado di affidabilità',
 
-      service_2_title: 'Telerilevamento, Rilievo 3D & Gaussian Splatting',
+      service_2_title: 'Telerilevamento Satellitare (SAR/Ottico), UAV & Rilievo 3D',
       service_2_desc:
-        'Prospezioni aeree tramite droni (UAV), fotogrammetria Structure-from-Motion e ricostruzione immersiva fotorealistica tramite 3D Gaussian Splatting (3DGS) e Radiance Fields, integrate con sensori LiDAR, camere multispettrali e termiche per documentare paesaggi archeologici e monumenti.',
-      service_2_caption: 'Rilievo 3D immersivo con 3D Gaussian Splatting',
-      service_2_spec1: 'Modelli 3D Gaussian Splatting navigabili in tempo reale e fotogrammetria SfM',
-      service_2_spec2: 'DTM/DSM da LiDAR con filtraggio vegetazione (Local Relief Model, SVF)',
-      service_2_spec3: 'Indici multispettrali (NDVI, NDRE) e termografia archeologica',
+        'Elaborazione di dati satellitari radar ad apertura sintetica (SAR Sentinel-1, rapporto di polarizzazione VV/VH) e multispettrali per analisi multitemporali di Change Detection (SSD) e monitoraggio delle trasformazioni del territorio, integrati con droni LiDAR e ricostruzioni 3D Gaussian Splatting.',
+      service_2_caption: 'Telerilevamento Satellitare SAR Sentinel-1 & Change Detection (SSD)',
+      service_2_spec1: 'Change Detection satellitare multitemporale SAR (Sentinel-1 VV/VH, SSD) e ottica',
+      service_2_spec2: 'Modelli 3D Gaussian Splatting (3DGS), fotogrammetria SfM e LiDAR da drone',
+      service_2_spec3: 'Indici multispettrali (NDVI, NDRE) e monitoraggio paesaggi archeologici',
 
-      service_3_title: 'Topografia & Rilievo Tridimensionale',
+      service_3_title: 'Topografia & Rilievo 3D Gaussian Splatting',
       service_3_desc:
-        'Inquadramento geodetico rigoroso, poligonali di precisione, rilievo strumentale con Stazione Totale robotica e GNSS differenziale, scansioni Laser Scanner 3D e digitalizzazione tridimensionale tramite 3D Gaussian Splatting.',
+        'Inquadramento geodetico rigoroso, poligonali di precisione, rilievo strumentale con Stazione Totale robotica e GNSS differenziale, scansioni Laser Scanner 3D e digitalizzazione immersiva tramite 3D Gaussian Splatting.',
+      service_3_caption: 'Rilievo 3D immersivo con 3D Gaussian Splatting',
       service_3_spec1: 'Reticoli di scavo, picchettamento anomalie geofisiche e quote assolute',
       service_3_spec2: 'Nuvole di punti certificate, mesh metriche e Digital Twin 3DGS',
 
@@ -100,10 +101,10 @@
       portfolio_kicker: 'Progetti & Campagne sul Campo',
       portfolio_title: 'Casi studio selezionati',
       portfolio_subtitle:
-        'Esplora esempi concreti di integrazione tra telerilevamento, rilievo 3D Gaussian Splatting, geofisica non invasiva, rilievo topografico, modellazione GIS e verifica stratigrafica diretta.',
+        'Esplora esempi concreti di integrazione tra telerilevamento satellitare SAR, rilievo 3D Gaussian Splatting, geofisica non invasiva, topografia, GIS e scavo stratigrafico.',
       filter_all: 'Tutti i Progetti (4)',
       filter_geophysics: 'Geofisica (GPR / Mag / ERT)',
-      filter_remotesensing: 'Rilievo 3D, Gaussian Splatting & LiDAR',
+      filter_remotesensing: 'Telerilevamento SAR, Rilievo 3D & Gaussian Splatting',
       filter_topogis: 'Topografia & GIS',
       filter_excavation: 'Scavo & VPIA',
 
@@ -117,24 +118,24 @@
       case2_desc:
         "Integrazione di rilievi aerofotogrammetrici da drone (UAV) e algoritmi di 3D Gaussian Splatting per la generazione di gemelli digitali tridimensionali fotorealistici di complessi templari e parchi archeologici. Consente l'esplorazione fluida in tempo reale, l'integrazione con nuvole di punti metriche e la valorizzazione scientifica.",
 
-      case3_loc: 'Verifica Preventiva & Scavo Estensivo • D.Lgs. 36/2023',
-      case3_title: 'Indagine Stratigrafica Mirata e Rilievo 3D di Cantiere',
+      case3_loc: 'Telerilevamento Satellitare Radar • Change Detection & GIS',
+      case3_title: 'Monitoraggio Satellitare SAR Sentinel-1 e Analisi di Change Detection (SSD)',
       case3_desc:
-        'Pianificazione ed esecuzione di trincee di verifica archeologica posizionate direttamente sulle anomalie geofisiche ad alta affidabilità. Lo scavo stratigrafico viene documentato giornalmente tramite fotogrammetria 3D, Gaussian Splatting, stazione totale e GIS intra-site conforme ai template MiC.',
+        "Analisi multitemporale decennale (2014–2024) basata su acquisizioni radar ad apertura sintetica Sentinel-1 (AWS-IW-VVVH RGB ratio) ed elaborazione dell'indice Sum of Squared Differences (SSD) per il rilevamento delle variazioni morfologiche, dell'espansione antropica, dell'umidità dei suoli e la tutela preventiva dei paesaggi archeologici.",
 
-      case4_loc: 'Telerilevamento & Analisi Geomorfologica • GIS',
-      case4_title: 'Rilievo LiDAR, Analisi Micro-Topografica (LRM/SVF) e Tomografia',
+      case4_loc: 'Verifica Preventiva & Scavo Estensivo • D.Lgs. 36/2023',
+      case4_title: 'Indagine Stratigrafica Mirata, VPIA e Rilievo Topografico di Cantiere',
       case4_desc:
-        "Acquisizione LiDAR e multispettrale da drone combinata con algoritmi di visualizzazione avanzata del micro-rilievo (Sky-View Factor e Local Relief Model) e tomografia profonda per l'individuazione di strutture difensive, terrazzamenti, tumuli e paleo-morfologie sotto copertura vegetale.",
+        'Pianificazione ed esecuzione di trincee di verifica archeologica posizionate direttamente sulle anomalie geofisiche ad alta affidabilità. Lo scavo stratigrafico viene documentato giornalmente tramite fotogrammetria 3D, Gaussian Splatting, stazione totale e GIS intra-site conforme ai template MiC / ICA.',
 
       stat_area: 'Metodologia',
       stat_depth: 'Profondità Target',
       stat_method: 'Output / Sensori',
       stat_res: 'Acquisizione',
-      stat_us: 'Documentazione',
-      stat_accuracy: 'Precisione Rilievo',
-      stat_compliance: 'Consegna',
-      stat_electrodes: 'Elaborazione',
+      stat_us: 'Sensore',
+      stat_accuracy: 'Serie Storica',
+      stat_compliance: 'Algoritmo',
+      stat_electrodes: 'Precisione Rilievo',
       stat_resistivity: 'Deliverable',
 
       eq_kicker: 'Dotazione Strumentale & Software',
@@ -151,15 +152,15 @@
       eq_row2_app: 'Prospezioni estensive ad alta velocità per fornaci, fossati, buche di palo, necropoli e viabilità antica',
       eq_row3_inst: 'Pipeline 3D Gaussian Splatting (3DGS), Fotogrammetria SfM & Laser Scanner',
       eq_row3_app: 'Ricostruzione 3D immersiva fotorealistica di monumenti, aree di scavo e paesaggi archeologici navigabili in tempo reale',
-      eq_row4_inst: 'Droni RTK con payload LiDAR, Camera Multispettrale (5 bande), Termica e RGB',
-      eq_row4_app: 'Rilievo micro-topografico sotto bosco, analisi cropmarks (NDVI/NDRE), ortofoto metriche e modelli DEM/DSM',
+      eq_row4_inst: 'SAR Sentinel-1 (VV/VH), Ottico Multispettrale & Droni RTK (LiDAR / 5 Bande)',
+      eq_row4_app: 'Analisi multitemporale di Change Detection (SSD), monitoraggio archeologico, micro-topografia sotto bosco e indici NDVI/NDRE',
       eq_row5_inst: 'Stazione Totale Robotica 1", Ricevitori GNSS Multi-Costellazione RTK, QGIS/PostGIS',
       eq_row5_app: "Inquadramento geodetico, rilievo stratigrafico di cantiere, geodatabase VPIA conformi al Geoportale Nazionale per l'Archeologia",
 
       contact_kicker: 'Consulenza Tecnica & Preventivi',
       contact_title: 'Pianifichiamo la tua prossima indagine sul campo',
       contact_desc:
-        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, rilievi 3D Gaussian Splatting, LiDAR/aerofotogrammetrici o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
+        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, telerilevamento satellitare SAR, rilievi 3D Gaussian Splatting o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
       compliance_box_title: 'Conformità Normativa & Qualifica Professionale',
       compliance_box_text:
         "Tutte le relazioni archeologiche, geofisiche e le banche dati GIS vengono redatte nel pieno rispetto del Codice dei Contratti Pubblici (D.Lgs. 36/2023, All. I.8) e delle Linee Guida dell'Istituto Centrale per l'Archeologia (ICA) per la pubblicazione sul Geoportale Nazionale per l'Archeologia (GNA).",
@@ -170,14 +171,14 @@
       form_email: 'Email di riferimento *',
       form_service: 'Servizio Richiesto *',
       form_opt_geo: 'Prospezione Geofisica (GPR / Magnetometria / ERT)',
-      form_opt_rs: 'Rilievo 3D Gaussian Splatting & Telerilevamento Drone (LiDAR / SfM)',
+      form_opt_rs: 'Telerilevamento Satellitare SAR, Rilievo 3D Gaussian Splatting & UAV',
       form_opt_gis: 'Rilievo Topografico, Laser Scanner & GIS (Template GNA/ICA)',
       form_opt_vpia: 'VPIA, Assistenza & Scavo Archeologico Stratigrafico',
       form_opt_int: 'Pacchetto Integrato Multi-Disciplinare',
       form_location: 'Comune / Estensione Stimata (ha o m²)',
       form_details: "Inquadramento del sito e obiettivi dell'indagine *",
       form_submit: 'Genera Richiesta Tecnica Preliminare',
-      footer_motto: 'Diagnostica non invasiva, telerilevamento, rilievo 3D Gaussian Splatting, topografia e archeologia stratigrafica.'
+      footer_motto: 'Diagnostica non invasiva, telerilevamento satellitare SAR, rilievo 3D Gaussian Splatting, topografia e archeologia stratigrafica.'
     },
 
     en: {
@@ -193,7 +194,7 @@
       hero_kicker: 'Archaeological Diagnostics & Geotechnologies',
       hero_title: 'Reading the subsurface before excavation, documenting landscapes with metric rigor.',
       hero_lead:
-        'TerreIndago integrates high-resolution geophysical prospection, 3D Gaussian Splatting, multispectral & LiDAR remote sensing, precision topography, GIS architecture, and stratigraphic excavation direction for academic research, heritage protection, and preventive archaeology.',
+        'TerreIndago integrates high-resolution geophysical prospection, Sentinel-1 SAR satellite change detection, 3D Gaussian Splatting, UAV LiDAR, precision topography, GIS architecture, and stratigraphic excavation direction.',
       hero_btn_primary: 'Explore Case Studies',
       hero_btn_secondary: 'Methodology Specs',
       metric_1_label: 'Area surveyed via GPR & Magnetometry',
@@ -210,7 +211,7 @@
       services_kicker: 'Integrated Operational Domains',
       services_title: 'Five disciplines for archaeological intelligence',
       services_subtitle:
-        'From large-scale non-invasive prospection and immersive 3D Gaussian Splatting to direct stratigraphic excavation, we deliver complete georeferenced workflows for Heritage Authorities, Universities, and engineering firms.',
+        'From large-scale non-invasive prospection, satellite SAR monitoring, and immersive 3D Gaussian Splatting to direct stratigraphic excavation, we deliver complete georeferenced workflows.',
 
       service_1_title: 'Applied Archaeological Geophysics',
       service_1_desc:
@@ -220,17 +221,18 @@
       service_1_spec2: 'Acquisition in complex terrains with centimeter-grade GNSS RTK positioning',
       service_1_spec3: 'Vector archaeo-geophysical interpretation graded by reliability',
 
-      service_2_title: 'Remote Sensing, 3D Survey & Gaussian Splatting',
+      service_2_title: 'Satellite (SAR/Optical) & UAV Remote Sensing',
       service_2_desc:
-        'UAV aerial surveys, Structure-from-Motion photogrammetry, and photorealistic immersive reconstruction via 3D Gaussian Splatting (3DGS) and Radiance Fields, integrated with LiDAR, multispectral, and thermal sensors to document monuments and archaeological landscapes.',
-      service_2_caption: 'Immersive 3D survey via 3D Gaussian Splatting',
-      service_2_spec1: 'Real-time navigable 3D Gaussian Splatting models & SfM photogrammetry',
-      service_2_spec2: 'LiDAR DTM/DSM with canopy filtering (Local Relief Model, Sky-View Factor)',
-      service_2_spec3: 'Multispectral vegetation indices (NDVI, NDRE) and thermography',
+        'Synthetic Aperture Radar (Sentinel-1 SAR VV/VH polarization ratio) and multispectral satellite processing for multi-temporal Change Detection (SSD) and landscape monitoring, combined with UAV LiDAR and 3D Gaussian Splatting.',
+      service_2_caption: 'Sentinel-1 SAR Satellite Monitoring & Change Detection (SSD)',
+      service_2_spec1: 'Multi-temporal SAR Change Detection (Sentinel-1 VV/VH, SSD) & optical analysis',
+      service_2_spec2: 'Real-time 3D Gaussian Splatting (3DGS), SfM photogrammetry & UAV LiDAR',
+      service_2_spec3: 'Multispectral vegetation indices (NDVI, NDRE) & archaeological landscape monitoring',
 
-      service_3_title: 'Topography & 3D Metric Survey',
+      service_3_title: 'Topography & 3D Gaussian Splatting',
       service_3_desc:
-        'Rigorous geodetic networks, precision traverses, instrumental survey with Robotic Total Station and differential GNSS, terrestrial 3D Laser Scanning, and 3D Gaussian Splatting digitization.',
+        'Rigorous geodetic networks, precision traverses, instrumental survey with Robotic Total Station and differential GNSS, terrestrial 3D Laser Scanning, and immersive 3D Gaussian Splatting digitization.',
+      service_3_caption: 'Immersive 3D survey via 3D Gaussian Splatting',
       service_3_spec1: 'Excavation grids, geophysical anomaly stakeout, and absolute elevations',
       service_3_spec2: 'Certified point clouds, metric meshes, and 3DGS Digital Twins',
 
@@ -266,10 +268,10 @@
       portfolio_kicker: 'Field Projects & Campaigns',
       portfolio_title: 'Selected case studies',
       portfolio_subtitle:
-        'Explore real-world integrations of remote sensing, 3D Gaussian Splatting, non-invasive geophysics, topographic survey, GIS modeling, and direct stratigraphic ground-truthing.',
+        'Explore real-world integrations of Sentinel-1 SAR remote sensing, 3D Gaussian Splatting, non-invasive geophysics, topographic survey, GIS modeling, and stratigraphic excavation.',
       filter_all: 'All Projects (4)',
       filter_geophysics: 'Geophysics (GPR / Mag / ERT)',
-      filter_remotesensing: '3D Survey, Gaussian Splatting & LiDAR',
+      filter_remotesensing: 'SAR Remote Sensing, 3D Survey & Gaussian Splatting',
       filter_topogis: 'Topography & GIS',
       filter_excavation: 'Excavation & VPIA',
 
@@ -283,15 +285,15 @@
       case2_desc:
         'Integration of UAV photogrammetric flights and 3D Gaussian Splatting algorithms to generate photorealistic 3D digital twins of temple complexes and archaeological parks, enabling real-time navigation, metric point-cloud integration, and scientific dissemination.',
 
-      case3_loc: 'Preventive Verification & Excavation • D.Lgs. 36/2023',
-      case3_title: 'Targeted Stratigraphic Excavation and 3D Trench Documentation',
+      case3_loc: 'Satellite Radar Remote Sensing • Change Detection & GIS',
+      case3_title: 'Sentinel-1 SAR Satellite Monitoring & Change Detection Analysis (SSD)',
       case3_desc:
-        'Planning and execution of verification trenches positioned directly over high-confidence geophysical anomalies. Stratigraphic excavation is documented daily via 3D photogrammetry, Gaussian Splatting, total station, and MiC-compliant intra-site GIS.',
+        '10-year multi-temporal analysis (2014–2024) using Sentinel-1 Synthetic Aperture Radar (AWS-IW-VVVH RGB ratio) and Sum of Squared Differences (SSD) change detection to track morphological shifts, urban encroachment, soil moisture anomalies, and archaeological landscape preservation.',
 
-      case4_loc: 'Remote Sensing & Geomorphological Analysis • GIS',
-      case4_title: 'LiDAR Survey, Micro-Topographic Analysis (LRM/SVF) & Tomography',
+      case4_loc: 'Preventive Verification & Excavation • D.Lgs. 36/2023',
+      case4_title: 'Targeted Stratigraphic Excavation, VPIA & Trench Topography',
       case4_desc:
-        'UAV LiDAR and multispectral acquisition combined with advanced micro-relief visualization algorithms (Sky-View Factor and Local Relief Model) and deep tomography to detect defensive ramparts, terraces, tumuli, and paleochannels beneath vegetation.',
+        'Planning and execution of verification trenches positioned directly over high-confidence geophysical anomalies. Stratigraphic excavation is documented daily via 3D photogrammetry, Gaussian Splatting, total station, and MiC-compliant intra-site GIS.',
 
       stat_area: 'Methodology',
       stat_depth: 'Target Depth',
