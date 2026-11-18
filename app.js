@@ -69,15 +69,17 @@
       service_3_spec1: 'Reticoli di scavo, picchettamento anomalie geofisiche e quote assolute',
       service_3_spec2: 'Nuvole di punti certificate, mesh metriche e Digital Twin 3DGS',
 
-      service_4_title: 'GIS & Analisi Spaziale',
+      service_4_title: 'Rilievo LiDAR, Analisi DTM & Sistemi GIS',
       service_4_desc:
-        "Progettazione di Geodatabase relazionali, digitalizzazione cartografica multitemporale, analisi predittiva del potenziale archeologico e predisposizione di pacchetti informativi conformi agli standard dell'Istituto Centrale per l'Archeologia (ICA / Geoportale Nazionale).",
-      service_4_spec1: 'Cartografia del rischio e potenziale archeologico per grandi opere',
-      service_4_spec2: 'GIS di scavo intra-site e WebGIS interattivi di consultazione',
+        'Elaborazione di modelli digitali del terreno (DTM/DEM) da rilievo LiDAR con filtraggio della vegetazione, analisi micro-topografica (Hillshade, Sky-View Factor, LRM) e progettazione di Geodatabase GIS conformi agli standard MiC / ICA.',
+      service_4_caption: 'DTM da Rilievo LiDAR: micro-rilievo e strutture sepolte',
+      service_4_spec1: 'Elaborazione nuvole LiDAR, carte del potenziale e rischio archeologico',
+      service_4_spec2: 'GIS di scavo intra-site, template GNA/ICA e WebGIS interattivi',
 
       service_5_title: 'Scavo Archeologico & VPIA',
       service_5_desc:
         "Redazione di Valutazioni Preventive dell'Interesse Archeologico (VPIA), assistenza archeologica in corso d'opera, saggi di verifica stratigrafica ed esecuzione di scavi estensivi con documentazione digitale integrata 3D e Matrix di Harris.",
+      service_5_caption: 'Scavo stratigrafico, VPIA e rilievo strumentale',
       service_5_spec1: 'Direzione scientifica, schede US/USM e relazioni tecniche per Soprintendenze',
       service_5_spec2: 'Verifica mirata delle anomalie geofisiche per ridurre tempi e costi di cantiere',
 
@@ -101,10 +103,10 @@
       portfolio_kicker: 'Progetti & Campagne sul Campo',
       portfolio_title: 'Casi studio selezionati',
       portfolio_subtitle:
-        'Esplora esempi concreti di integrazione tra telerilevamento satellitare SAR, rilievo 3D Gaussian Splatting, geofisica non invasiva, topografia, GIS e scavo stratigrafico.',
+        'Esplora esempi concreti di integrazione tra rilievo LiDAR, telerilevamento satellitare SAR, rilievo 3D Gaussian Splatting, geofisica GPR, topografia, GIS e scavo stratigrafico.',
       filter_all: 'Tutti i Progetti (4)',
       filter_geophysics: 'Geofisica (GPR / Mag / ERT)',
-      filter_remotesensing: 'Telerilevamento SAR, Rilievo 3D & Gaussian Splatting',
+      filter_remotesensing: 'LiDAR, SAR & 3D Gaussian Splatting',
       filter_topogis: 'Topografia & GIS',
       filter_excavation: 'Scavo & VPIA',
 
@@ -123,19 +125,19 @@
       case3_desc:
         "Analisi multitemporale decennale (2014–2024) basata su acquisizioni radar ad apertura sintetica Sentinel-1 (AWS-IW-VVVH RGB ratio) ed elaborazione dell'indice Sum of Squared Differences (SSD) per il rilevamento delle variazioni morfologiche, dell'espansione antropica, dell'umidità dei suoli e la tutela preventiva dei paesaggi archeologici.",
 
-      case4_loc: 'Verifica Preventiva & Scavo Estensivo • D.Lgs. 36/2023',
-      case4_title: 'Indagine Stratigrafica Mirata, VPIA e Rilievo Topografico di Cantiere',
+      case4_loc: 'Rilievo LiDAR & Analisi Micro-Morfologica • GIS',
+      case4_title: 'Rilievo LiDAR e Modello Digitale del Terreno (DTM) per Strutture Sepolte',
       case4_desc:
-        'Pianificazione ed esecuzione di trincee di verifica archeologica posizionate direttamente sulle anomalie geofisiche ad alta affidabilità. Lo scavo stratigrafico viene documentato giornalmente tramite fotogrammetria 3D, Gaussian Splatting, stazione totale e GIS intra-site conforme ai template MiC / ICA.',
+        "Acquisizione ed elaborazione LiDAR ad altissima densità di punti con filtraggio della copertura vegetale ed estrazione del Modello Digitale del Terreno (DTM/Hillshade). L'analisi micro-topografica ha permesso di individuare chiaramente strutture archeologiche quadrangolari fortificate, recinti, viabilità antica e anomalie morfologiche invisibili a quota campagna.",
 
       stat_area: 'Metodologia',
-      stat_depth: 'Profondità Target',
+      stat_depth: 'Profondità / DTM',
       stat_method: 'Output / Sensori',
       stat_res: 'Acquisizione',
       stat_us: 'Sensore',
       stat_accuracy: 'Serie Storica',
       stat_compliance: 'Algoritmo',
-      stat_electrodes: 'Precisione Rilievo',
+      stat_electrodes: 'Elaborazione',
       stat_resistivity: 'Deliverable',
 
       eq_kicker: 'Dotazione Strumentale & Software',
@@ -160,7 +162,7 @@
       contact_kicker: 'Consulenza Tecnica & Preventivi',
       contact_title: 'Pianifichiamo la tua prossima indagine sul campo',
       contact_desc:
-        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, telerilevamento satellitare SAR, rilievi 3D Gaussian Splatting o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
+        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, telerilevamento satellitare SAR, rilievi LiDAR e 3D Gaussian Splatting o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
       compliance_box_title: 'Conformità Normativa & Qualifica Professionale',
       compliance_box_text:
         "Tutte le relazioni archeologiche, geofisiche e le banche dati GIS vengono redatte nel pieno rispetto del Codice dei Contratti Pubblici (D.Lgs. 36/2023, All. I.8) e delle Linee Guida dell'Istituto Centrale per l'Archeologia (ICA) per la pubblicazione sul Geoportale Nazionale per l'Archeologia (GNA).",
@@ -171,14 +173,14 @@
       form_email: 'Email di riferimento *',
       form_service: 'Servizio Richiesto *',
       form_opt_geo: 'Prospezione Geofisica (GPR / Magnetometria / ERT)',
-      form_opt_rs: 'Telerilevamento Satellitare SAR, Rilievo 3D Gaussian Splatting & UAV',
+      form_opt_rs: 'Rilievo LiDAR, Telerilevamento Satellitare SAR & 3D Gaussian Splatting',
       form_opt_gis: 'Rilievo Topografico, Laser Scanner & GIS (Template GNA/ICA)',
       form_opt_vpia: 'VPIA, Assistenza & Scavo Archeologico Stratigrafico',
       form_opt_int: 'Pacchetto Integrato Multi-Disciplinare',
       form_location: 'Comune / Estensione Stimata (ha o m²)',
       form_details: "Inquadramento del sito e obiettivi dell'indagine *",
       form_submit: 'Genera Richiesta Tecnica Preliminare',
-      footer_motto: 'Diagnostica non invasiva, telerilevamento satellitare SAR, rilievo 3D Gaussian Splatting, topografia e archeologia stratigrafica.'
+      footer_motto: 'Diagnostica non invasiva, rilievo LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, topografia e scavo archeologico.'
     },
 
     en: {
@@ -194,7 +196,7 @@
       hero_kicker: 'Archaeological Diagnostics & Geotechnologies',
       hero_title: 'Reading the subsurface before excavation, documenting landscapes with metric rigor.',
       hero_lead:
-        'TerreIndago integrates high-resolution geophysical prospection, Sentinel-1 SAR satellite change detection, 3D Gaussian Splatting, UAV LiDAR, precision topography, GIS architecture, and stratigraphic excavation direction.',
+        'TerreIndago integrates high-resolution geophysical prospection, LiDAR DTM analysis, Sentinel-1 SAR change detection, 3D Gaussian Splatting, precision topography, GIS architecture, and stratigraphic excavation direction.',
       hero_btn_primary: 'Explore Case Studies',
       hero_btn_secondary: 'Methodology Specs',
       metric_1_label: 'Area surveyed via GPR & Magnetometry',
@@ -211,7 +213,7 @@
       services_kicker: 'Integrated Operational Domains',
       services_title: 'Five disciplines for archaeological intelligence',
       services_subtitle:
-        'From large-scale non-invasive prospection, satellite SAR monitoring, and immersive 3D Gaussian Splatting to direct stratigraphic excavation, we deliver complete georeferenced workflows.',
+        'From large-scale non-invasive prospection, LiDAR micro-topography, and satellite SAR monitoring to direct stratigraphic excavation, we deliver complete georeferenced workflows.',
 
       service_1_title: 'Applied Archaeological Geophysics',
       service_1_desc:
@@ -236,15 +238,17 @@
       service_3_spec1: 'Excavation grids, geophysical anomaly stakeout, and absolute elevations',
       service_3_spec2: 'Certified point clouds, metric meshes, and 3DGS Digital Twins',
 
-      service_4_title: 'GIS & Spatial Analysis',
+      service_4_title: 'LiDAR Survey, DTM Analysis & GIS Systems',
       service_4_desc:
-        'Relational Geodatabase engineering, multi-temporal cartographic digitization, predictive archaeological potential modeling, and standardized GIS deliverables compliant with the National Geoportal for Archaeology (GNA / ICA).',
-      service_4_spec1: 'Archaeological risk and potential cartography for infrastructure projects',
-      service_4_spec2: 'Intra-site excavation GIS and interactive WebGIS portals',
+        'High-resolution Digital Terrain Model (DTM/DEM) generation from LiDAR point clouds with vegetation filtering, micro-topographic visualization (Hillshade, Sky-View Factor, LRM), and MiC/ICA-compliant GIS Geodatabases.',
+      service_4_caption: 'LiDAR DTM Hillshade: micro-relief & buried structures',
+      service_4_spec1: 'LiDAR point cloud processing, archaeological risk & potential maps',
+      service_4_spec2: 'Intra-site excavation GIS, GNA/ICA templates & interactive WebGIS',
 
       service_5_title: 'Archaeological Excavation & Preventive Assessment',
       service_5_desc:
         'Preventive Archaeological Impact Assessments (VPIA), construction monitoring, targeted ground-truthing trenches, and open-area stratigraphic excavations with integrated 3D digital recording and Harris Matrix management.',
+      service_5_caption: 'Stratigraphic excavation, VPIA & instrumental survey',
       service_5_spec1: 'Scientific direction, stratigraphic unit recording, and official reports',
       service_5_spec2: 'Targeted verification of geophysical anomalies reducing project delays and costs',
 
@@ -268,10 +272,10 @@
       portfolio_kicker: 'Field Projects & Campaigns',
       portfolio_title: 'Selected case studies',
       portfolio_subtitle:
-        'Explore real-world integrations of Sentinel-1 SAR remote sensing, 3D Gaussian Splatting, non-invasive geophysics, topographic survey, GIS modeling, and stratigraphic excavation.',
+        'Explore real-world integrations of LiDAR micro-topography, Sentinel-1 SAR remote sensing, 3D Gaussian Splatting, GPR geophysics, topographic survey, GIS, and stratigraphic excavation.',
       filter_all: 'All Projects (4)',
       filter_geophysics: 'Geophysics (GPR / Mag / ERT)',
-      filter_remotesensing: 'SAR Remote Sensing, 3D Survey & Gaussian Splatting',
+      filter_remotesensing: 'LiDAR, SAR & 3D Gaussian Splatting',
       filter_topogis: 'Topography & GIS',
       filter_excavation: 'Excavation & VPIA',
 
@@ -290,13 +294,13 @@
       case3_desc:
         '10-year multi-temporal analysis (2014–2024) using Sentinel-1 Synthetic Aperture Radar (AWS-IW-VVVH RGB ratio) and Sum of Squared Differences (SSD) change detection to track morphological shifts, urban encroachment, soil moisture anomalies, and archaeological landscape preservation.',
 
-      case4_loc: 'Preventive Verification & Excavation • D.Lgs. 36/2023',
-      case4_title: 'Targeted Stratigraphic Excavation, VPIA & Trench Topography',
+      case4_loc: 'LiDAR Survey & Micro-Morphological Analysis • GIS',
+      case4_title: 'LiDAR Survey & Digital Terrain Model (DTM) for Buried Structures',
       case4_desc:
-        'Planning and execution of verification trenches positioned directly over high-confidence geophysical anomalies. Stratigraphic excavation is documented daily via 3D photogrammetry, Gaussian Splatting, total station, and MiC-compliant intra-site GIS.',
+        'High-density LiDAR acquisition and vegetation filtering to extract bare-earth Digital Terrain Models (DTM/Hillshade). Micro-topographic analysis clearly revealed quadrangular fortified enclosures, ancient road traces, and subtle morphological features invisible at ground level.',
 
       stat_area: 'Methodology',
-      stat_depth: 'Target Depth',
+      stat_depth: 'Depth / DTM',
       stat_method: 'Output / Sensors',
       stat_res: 'Acquisition',
       stat_us: 'Stratigraphic Units',
