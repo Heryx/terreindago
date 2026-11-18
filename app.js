@@ -42,9 +42,9 @@
       toggle_gis_vectors_off: 'Vettori GIS: OFF',
 
       services_kicker: 'Ambiti Operativi Integrati',
-      services_title: 'Cinque discipline per la conoscenza del territorio',
+      services_title: 'Sei discipline per la conoscenza del territorio e dei monumenti',
       services_subtitle:
-        'Dalla diagnostica non invasiva su vasta scala fino all’indagine stratigrafica diretta, forniamo flussi di lavoro georiferiti completi per Soprintendenze, Università, studi di progettazione ed enti pubblici.',
+        "Dalla diagnostica non invasiva su vasta scala fino al rilievo Laser Scanner 3D dei monumenti e all'indagine stratigrafica diretta, forniamo flussi di lavoro georiferiti completi per Soprintendenze, Università, studi di progettazione ed enti pubblici.",
 
       service_1_title: "Geofisica Applicata all'Archeologia",
       service_1_desc:
@@ -54,20 +54,27 @@
       service_1_spec2: 'Acquisizione in contesti complessi con posizionamento GNSS RTK',
       service_1_spec3: 'Interpretazione archeo-geofisica vettoriale del grado di affidabilità',
 
-      service_2_title: 'Telerilevamento Satellitare (SAR/Ottico), UAV & Rilievo 3D',
+      service_2_title: 'Telerilevamento Satellitare (SAR/Ottico) & Change Detection',
       service_2_desc:
-        'Elaborazione di dati satellitari radar ad apertura sintetica (SAR Sentinel-1, rapporto di polarizzazione VV/VH) e multispettrali per analisi multitemporali di Change Detection (SSD) e monitoraggio delle trasformazioni del territorio, integrati con droni LiDAR e ricostruzioni 3D Gaussian Splatting.',
+        'Elaborazione di dati satellitari radar ad apertura sintetica (SAR Sentinel-1, rapporto di polarizzazione VV/VH) e multispettrali per analisi multitemporali di Change Detection (SSD), individuazione di paleoalvei, cropmarks e monitoraggio delle trasformazioni del territorio.',
       service_2_caption: 'Telerilevamento Satellitare SAR Sentinel-1 & Change Detection (SSD)',
       service_2_spec1: 'Change Detection satellitare multitemporale SAR (Sentinel-1 VV/VH, SSD) e ottica',
-      service_2_spec2: 'Modelli 3D Gaussian Splatting (3DGS), fotogrammetria SfM e LiDAR da drone',
-      service_2_spec3: 'Indici multispettrali (NDVI, NDRE) e monitoraggio paesaggi archeologici',
+      service_2_spec2: 'Analisi serie storiche decennali per tutela preventiva del paesaggio',
+      service_2_spec3: 'Indici multispettrali (NDVI, NDRE) da satellite e drone',
 
-      service_3_title: 'Topografia & Rilievo 3D Gaussian Splatting',
+      service_3_title: 'Rilievo 3D & Gaussian Splatting (3DGS)',
       service_3_desc:
-        'Inquadramento geodetico rigoroso, poligonali di precisione, rilievo strumentale con Stazione Totale robotica e GNSS differenziale, scansioni Laser Scanner 3D e digitalizzazione immersiva tramite 3D Gaussian Splatting.',
+        'Acquisizione aerofotogrammetrica da drone (UAV) e terrestre integrata con algoritmi di 3D Gaussian Splatting (Radiance Fields) per la generazione di Digital Twin tridimensionali fotorealistici di parchi archeologici e complessi monumentali esplorabili in tempo reale.',
       service_3_caption: 'Rilievo 3D immersivo con 3D Gaussian Splatting',
-      service_3_spec1: 'Reticoli di scavo, picchettamento anomalie geofisiche e quote assolute',
-      service_3_spec2: 'Nuvole di punti certificate, mesh metriche e Digital Twin 3DGS',
+      service_3_spec1: 'Digital Twin fotorealistici 3DGS navigabili via web in tempo reale',
+      service_3_spec2: 'Fotogrammetria Structure-from-Motion (SfM) e ortofoto metriche',
+
+      service_6_title: 'Rilievo Monumenti con Laser Scanner 3D & Nuvole di Punti',
+      service_6_desc:
+        'Scansione 3D ad altissima densità e precisione millimetrica di teatri antichi, anfiteatri, templi e architetture storiche. Elaborazione di nuvole di punti certificate, ortofoto architettoniche, profili, sezioni strutturali e modelli HBIM per il restauro e la conservazione.',
+      service_6_caption: 'Nuvola di punti Laser Scanner 3D: Teatro Antico',
+      service_6_spec1: 'Nuvole di punti dense (.E57 / .LAS), piante, prospetti e sezioni metriche',
+      service_6_spec2: 'Analisi delle deformazioni strutturali, studio degli alzati e modellazione HBIM',
 
       service_4_title: 'Rilievo LiDAR, Analisi DTM & Sistemi GIS',
       service_4_desc:
@@ -76,12 +83,12 @@
       service_4_spec1: 'Elaborazione nuvole LiDAR, carte del potenziale e rischio archeologico',
       service_4_spec2: 'GIS di scavo intra-site, template GNA/ICA e WebGIS interattivi',
 
-      service_5_title: 'Scavo Archeologico & VPIA',
+      service_5_title: 'Topografia, Scavo Archeologico & VPIA',
       service_5_desc:
-        "Redazione di Valutazioni Preventive dell'Interesse Archeologico (VPIA), assistenza archeologica in corso d'opera, saggi di verifica stratigrafica ed esecuzione di scavi estensivi con documentazione digitale integrata 3D e Matrix di Harris.",
-      service_5_caption: 'Scavo stratigrafico, VPIA e rilievo strumentale',
+        "Inquadramento topografico con Stazione Totale e GNSS RTK, redazione di Valutazioni Preventive dell'Interesse Archeologico (VPIA), assistenza in corso d'opera ed esecuzione di scavi stratigrafici con documentazione digitale integrata e Matrix di Harris.",
+      service_5_caption: 'Topografia, scavo stratigrafico e VPIA',
       service_5_spec1: 'Direzione scientifica, schede US/USM e relazioni tecniche per Soprintendenze',
-      service_5_spec2: 'Verifica mirata delle anomalie geofisiche per ridurre tempi e costi di cantiere',
+      service_5_spec2: 'Reticoli di scavo, picchettamento anomalie geofisiche e verifica stratigrafica',
 
       sim_kicker: 'Diagnostica Sottosuolo Interattiva',
       sim_title: 'Confronto della risposta geofisica per profondità e target',
@@ -103,11 +110,11 @@
       portfolio_kicker: 'Progetti & Campagne sul Campo',
       portfolio_title: 'Casi studio selezionati',
       portfolio_subtitle:
-        'Esplora esempi concreti di integrazione tra rilievo LiDAR, telerilevamento satellitare SAR, rilievo 3D Gaussian Splatting, geofisica GPR, topografia, GIS e scavo stratigrafico.',
-      filter_all: 'Tutti i Progetti (4)',
+        'Esplora esempi concreti di integrazione tra rilievo Laser Scanner 3D di monumenti, rilievo LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, geofisica GPR, topografia e GIS.',
+      filter_all: 'Tutti i Progetti (5)',
       filter_geophysics: 'Geofisica (GPR / Mag / ERT)',
       filter_remotesensing: 'LiDAR, SAR & 3D Gaussian Splatting',
-      filter_topogis: 'Topografia & GIS',
+      filter_topogis: 'Laser Scanner 3D, Topografia & GIS',
       filter_excavation: 'Scavo & VPIA',
 
       case1_loc: "Geofisica Applicata all'Archeologia • Acquisizione GPR",
@@ -130,12 +137,17 @@
       case4_desc:
         "Acquisizione ed elaborazione LiDAR ad altissima densità di punti con filtraggio della copertura vegetale ed estrazione del Modello Digitale del Terreno (DTM/Hillshade). L'analisi micro-topografica ha permesso di individuare chiaramente strutture archeologiche quadrangolari fortificate, recinti, viabilità antica e anomalie morfologiche invisibili a quota campagna.",
 
-      stat_area: 'Metodologia',
+      case5_loc: 'Rilievo Architettonico & Topografia 3D • Monumenti Antichi',
+      case5_title: 'Rilievo Laser Scanner 3D e Nuvole di Punti di Monumenti Antichi (Teatro)',
+      case5_desc:
+        'Acquisizione tramite Laser Scanner 3D terrestre ed elaborazione di nuvole di punti metriche ad altissima densità per la documentazione geometrica integrale di un teatro antico (cavea, scalaria, orchestra, proskenion, edificio scenico e pilastri perimetrali). Base metrica certificata per piante, profili, analisi strutturali e restauro.',
+
+      stat_area: 'Metodologia / Strumento',
       stat_depth: 'Profondità / DTM',
       stat_method: 'Output / Sensori',
       stat_res: 'Acquisizione',
       stat_us: 'Sensore',
-      stat_accuracy: 'Serie Storica',
+      stat_accuracy: 'Accuratezza / Serie',
       stat_compliance: 'Algoritmo',
       stat_electrodes: 'Elaborazione',
       stat_resistivity: 'Deliverable',
@@ -152,8 +164,8 @@
       eq_row1_app: 'Mappatura 3D di strutture murarie, pavimentazioni, cavità e stratigrafie sepolte in contesti monumentali, urbani ed extraurbani',
       eq_row2_inst: 'Gradiometri Fluxgate Multi-Sensore su carrello amagnetico + GNSS RTK',
       eq_row2_app: 'Prospezioni estensive ad alta velocità per fornaci, fossati, buche di palo, necropoli e viabilità antica',
-      eq_row3_inst: 'Pipeline 3D Gaussian Splatting (3DGS), Fotogrammetria SfM & Laser Scanner',
-      eq_row3_app: 'Ricostruzione 3D immersiva fotorealistica di monumenti, aree di scavo e paesaggi archeologici navigabili in tempo reale',
+      eq_row3_inst: 'Laser Scanner 3D Terrestre, Pipeline 3D Gaussian Splatting (3DGS) & Fotogrammetria SfM',
+      eq_row3_app: 'Nuvole di punti millimetriche e ricostruzione 3D immersiva di teatri, templi, monumenti antichi e aree di scavo',
       eq_row4_inst: 'SAR Sentinel-1 (VV/VH), Ottico Multispettrale & Droni RTK (LiDAR / 5 Bande)',
       eq_row4_app: 'Analisi multitemporale di Change Detection (SSD), monitoraggio archeologico, micro-topografia sotto bosco e indici NDVI/NDRE',
       eq_row5_inst: 'Stazione Totale Robotica 1", Ricevitori GNSS Multi-Costellazione RTK, QGIS/PostGIS',
@@ -162,7 +174,7 @@
       contact_kicker: 'Consulenza Tecnica & Preventivi',
       contact_title: 'Pianifichiamo la tua prossima indagine sul campo',
       contact_desc:
-        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, telerilevamento satellitare SAR, rilievi LiDAR e 3D Gaussian Splatting o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
+        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, rilievi Laser Scanner 3D, LiDAR, telerilevamento satellitare SAR e 3D Gaussian Splatting o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
       compliance_box_title: 'Conformità Normativa & Qualifica Professionale',
       compliance_box_text:
         "Tutte le relazioni archeologiche, geofisiche e le banche dati GIS vengono redatte nel pieno rispetto del Codice dei Contratti Pubblici (D.Lgs. 36/2023, All. I.8) e delle Linee Guida dell'Istituto Centrale per l'Archeologia (ICA) per la pubblicazione sul Geoportale Nazionale per l'Archeologia (GNA).",
@@ -174,13 +186,13 @@
       form_service: 'Servizio Richiesto *',
       form_opt_geo: 'Prospezione Geofisica (GPR / Magnetometria / ERT)',
       form_opt_rs: 'Rilievo LiDAR, Telerilevamento Satellitare SAR & 3D Gaussian Splatting',
-      form_opt_gis: 'Rilievo Topografico, Laser Scanner & GIS (Template GNA/ICA)',
+      form_opt_gis: 'Rilievo Monumenti Laser Scanner 3D, Topografia & GIS (Template GNA/ICA)',
       form_opt_vpia: 'VPIA, Assistenza & Scavo Archeologico Stratigrafico',
       form_opt_int: 'Pacchetto Integrato Multi-Disciplinare',
       form_location: 'Comune / Estensione Stimata (ha o m²)',
       form_details: "Inquadramento del sito e obiettivi dell'indagine *",
       form_submit: 'Genera Richiesta Tecnica Preliminare',
-      footer_motto: 'Diagnostica non invasiva, rilievo LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, topografia e scavo archeologico.'
+      footer_motto: 'Diagnostica non invasiva, rilievo Laser Scanner 3D, LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, topografia e scavo archeologico.'
     },
 
     en: {
@@ -196,7 +208,7 @@
       hero_kicker: 'Archaeological Diagnostics & Geotechnologies',
       hero_title: 'Reading the subsurface before excavation, documenting landscapes with metric rigor.',
       hero_lead:
-        'TerreIndago integrates high-resolution geophysical prospection, LiDAR DTM analysis, Sentinel-1 SAR change detection, 3D Gaussian Splatting, precision topography, GIS architecture, and stratigraphic excavation direction.',
+        'TerreIndago integrates high-resolution geophysical prospection, 3D Laser Scanning of ancient monuments, LiDAR DTM analysis, Sentinel-1 SAR change detection, 3D Gaussian Splatting, precision topography, GIS architecture, and stratigraphic excavation.',
       hero_btn_primary: 'Explore Case Studies',
       hero_btn_secondary: 'Methodology Specs',
       metric_1_label: 'Area surveyed via GPR & Magnetometry',
@@ -211,9 +223,9 @@
       toggle_gis_vectors_off: 'GIS Vectors: OFF',
 
       services_kicker: 'Integrated Operational Domains',
-      services_title: 'Five disciplines for archaeological intelligence',
+      services_title: 'Six disciplines for archaeological and monumental intelligence',
       services_subtitle:
-        'From large-scale non-invasive prospection, LiDAR micro-topography, and satellite SAR monitoring to direct stratigraphic excavation, we deliver complete georeferenced workflows.',
+        'From large-scale non-invasive prospection, 3D Laser Scanning of ancient monuments, LiDAR micro-topography, and satellite SAR monitoring to direct stratigraphic excavation, we deliver complete georeferenced workflows.',
 
       service_1_title: 'Applied Archaeological Geophysics',
       service_1_desc:
@@ -223,20 +235,27 @@
       service_1_spec2: 'Acquisition in complex terrains with centimeter-grade GNSS RTK positioning',
       service_1_spec3: 'Vector archaeo-geophysical interpretation graded by reliability',
 
-      service_2_title: 'Satellite (SAR/Optical) & UAV Remote Sensing',
+      service_2_title: 'Satellite (SAR/Optical) Remote Sensing & Change Detection',
       service_2_desc:
-        'Synthetic Aperture Radar (Sentinel-1 SAR VV/VH polarization ratio) and multispectral satellite processing for multi-temporal Change Detection (SSD) and landscape monitoring, combined with UAV LiDAR and 3D Gaussian Splatting.',
+        'Synthetic Aperture Radar (Sentinel-1 SAR VV/VH polarization ratio) and multispectral satellite processing for multi-temporal Change Detection (SSD), paleochannel detection, and archaeological landscape monitoring.',
       service_2_caption: 'Sentinel-1 SAR Satellite Monitoring & Change Detection (SSD)',
       service_2_spec1: 'Multi-temporal SAR Change Detection (Sentinel-1 VV/VH, SSD) & optical analysis',
-      service_2_spec2: 'Real-time 3D Gaussian Splatting (3DGS), SfM photogrammetry & UAV LiDAR',
-      service_2_spec3: 'Multispectral vegetation indices (NDVI, NDRE) & archaeological landscape monitoring',
+      service_2_spec2: 'Decadal time-series analysis for preventive landscape heritage protection',
+      service_2_spec3: 'Multispectral vegetation indices (NDVI, NDRE) from satellite and UAV',
 
-      service_3_title: 'Topography & 3D Gaussian Splatting',
+      service_3_title: '3D Survey & Gaussian Splatting (3DGS)',
       service_3_desc:
-        'Rigorous geodetic networks, precision traverses, instrumental survey with Robotic Total Station and differential GNSS, terrestrial 3D Laser Scanning, and immersive 3D Gaussian Splatting digitization.',
+        'UAV and terrestrial photogrammetric acquisition combined with 3D Gaussian Splatting (Radiance Fields) algorithms to generate photorealistic 3D Digital Twins of archaeological parks and monumental complexes navigable in real time.',
       service_3_caption: 'Immersive 3D survey via 3D Gaussian Splatting',
-      service_3_spec1: 'Excavation grids, geophysical anomaly stakeout, and absolute elevations',
-      service_3_spec2: 'Certified point clouds, metric meshes, and 3DGS Digital Twins',
+      service_3_spec1: 'Real-time web-navigable 3DGS photorealistic Digital Twins',
+      service_3_spec2: 'Structure-from-Motion (SfM) photogrammetry and metric orthophotos',
+
+      service_6_title: '3D Laser Scanning & Point Clouds of Ancient Monuments',
+      service_6_desc:
+        'Millimeter-accurate high-density 3D laser scanning of ancient theaters, amphitheaters, temples, and historical architecture. Production of certified point clouds, architectural orthophotos, structural cross-sections, and HBIM models for conservation.',
+      service_6_caption: '3D Laser Scanner Point Cloud: Ancient Theater',
+      service_6_spec1: 'Dense point clouds (.E57 / .LAS), metric plans, elevations, and sections',
+      service_6_spec2: 'Structural deformation analysis, elevation recording, and HBIM modeling',
 
       service_4_title: 'LiDAR Survey, DTM Analysis & GIS Systems',
       service_4_desc:
@@ -245,12 +264,12 @@
       service_4_spec1: 'LiDAR point cloud processing, archaeological risk & potential maps',
       service_4_spec2: 'Intra-site excavation GIS, GNA/ICA templates & interactive WebGIS',
 
-      service_5_title: 'Archaeological Excavation & Preventive Assessment',
+      service_5_title: 'Topography, Archaeological Excavation & VPIA',
       service_5_desc:
-        'Preventive Archaeological Impact Assessments (VPIA), construction monitoring, targeted ground-truthing trenches, and open-area stratigraphic excavations with integrated 3D digital recording and Harris Matrix management.',
-      service_5_caption: 'Stratigraphic excavation, VPIA & instrumental survey',
+        'Robotic Total Station and GNSS RTK geodetic control, Preventive Archaeological Impact Assessments (VPIA), construction monitoring, and stratigraphic excavations with integrated 3D digital recording and Harris Matrix management.',
+      service_5_caption: 'Topography, stratigraphic excavation & VPIA',
       service_5_spec1: 'Scientific direction, stratigraphic unit recording, and official reports',
-      service_5_spec2: 'Targeted verification of geophysical anomalies reducing project delays and costs',
+      service_5_spec2: 'Excavation grids, geophysical anomaly stakeout, and ground-truthing',
 
       sim_kicker: 'Interactive Subsurface Diagnostics',
       sim_title: 'Geophysical response comparison by depth and target',
@@ -272,11 +291,11 @@
       portfolio_kicker: 'Field Projects & Campaigns',
       portfolio_title: 'Selected case studies',
       portfolio_subtitle:
-        'Explore real-world integrations of LiDAR micro-topography, Sentinel-1 SAR remote sensing, 3D Gaussian Splatting, GPR geophysics, topographic survey, GIS, and stratigraphic excavation.',
-      filter_all: 'All Projects (4)',
+        'Explore real-world integrations of 3D Laser Scanning of ancient monuments, LiDAR micro-topography, Sentinel-1 SAR remote sensing, 3D Gaussian Splatting, GPR geophysics, topography, and GIS.',
+      filter_all: 'All Projects (5)',
       filter_geophysics: 'Geophysics (GPR / Mag / ERT)',
       filter_remotesensing: 'LiDAR, SAR & 3D Gaussian Splatting',
-      filter_topogis: 'Topography & GIS',
+      filter_topogis: '3D Laser Scanner, Topography & GIS',
       filter_excavation: 'Excavation & VPIA',
 
       case1_loc: 'Applied Archaeological Geophysics • GPR Acquisition',
@@ -299,15 +318,20 @@
       case4_desc:
         'High-density LiDAR acquisition and vegetation filtering to extract bare-earth Digital Terrain Models (DTM/Hillshade). Micro-topographic analysis clearly revealed quadrangular fortified enclosures, ancient road traces, and subtle morphological features invisible at ground level.',
 
-      stat_area: 'Methodology',
+      case5_loc: 'Architectural Survey & 3D Topography • Ancient Monuments',
+      case5_title: '3D Laser Scanner & Point Cloud Survey of Ancient Monuments (Theater)',
+      case5_desc:
+        'Terrestrial 3D Laser Scanner acquisition and high-density metric point cloud processing for comprehensive geometric documentation of an ancient theater (cavea, scalaria, orchestra, proskenion, stage building, and perimeter pilasters). Certified metric baseline for plans, cross-sections, structural analysis, and restoration.',
+
+      stat_area: 'Methodology / Sensor',
       stat_depth: 'Depth / DTM',
       stat_method: 'Output / Sensors',
       stat_res: 'Acquisition',
-      stat_us: 'Stratigraphic Units',
-      stat_accuracy: 'Survey Accuracy',
-      stat_compliance: 'Deliverable',
-      stat_electrodes: 'Electrodes',
-      stat_resistivity: 'Contrast',
+      stat_us: 'Sensor',
+      stat_accuracy: 'Accuracy / Series',
+      stat_compliance: 'Algorithm',
+      stat_electrodes: 'Processing',
+      stat_resistivity: 'Deliverable',
 
       eq_kicker: 'Hardware & Software Arsenal',
       eq_title: 'Field instrumentation and processing pipeline',
