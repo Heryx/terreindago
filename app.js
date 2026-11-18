@@ -62,33 +62,33 @@
       service_2_spec2: 'Analisi serie storiche decennali per tutela preventiva del paesaggio',
       service_2_spec3: 'Indici multispettrali (NDVI, NDRE) da satellite e drone',
 
-      service_3_title: 'Rilievo 3D & Gaussian Splatting (3DGS)',
+      service_7_title: 'Fotogrammetria Structure from Motion (SfM) & Rilievo UAV',
+      service_7_desc:
+        'Acquisizione aerofotogrammetrica nadirale e obliqua da drone RTK e terrestre con elaborazione Structure from Motion (SfM) / Multi-View Stereo (MVS) per la restituzione di nuvole di punti dense, mesh 3D texturizzate, DEM e ortofoto metriche di scavi e complessi monumentali.',
+      service_7_caption: 'Structure from Motion (SfM): camere e modello 3D',
+      service_7_spec1: 'Bundle adjustment, orientamento camere con GCP GNSS RTK e ortofoto centimetriche',
+      service_7_spec2: 'Documentazione 3D stratigrafica di cantiere, prospetti architettonici e DEM',
+
+      service_3_title: 'Rilievo 3D Immersivo & Gaussian Splatting (3DGS)',
       service_3_desc:
-        'Acquisizione aerofotogrammetrica da drone (UAV) e terrestre integrata con algoritmi di 3D Gaussian Splatting (Radiance Fields) per la generazione di Digital Twin tridimensionali fotorealistici di parchi archeologici e complessi monumentali esplorabili in tempo reale.',
+        'Integrazione dei dataset fotogrammetrici SfM con algoritmi neurali di 3D Gaussian Splatting (Radiance Fields) per la generazione di Digital Twin tridimensionali fotorealistici di parchi archeologici e monumenti antichi esplorabili in tempo reale.',
       service_3_caption: 'Rilievo 3D immersivo con 3D Gaussian Splatting',
       service_3_spec1: 'Digital Twin fotorealistici 3DGS navigabili via web in tempo reale',
-      service_3_spec2: 'Fotogrammetria Structure-from-Motion (SfM) e ortofoto metriche',
+      service_3_spec2: 'Resa fedele di superfici lapidee, vegetazione e illuminazione complessa',
 
-      service_6_title: 'Rilievo Monumenti con Laser Scanner 3D & Nuvole di Punti',
+      service_6_title: 'Rilievo Monumenti con Laser Scanner 3D & Topografia',
       service_6_desc:
-        'Scansione 3D ad altissima densità e precisione millimetrica di teatri antichi, anfiteatri, templi e architetture storiche. Elaborazione di nuvole di punti certificate, ortofoto architettoniche, profili, sezioni strutturali e modelli HBIM per il restauro e la conservazione.',
+        'Scansione 3D ad altissima densità e precisione millimetrica di teatri antichi, anfiteatri, templi e architetture storiche, inquadrata con Stazione Totale e GNSS RTK. Elaborazione di nuvole di punti certificate, piante, sezioni strutturali e modelli HBIM.',
       service_6_caption: 'Nuvola di punti Laser Scanner 3D: Teatro Antico',
       service_6_spec1: 'Nuvole di punti dense (.E57 / .LAS), piante, prospetti e sezioni metriche',
-      service_6_spec2: 'Analisi delle deformazioni strutturali, studio degli alzati e modellazione HBIM',
+      service_6_spec2: 'Inquadramento topografico, analisi delle deformazioni e modellazione HBIM',
 
-      service_4_title: 'Rilievo LiDAR, Analisi DTM & Sistemi GIS',
+      service_4_title: 'Rilievo LiDAR, Sistemi GIS, Scavo & VPIA',
       service_4_desc:
-        'Elaborazione di modelli digitali del terreno (DTM/DEM) da rilievo LiDAR con filtraggio della vegetazione, analisi micro-topografica (Hillshade, Sky-View Factor, LRM) e progettazione di Geodatabase GIS conformi agli standard MiC / ICA.',
+        'Elaborazione di modelli digitali del terreno (DTM/DEM) da rilievo LiDAR con filtraggio della vegetazione, analisi micro-topografica (Hillshade, SVF, LRM), progettazione di Geodatabase GIS conformi agli standard MiC / ICA e direzione di scavi archeologici e VPIA.',
       service_4_caption: 'DTM da Rilievo LiDAR: micro-rilievo e strutture sepolte',
-      service_4_spec1: 'Elaborazione nuvole LiDAR, carte del potenziale e rischio archeologico',
-      service_4_spec2: 'GIS di scavo intra-site, template GNA/ICA e WebGIS interattivi',
-
-      service_5_title: 'Topografia, Scavo Archeologico & VPIA',
-      service_5_desc:
-        "Inquadramento topografico con Stazione Totale e GNSS RTK, redazione di Valutazioni Preventive dell'Interesse Archeologico (VPIA), assistenza in corso d'opera ed esecuzione di scavi stratigrafici con documentazione digitale integrata e Matrix di Harris.",
-      service_5_caption: 'Topografia, scavo stratigrafico e VPIA',
-      service_5_spec1: 'Direzione scientifica, schede US/USM e relazioni tecniche per Soprintendenze',
-      service_5_spec2: 'Reticoli di scavo, picchettamento anomalie geofisiche e verifica stratigrafica',
+      service_4_spec1: 'Elaborazione nuvole LiDAR, carte del potenziale e VPIA (D.Lgs. 36/2023)',
+      service_4_spec2: 'Direzione di scavo stratigrafico, GIS intra-site e template GNA/ICA',
 
       sim_kicker: 'Diagnostica Sottosuolo Interattiva',
       sim_title: 'Confronto della risposta geofisica per profondità e target',
@@ -110,10 +110,10 @@
       portfolio_kicker: 'Progetti & Campagne sul Campo',
       portfolio_title: 'Casi studio selezionati',
       portfolio_subtitle:
-        'Esplora esempi concreti di integrazione tra rilievo Laser Scanner 3D di monumenti, rilievo LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, geofisica GPR, topografia e GIS.',
-      filter_all: 'Tutti i Progetti (5)',
+        'Esplora esempi concreti di integrazione tra fotogrammetria Structure from Motion (SfM), Laser Scanner 3D di monumenti, rilievo LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, geofisica GPR e GIS.',
+      filter_all: 'Tutti i Progetti (6)',
       filter_geophysics: 'Geofisica (GPR / Mag / ERT)',
-      filter_remotesensing: 'LiDAR, SAR & 3D Gaussian Splatting',
+      filter_remotesensing: 'SfM, 3DGS, LiDAR & SAR',
       filter_topogis: 'Laser Scanner 3D, Topografia & GIS',
       filter_excavation: 'Scavo & VPIA',
 
@@ -121,6 +121,11 @@
       case1_title: 'Indagini Georadar (GPR) in Contesti Archeologici Monumentali',
       case1_desc:
         "Acquisizione Georadar (GPR) ad alta risoluzione in contesti archeologici complessi e a morfologia articolata. L'elaborazione dei profili B-Scan e la generazione di Time-Slices 3D georiferite permettono di individuare fasi costruttive sepolte, strutture murarie, cavità e livelli di frequentazione antichi senza impatto sul sito.",
+
+      case6_loc: 'Fotogrammetria Structure from Motion • Rilievo Aerofotogrammetrico 3D',
+      case6_title: 'Rilievo Fotogrammetrico Structure from Motion (SfM) di Complessi Templari',
+      case6_desc:
+        'Pianificazione di voli fotogrammetrici da drone (UAV) con griglia di acquisizione nadirale e obliqua, Bundle Adjustment delle prese fotografiche e appoggio topografico su Ground Control Points (GCP) GNSS RTK per la generazione di nuvole di punti dense, modelli 3D metrici, DEM e ortomosaici ad altissima risoluzione.',
 
       case2_loc: 'Rilievo 3D & Telerilevamento da Drone • Modellazione Avanzata',
       case2_title: 'Rilievo 3D e Modellazione Immersiva tramite Gaussian Splatting (3DGS)',
@@ -164,8 +169,8 @@
       eq_row1_app: 'Mappatura 3D di strutture murarie, pavimentazioni, cavità e stratigrafie sepolte in contesti monumentali, urbani ed extraurbani',
       eq_row2_inst: 'Gradiometri Fluxgate Multi-Sensore su carrello amagnetico + GNSS RTK',
       eq_row2_app: 'Prospezioni estensive ad alta velocità per fornaci, fossati, buche di palo, necropoli e viabilità antica',
-      eq_row3_inst: 'Laser Scanner 3D Terrestre, Pipeline 3D Gaussian Splatting (3DGS) & Fotogrammetria SfM',
-      eq_row3_app: 'Nuvole di punti millimetriche e ricostruzione 3D immersiva di teatri, templi, monumenti antichi e aree di scavo',
+      eq_row3_inst: 'Laser Scanner 3D Terrestre, Pipeline Structure from Motion (SfM) & 3D Gaussian Splatting (3DGS)',
+      eq_row3_app: 'Nuvole di punti millimetriche, fotogrammetria UAV/terrestre e ricostruzione 3D immersiva di teatri, templi e monumenti antichi',
       eq_row4_inst: 'SAR Sentinel-1 (VV/VH), Ottico Multispettrale & Droni RTK (LiDAR / 5 Bande)',
       eq_row4_app: 'Analisi multitemporale di Change Detection (SSD), monitoraggio archeologico, micro-topografia sotto bosco e indici NDVI/NDRE',
       eq_row5_inst: 'Stazione Totale Robotica 1", Ricevitori GNSS Multi-Costellazione RTK, QGIS/PostGIS',
@@ -174,7 +179,7 @@
       contact_kicker: 'Consulenza Tecnica & Preventivi',
       contact_title: 'Pianifichiamo la tua prossima indagine sul campo',
       contact_desc:
-        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, rilievi Laser Scanner 3D, LiDAR, telerilevamento satellitare SAR e 3D Gaussian Splatting o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
+        "Contattaci per valutare il protocollo diagnostico più adatto al tuo sito, richiedere un preventivo per prospezioni geofisiche, fotogrammetria Structure from Motion, Laser Scanner 3D, LiDAR, SAR e 3D Gaussian Splatting o affidare una Verifica Preventiva dell'Interesse Archeologico (VPIA).",
       compliance_box_title: 'Conformità Normativa & Qualifica Professionale',
       compliance_box_text:
         "Tutte le relazioni archeologiche, geofisiche e le banche dati GIS vengono redatte nel pieno rispetto del Codice dei Contratti Pubblici (D.Lgs. 36/2023, All. I.8) e delle Linee Guida dell'Istituto Centrale per l'Archeologia (ICA) per la pubblicazione sul Geoportale Nazionale per l'Archeologia (GNA).",
@@ -185,14 +190,14 @@
       form_email: 'Email di riferimento *',
       form_service: 'Servizio Richiesto *',
       form_opt_geo: 'Prospezione Geofisica (GPR / Magnetometria / ERT)',
-      form_opt_rs: 'Rilievo LiDAR, Telerilevamento Satellitare SAR & 3D Gaussian Splatting',
+      form_opt_rs: 'Fotogrammetria SfM, LiDAR, Telerilevamento SAR & 3D Gaussian Splatting',
       form_opt_gis: 'Rilievo Monumenti Laser Scanner 3D, Topografia & GIS (Template GNA/ICA)',
       form_opt_vpia: 'VPIA, Assistenza & Scavo Archeologico Stratigrafico',
       form_opt_int: 'Pacchetto Integrato Multi-Disciplinare',
       form_location: 'Comune / Estensione Stimata (ha o m²)',
       form_details: "Inquadramento del sito e obiettivi dell'indagine *",
       form_submit: 'Genera Richiesta Tecnica Preliminare',
-      footer_motto: 'Diagnostica non invasiva, rilievo Laser Scanner 3D, LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, topografia e scavo archeologico.'
+      footer_motto: 'Diagnostica non invasiva, fotogrammetria SfM, Laser Scanner 3D, LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, topografia e scavo archeologico.'
     },
 
     en: {
@@ -208,7 +213,7 @@
       hero_kicker: 'Archaeological Diagnostics & Geotechnologies',
       hero_title: 'Reading the subsurface before excavation, documenting landscapes with metric rigor.',
       hero_lead:
-        'TerreIndago integrates high-resolution geophysical prospection, 3D Laser Scanning of ancient monuments, LiDAR DTM analysis, Sentinel-1 SAR change detection, 3D Gaussian Splatting, precision topography, GIS architecture, and stratigraphic excavation.',
+        'TerreIndago integrates high-resolution geophysical prospection, Structure from Motion (SfM) photogrammetry, 3D Laser Scanning of ancient monuments, LiDAR DTM analysis, Sentinel-1 SAR change detection, 3D Gaussian Splatting, topography, and GIS.',
       hero_btn_primary: 'Explore Case Studies',
       hero_btn_secondary: 'Methodology Specs',
       metric_1_label: 'Area surveyed via GPR & Magnetometry',
@@ -225,7 +230,7 @@
       services_kicker: 'Integrated Operational Domains',
       services_title: 'Six disciplines for archaeological and monumental intelligence',
       services_subtitle:
-        'From large-scale non-invasive prospection, 3D Laser Scanning of ancient monuments, LiDAR micro-topography, and satellite SAR monitoring to direct stratigraphic excavation, we deliver complete georeferenced workflows.',
+        'From large-scale non-invasive prospection, Structure from Motion (SfM), 3D Laser Scanning of ancient monuments, LiDAR micro-topography, and satellite SAR monitoring to direct stratigraphic excavation.',
 
       service_1_title: 'Applied Archaeological Geophysics',
       service_1_desc:
@@ -243,33 +248,33 @@
       service_2_spec2: 'Decadal time-series analysis for preventive landscape heritage protection',
       service_2_spec3: 'Multispectral vegetation indices (NDVI, NDRE) from satellite and UAV',
 
-      service_3_title: '3D Survey & Gaussian Splatting (3DGS)',
+      service_7_title: 'Structure from Motion (SfM) Photogrammetry & UAV Survey',
+      service_7_desc:
+        'Nadir and oblique RTK UAV and terrestrial photogrammetric acquisition with Structure from Motion (SfM) / Multi-View Stereo (MVS) processing to generate dense point clouds, textured 3D meshes, DEMs, and metric orthophotos of excavations and monuments.',
+      service_7_caption: 'Structure from Motion (SfM): camera frustums & 3D model',
+      service_7_spec1: 'Bundle adjustment, GNSS RTK GCP camera alignment, and sub-centimeter orthophotos',
+      service_7_spec2: '3D stratigraphic trench documentation, architectural elevations, and DEMs',
+
+      service_3_title: 'Immersive 3D Survey & Gaussian Splatting (3DGS)',
       service_3_desc:
-        'UAV and terrestrial photogrammetric acquisition combined with 3D Gaussian Splatting (Radiance Fields) algorithms to generate photorealistic 3D Digital Twins of archaeological parks and monumental complexes navigable in real time.',
+        'Integration of photogrammetric SfM datasets with neural 3D Gaussian Splatting (Radiance Fields) algorithms to generate photorealistic 3D Digital Twins of archaeological parks and ancient monuments navigable in real time.',
       service_3_caption: 'Immersive 3D survey via 3D Gaussian Splatting',
       service_3_spec1: 'Real-time web-navigable 3DGS photorealistic Digital Twins',
-      service_3_spec2: 'Structure-from-Motion (SfM) photogrammetry and metric orthophotos',
+      service_3_spec2: 'High-fidelity rendering of masonry surfaces, vegetation, and complex lighting',
 
-      service_6_title: '3D Laser Scanning & Point Clouds of Ancient Monuments',
+      service_6_title: '3D Laser Scanning of Monuments & Topography',
       service_6_desc:
-        'Millimeter-accurate high-density 3D laser scanning of ancient theaters, amphitheaters, temples, and historical architecture. Production of certified point clouds, architectural orthophotos, structural cross-sections, and HBIM models for conservation.',
+        'Millimeter-accurate high-density 3D laser scanning of ancient theaters, amphitheaters, temples, and historical architecture, georeferenced via Total Station and GNSS RTK. Certified point clouds, plans, structural cross-sections, and HBIM.',
       service_6_caption: '3D Laser Scanner Point Cloud: Ancient Theater',
       service_6_spec1: 'Dense point clouds (.E57 / .LAS), metric plans, elevations, and sections',
-      service_6_spec2: 'Structural deformation analysis, elevation recording, and HBIM modeling',
+      service_6_spec2: 'Topographic control, structural deformation analysis, and HBIM modeling',
 
-      service_4_title: 'LiDAR Survey, DTM Analysis & GIS Systems',
+      service_4_title: 'LiDAR Survey, GIS Systems, Excavation & VPIA',
       service_4_desc:
-        'High-resolution Digital Terrain Model (DTM/DEM) generation from LiDAR point clouds with vegetation filtering, micro-topographic visualization (Hillshade, Sky-View Factor, LRM), and MiC/ICA-compliant GIS Geodatabases.',
+        'High-resolution Digital Terrain Model (DTM/DEM) generation from LiDAR point clouds with vegetation filtering, micro-topographic visualization (Hillshade, SVF, LRM), MiC/ICA-compliant GIS Geodatabases, and stratigraphic excavation / VPIA.',
       service_4_caption: 'LiDAR DTM Hillshade: micro-relief & buried structures',
-      service_4_spec1: 'LiDAR point cloud processing, archaeological risk & potential maps',
-      service_4_spec2: 'Intra-site excavation GIS, GNA/ICA templates & interactive WebGIS',
-
-      service_5_title: 'Topography, Archaeological Excavation & VPIA',
-      service_5_desc:
-        'Robotic Total Station and GNSS RTK geodetic control, Preventive Archaeological Impact Assessments (VPIA), construction monitoring, and stratigraphic excavations with integrated 3D digital recording and Harris Matrix management.',
-      service_5_caption: 'Topography, stratigraphic excavation & VPIA',
-      service_5_spec1: 'Scientific direction, stratigraphic unit recording, and official reports',
-      service_5_spec2: 'Excavation grids, geophysical anomaly stakeout, and ground-truthing',
+      service_4_spec1: 'LiDAR point cloud processing, archaeological potential maps & VPIA',
+      service_4_spec2: 'Stratigraphic excavation direction, intra-site GIS & GNA/ICA templates',
 
       sim_kicker: 'Interactive Subsurface Diagnostics',
       sim_title: 'Geophysical response comparison by depth and target',
@@ -291,10 +296,10 @@
       portfolio_kicker: 'Field Projects & Campaigns',
       portfolio_title: 'Selected case studies',
       portfolio_subtitle:
-        'Explore real-world integrations of 3D Laser Scanning of ancient monuments, LiDAR micro-topography, Sentinel-1 SAR remote sensing, 3D Gaussian Splatting, GPR geophysics, topography, and GIS.',
-      filter_all: 'All Projects (5)',
+        'Explore real-world integrations of Structure from Motion (SfM) photogrammetry, 3D Laser Scanning of ancient monuments, LiDAR micro-topography, Sentinel-1 SAR remote sensing, 3D Gaussian Splatting, GPR geophysics, and GIS.',
+      filter_all: 'All Projects (6)',
       filter_geophysics: 'Geophysics (GPR / Mag / ERT)',
-      filter_remotesensing: 'LiDAR, SAR & 3D Gaussian Splatting',
+      filter_remotesensing: 'SfM, 3DGS, LiDAR & SAR',
       filter_topogis: '3D Laser Scanner, Topography & GIS',
       filter_excavation: 'Excavation & VPIA',
 
@@ -302,6 +307,11 @@
       case1_title: 'Ground Penetrating Radar (GPR) Surveys in Monumental Contexts',
       case1_desc:
         'High-resolution Ground Penetrating Radar (GPR) acquisition in complex monumental archaeological settings. B-Scan profile processing and georeferenced 3D Time-Slices identify buried construction phases, masonry foundations, cavities, and ancient occupation surfaces non-invasively.',
+
+      case6_loc: 'Structure from Motion Photogrammetry • 3D Aerial Survey',
+      case6_title: 'Structure from Motion (SfM) Photogrammetric Survey of Temple Complexes',
+      case6_desc:
+        'UAV photogrammetric flight planning with nadir and oblique acquisition grids, camera Bundle Adjustment, and GNSS RTK Ground Control Point (GCP) georeferencing to produce dense point clouds, metric 3D meshes, DEMs, and ultra-high-resolution orthomosaics.',
 
       case2_loc: '3D Survey & UAV Remote Sensing • Advanced Modeling',
       case2_title: '3D Survey and Immersive Modeling via 3D Gaussian Splatting (3DGS)',
