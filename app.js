@@ -34,10 +34,10 @@
       metric_2_label: 'Accuratezza planialtimetrica GNSS / Total Station',
       metric_3_label: 'Conformità standard MiC / ICA per VPIA',
 
-      inspector_header_title: 'ISPETTORE MULTISTRATO: VILLA ROMANA RUSTICA',
-      badge_before: '01. Ortofoto UAV & Cropmarks',
-      badge_after: '02. GPR Time-Slice (-1.2m) & Mag',
-      slider_label: 'Sovrapposizione Geofisica:',
+      inspector_header_title: 'CONFRONTO GEOFISICA & SCAVO: TIME-SLICES GPR vs VERIFICA STRATIGRAFICA',
+      badge_before: '01. Time-Slices GPR (1.1m – 2.0m)',
+      badge_after: '02. Verifica di Scavo Stratigrafico',
+      slider_label: 'Confronto GPR / Scavo:',
       toggle_gis_vectors_on: 'Vettori GIS: ON',
       toggle_gis_vectors_off: 'Vettori GIS: OFF',
 
@@ -51,7 +51,7 @@
         'Mappatura ad alta risoluzione delle anomalie sepolte tramite Georadar (GPR), magnetometria ed ERT 2D/3D. I dati acquisiti vengono elaborati direttamente con un software proprietario sviluppato internamente per la co-registrazione 3D di profili radargramma B-Scan, Time-Slices multi-profondità e sezioni tomografiche ERT.',
       service_1_caption: 'Acquisizione GPR & Software 3D Proprietario',
       service_1_spec1: 'Elaborazione diretta con software 3D sviluppato internamente (GPR + Time-Slice + ERT)',
-      service_1_spec2: 'Acquisizione in contesti complessi con posizionamento GNSS RTK',
+      service_1_spec2: 'Verifica stratigrafica diretta (Ground-Truthing) delle anomalie geofisiche con scavo',
       service_1_spec3: 'Interpretazione archeo-geofisica vettoriale del grado di affidabilità',
 
       service_2_title: 'Telerilevamento Satellitare (SAR/Ottico) & Change Detection',
@@ -121,17 +121,22 @@
       portfolio_kicker: 'Progetti & Campagne sul Campo',
       portfolio_title: 'Casi studio selezionati',
       portfolio_subtitle:
-        'Esplora esempi concreti di integrazione tra fotogrammetria Structure from Motion (SfM), Laser Scanner 3D di monumenti, rilievo LiDAR, telerilevamento satellitare SAR, 3D Gaussian Splatting, geofisica GPR e GIS.',
-      filter_all: 'Tutti i Progetti (6)',
+        'Esplora esempi concreti di integrazione tra geofisica GPR e verifica di scavo, fotogrammetria Structure from Motion (SfM), Laser Scanner 3D di monumenti, rilievo LiDAR, telerilevamento satellitare SAR e 3D Gaussian Splatting.',
+      filter_all: 'Tutti i Progetti (7)',
       filter_geophysics: 'Geofisica (GPR / Mag / ERT)',
       filter_remotesensing: 'SfM, 3DGS, LiDAR & SAR',
       filter_topogis: 'Laser Scanner 3D, Topografia & GIS',
-      filter_excavation: 'Scavo & VPIA',
+      filter_excavation: 'Scavo & Confronto Geofisica',
 
       case1_loc: 'Geofisica Applicata • Acquisizione GPR & Software Sviluppato Internamente',
       case1_title: 'Indagini Georadar (GPR) ed Elaborazione 3D con Software Proprietario',
       case1_desc:
         'Acquisizione Georadar (GPR) ad alta risoluzione in contesti archeologici monumentali ed elaborazione diretta dei dati tramite software sviluppato internamente, capace di integrare in 3D profili B-Scan, Time-Slices multi-quota e sezioni tomografiche ERT per una lettura stratigrafica non invasiva di altissima precisione.',
+
+      case7_loc: 'Geofisica Applicata & Scavo Archeologico • Verifica Stratigrafica Diretta',
+      case7_title: 'Confronto tra Time-Slices GPR e Verifica di Scavo Archeologico',
+      case7_desc:
+        "Corrispondenza geometrica e stratigrafica puntuale tra le Time-Slices Georadar (GPR) alle profondità di 1.10 – 2.00 m e il successivo saggio di scavo archeologico stratigrafico. Le anomalie riflettenti individuate in fase diagnostica hanno previsto con precisione millimetrica l'andamento della struttura muraria semicircolare absidata e del setto ortogonale.",
 
       case6_loc: 'Fotogrammetria Structure from Motion • Rilievo Aerofotogrammetrico 3D',
       case6_title: 'Rilievo Fotogrammetrico Structure from Motion (SfM) di Complessi Templari',
@@ -158,15 +163,15 @@
       case5_desc:
         'Acquisizione tramite Laser Scanner 3D terrestre ed elaborazione di nuvole di punti metriche ad altissima densità per la documentazione geometrica integrale di un teatro antico (cavea, scalaria, orchestra, proskenion, edificio scenico e pilastri perimetrali). Base metrica certificata per piante, profili, analisi strutturali e restauro.',
 
-      stat_area: 'Metodologia / Strumento',
-      stat_depth: 'Profondità / DTM',
+      stat_area: 'Metodologia / Target',
+      stat_depth: 'Profondità / Quote',
       stat_method: 'Output / Sensori',
       stat_res: 'Acquisizione',
       stat_us: 'Sensore',
       stat_accuracy: 'Accuratezza / Serie',
       stat_compliance: 'Algoritmo',
       stat_electrodes: 'Elaborazione',
-      stat_resistivity: 'Deliverable',
+      stat_resistivity: 'Deliverable / Validazione',
 
       eq_kicker: 'Dotazione Strumentale & Software',
       eq_title: 'Tecnologia da campo e pipeline di calcolo',
@@ -231,10 +236,10 @@
       metric_2_label: 'GNSS RTK / Total Station 3D accuracy',
       metric_3_label: 'MiC / ICA GIS standard compliance',
 
-      inspector_header_title: 'MULTILAYER INSPECTOR: ROMAN VILLA RUSTICA',
-      badge_before: '01. UAV Orthophoto & Cropmarks',
-      badge_after: '02. GPR Time-Slice (-1.2m) & Mag',
-      slider_label: 'Geophysical Overlay:',
+      inspector_header_title: 'GEOPHYSICS vs EXCAVATION: GPR TIME-SLICES vs STRATIGRAPHIC VERIFICATION',
+      badge_before: '01. GPR Time-Slices (1.1m – 2.0m)',
+      badge_after: '02. Stratigraphic Excavation Verification',
+      slider_label: 'GPR / Excavation Overlay:',
       toggle_gis_vectors_on: 'GIS Vectors: ON',
       toggle_gis_vectors_off: 'GIS Vectors: OFF',
 
@@ -248,7 +253,7 @@
         'High-resolution mapping of buried anomalies using Ground Penetrating Radar (GPR), magnetometry, and 2D/3D ERT. Field datasets are processed directly with custom-built proprietary software for 3D co-registration of B-Scan radargrams, multi-depth Time-Slices, and ERT sections.',
       service_1_caption: 'GPR Field Acquisition & Proprietary 3D Software',
       service_1_spec1: 'Direct processing via in-house 3D software (GPR B-Scan + Time-Slice + ERT)',
-      service_1_spec2: 'Acquisition in complex terrains with centimeter-grade GNSS RTK positioning',
+      service_1_spec2: 'Direct stratigraphic ground-truthing of geophysical anomalies via excavation',
       service_1_spec3: 'Vector archaeo-geophysical interpretation graded by reliability',
 
       service_2_title: 'Satellite (SAR/Optical) Remote Sensing & Change Detection',
@@ -318,17 +323,22 @@
       portfolio_kicker: 'Field Projects & Campaigns',
       portfolio_title: 'Selected case studies',
       portfolio_subtitle:
-        'Explore real-world integrations of Structure from Motion (SfM) photogrammetry, 3D Laser Scanning of ancient monuments, LiDAR micro-topography, Sentinel-1 SAR remote sensing, 3D Gaussian Splatting, GPR geophysics, and GIS.',
-      filter_all: 'All Projects (6)',
-      filter_geophysics: 'Geofisica (GPR / Mag / ERT)',
+        'Explore real-world integrations of GPR geophysics and excavation ground-truthing, Structure from Motion (SfM) photogrammetry, 3D Laser Scanning of ancient monuments, LiDAR micro-topography, Sentinel-1 SAR remote sensing, and 3D Gaussian Splatting.',
+      filter_all: 'All Projects (7)',
+      filter_geophysics: 'Geophysics (GPR / Mag / ERT)',
       filter_remotesensing: 'SfM, 3DGS, LiDAR & SAR',
       filter_topogis: '3D Laser Scanner, Topography & GIS',
-      filter_excavation: 'Excavation & VPIA',
+      filter_excavation: 'Excavation & Geophysics Ground-Truthing',
 
       case1_loc: 'Applied Geophysics • GPR Acquisition & In-House 3D Software',
       case1_title: 'Ground Penetrating Radar (GPR) & 3D Processing with Proprietary Software',
       case1_desc:
         'High-resolution GPR acquisition in monumental archaeological contexts and direct processing via custom-built in-house software integrating 3D B-Scan profiles, multi-depth Time-Slices, and ERT tomographic sections for high-precision non-invasive stratigraphic diagnostics.',
+
+      case7_loc: 'Applied Geophysics & Archaeological Excavation • Direct Ground-Truthing',
+      case7_title: 'Comparison Between GPR Time-Slices and Stratigraphic Excavation Verification',
+      case7_desc:
+        'Exact geometric and stratigraphic correlation between Ground Penetrating Radar (GPR) Time-Slices at 1.10 – 2.00 m depth and subsequent stratigraphic excavation. High-amplitude reflectors detected during non-invasive diagnostics accurately predicted the semicircular apsidal masonry structure and orthogonal wall.',
 
       case6_loc: 'Structure from Motion Photogrammetry • 3D Aerial Survey',
       case6_title: 'Structure from Motion (SfM) Photogrammetric Survey of Temple Complexes',
