@@ -693,7 +693,42 @@ button {
 .discipline-desc {
   font-size: 0.94rem;
   color: var(--text-basalt);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.15rem;
+}
+
+.discipline-media-preview {
+  position: relative;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border-contour-strong);
+  background-color: var(--bg-slate-deep);
+  margin-top: 0.75rem;
+}
+
+.discipline-media-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s var(--transition-smooth);
+}
+
+.discipline-card:hover .discipline-media-preview img {
+  transform: scale(1.03);
+}
+
+.discipline-media-caption {
+  position: absolute;
+  bottom: 0.55rem;
+  left: 0.55rem;
+  background-color: hsla(212, 28%, 13%, 0.86);
+  backdrop-filter: blur(4px);
+  color: var(--text-on-dark);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 0.22rem 0.55rem;
+  border-radius: 2px;
+  border: 1px solid var(--border-dark-contour);
 }
 
 .spec-list {
